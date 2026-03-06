@@ -59,24 +59,24 @@
 			"desc": "Tôi là Lộc — một lập trình viên Front-end chuyên xây dựng các ứng dụng web hiệu năng cao. Tận dụng Next.js và các công cụ AI, tôi tối ưu hóa UI/UX để mang đến mã nguồn sạch, tốc độ tải nhanh và trải nghiệm mượt mà.",
 			"items": {
 				"1": {
-					"title": "50+",
-					"desc": "Khách hàng trên toàn thế giới",
-					"paragraph": "Từ các startup đến các công ty đa quốc gia."
+					"title": "3+",
+					"desc": "Năm Kinh Nghiệm",
+					"paragraph": "Trong lĩnh vực Front-end & 2D Animation."
 				},
 				"2": {
-					"title": "2+",
-					"desc": "Năm kinh nghiệm",
-					"paragraph": "Trong lĩnh vực công nghệ, thời trang và đời sống."
+					"title": "4+",
+					"desc": "Dự Án Trọng Điểm",
+					"paragraph": "Thiết kế kiến trúc và triển khai các ứng dụng Next.js phức tạp."
 				},
 				"3": {
-					"title": "4+",
-					"desc": "Dự án đã hoàn thành",
-					"paragraph": "Từ hình ảnh đến các sản phẩm kỹ thuật số."
+					"title": "100%",
+					"desc": "Đánh Giá Tích Cực",
+					"paragraph": "Duy trì tỷ lệ hài lòng tuyệt đối trên nền tảng Upwork."
 				},
 				"4": {
-					"title": "100%",
-					"desc": "Sự hài lòng của khách hàng",
-					"paragraph": "Xây dựng qua niềm tin, sự rõ ràng và kết quả."
+					"title": "70%",
+					"desc": "Rút Ngắn Thời Gian",
+					"paragraph": "Tăng tốc phát triển sản phẩm MVP thông qua việc tích hợp hiệu quả AI Agents."
 				}
 			},
 			"btn": "Về tôi"

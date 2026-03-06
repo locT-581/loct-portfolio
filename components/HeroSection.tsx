@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -31,25 +34,52 @@ function ArrowIcon() {
 	);
 }
 
+const fadeInUp = {
+	initial: { opacity: 0, y: 20 },
+	animate: { opacity: 1, y: 0 },
+	transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+};
+
+const staggerContainer = {
+	animate: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
+
 export default function HeroSection() {
 	const locale = useLocale();
 	const t = useTranslations("Hero");
 
 	return (
-		<section className="hero-section">
+		<motion.section
+			className="hero-section"
+			initial="initial"
+			animate="animate"
+			variants={staggerContainer}
+		>
 			<div className="hero-content">
 				{/* Top row: Subheading + Featured Project */}
 				<div className="hero-top-row">
-					<p className="hero-subheading">{t("subheading")}</p>
+					<motion.p className="hero-subheading" variants={fadeInUp}>
+						{t("subheading")}
+					</motion.p>
 
-					<div className="featured-project-block">
-						<Image
-							src="https://i.pinimg.com/736x/59/f9/5a/59f95aa8b46e479e4d0f84878acb34a8.jpg"
-							alt="Featured Project preview"
-							width={247}
-							height={139}
-							className="featured-project-thumb"
-						/>
+					<motion.div className="featured-project-block" variants={fadeInUp}>
+						<motion.div
+							whileHover={{ scale: 1.05 }}
+							transition={{ duration: 0.4, ease: "easeOut" }}
+							className="overflow-hidden rounded-lg"
+						>
+							<Image
+								src="https://i.pinimg.com/736x/59/f9/5a/59f95aa8b46e479e4d0f84878acb34a8.jpg"
+								alt="Featured Project preview"
+								width={247}
+								height={139}
+								className="featured-project-thumb transition-transform duration-500 hover:scale-110"
+							/>
+						</motion.div>
 						<Link
 							href={`/${locale}/projects`}
 							className="featured-project-link"
@@ -57,37 +87,51 @@ export default function HeroSection() {
 							<span className="featured-project-label">
 								{t("featuredProject")}
 							</span>
-							<ArrowIcon />
+							<motion.div
+								whileHover={{ x: 5 }}
+								transition={{ type: "spring", stiffness: 400 }}
+							>
+								<ArrowIcon />
+							</motion.div>
 						</Link>
-					</div>
+					</motion.div>
 				</div>
 
 				{/* Heading row: Large title + Location */}
 				<div className="hero-heading-row">
 					<h1 className="hero-heading">
-						<ShinyText
-							text={t("headingDark")}
-							disabled={false}
-							speed={5}
-							className="heading-dark"
-							color="#1a1a1a"
-							shineColor="#666666"
-						/>
-						<ShinyText
-							text={t("headingGrey")}
-							disabled={false}
-							speed={5}
-							className="heading-grey"
-							color="#999999"
-							shineColor="#aaaaaa"
-						/>
+						<motion.div variants={fadeInUp} className="inline-block mr-4">
+							<ShinyText
+								text={t("headingDark")}
+								disabled={false}
+								speed={5}
+								className="heading-dark"
+								color="#1a1a1a"
+								shineColor="#666666"
+							/>
+						</motion.div>
+						<motion.div variants={fadeInUp} className="inline-block">
+							<ShinyText
+								text={t("headingGrey")}
+								disabled={false}
+								speed={5}
+								className="heading-grey"
+								color="#999999"
+								shineColor="#aaaaaa"
+							/>
+						</motion.div>
 					</h1>
 				</div>
 			</div>
 
 			{/* Full-width hero image */}
 			{!!0 && (
-				<div className="hero-image-wrapper">
+				<motion.div
+					className="hero-image-wrapper"
+					initial={{ opacity: 0, scale: 1.1 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 1.2, ease: "easeOut" }}
+				>
 					<Image
 						src="https://api.builder.io/api/v1/image/assets/TEMP/4e614238f189078d25d6c5b3b3deec7bc018a56a?width=2882"
 						alt="Portfolio showcase"
@@ -95,8 +139,8 @@ export default function HeroSection() {
 						className="hero-image"
 						priority
 					/>
-				</div>
+				</motion.div>
 			)}
-		</section>
+		</motion.section>
 	);
 }

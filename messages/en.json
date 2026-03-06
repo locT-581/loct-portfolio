@@ -59,24 +59,24 @@
 			"desc": "I’m LocT — a Front-end Developer specializing in robust, scalable web applications. By leveraging Next.js and AI tools, I optimize UI/UX to deliver clean code, fast load times, and intuitive digital experiences.",
 			"items": {
 				"1": {
-					"title": "50+",
-					"desc": "Loyal Clients Worldwide",
-					"paragraph": "Startups to global companies."
+					"title": "3+",
+					"desc": "Years of Experience",
+					"paragraph": "In Front-end Development & 2D Animation."
 				},
 				"2": {
-					"title": "2+",
-					"desc": "Years of Experience",
-					"paragraph": "Across tech, fashion, and lifestyle."
+					"title": "4+",
+					"desc": "Core Enterprise Projects",
+					"paragraph": "Architecting and delivering complex Next.js applications."
 				},
 				"3": {
-					"title": "4+",
-					"desc": "Project Successfully Delivered",
-					"paragraph": "From visuals to digital products."
-				},
-				"4": {
 					"title": "100%",
 					"desc": "Client Satisfaction",
-					"paragraph": "Built through trust, clarity, and results."
+					"paragraph": "Maintained perfect feedback rating on Upwork."
+				},
+				"4": {
+					"title": "80%",
+					"desc": "Delivery Time Saved",
+					"paragraph": "Accelerating MVP development by effectively integrating AI Agents into the workflow."
 				}
 			},
 			"btn": "About me"

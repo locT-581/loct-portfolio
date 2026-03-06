@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
@@ -59,9 +60,11 @@ export default async function LocaleLayout({
 			<body className={`${inter.variable} min-h-screen flex flex-col`}>
 				<NextIntlClientProvider messages={messages} locale={locale}>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-						<Navbar />
-						<main className="grow pt-20">{children}</main>
-						<Footer />
+						<SmoothScroll>
+							<Navbar />
+							<main className="grow pt-20 max-w-360 mx-auto">{children}</main>
+							<Footer />
+						</SmoothScroll>
 					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>

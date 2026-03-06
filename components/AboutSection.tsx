@@ -1,7 +1,28 @@
 "use client";
-import { motion } from "motion/react";
+
+import { motion, type Variants } from "motion/react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import Counter from "./Counter";
+import ScrollRevealText from "./ScrollRevealText";
+
+const itemVariants: Variants = {
+	hidden: { opacity: 0, y: 30 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+	},
+};
+
+const gridVariants = {
+	hidden: {},
+	visible: {
+		transition: {
+			staggerChildren: 0.15,
+		},
+	},
+};
 
 const Item = ({
 	title,
@@ -13,8 +34,14 @@ const Item = ({
 	paragraph: string;
 }) => {
 	return (
-		<motion.div whileHover={{ y: -5 }} className="p-6 md:p-8 rounded-2xl">
-			<h3 className="text-6xl md:text-8xl mb-4 font-switzer">{title}</h3>
+		<motion.div
+			variants={itemVariants}
+			whileHover={{ y: -5 }}
+			className="p-6 md:p-8 rounded-2xl"
+		>
+			<h3 className="text-6xl md:text-8xl mb-4 font-switzer">
+				<Counter value={title} />
+			</h3>
 			<p className="text-xl md:text-2xl font-semibold font-switzer">{desc}</p>
 			<p className="text-lg md:text-[20px] text-grey-1">{paragraph}</p>
 		</motion.div>
@@ -36,9 +63,18 @@ export default function AboutSection() {
 			</div>
 			<div className="flex flex-col gap-10 md:gap-16">
 				<div className="col-span-1">
-					<p className="text-3xl md:text-5xl font-medium">{t("about.desc")}</p>
+					<ScrollRevealText
+						text={t("about.desc")}
+						className="text-3xl md:text-5xl font-medium"
+					/>
 				</div>
-				<div className="col-span-1 lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, margin: "-100px" }}
+					variants={gridVariants}
+					className="col-span-1 lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8"
+				>
 					<Item
 						title={t("about.items.1.title")}
 						desc={t("about.items.1.desc")}
@@ -59,7 +95,7 @@ export default function AboutSection() {
 						desc={t("about.items.4.desc")}
 						paragraph={t("about.items.4.paragraph")}
 					/>
-				</div>
+				</motion.div>
 				<Link
 					href={`/${locale}/about`}
 					className="flex text-lg md:text-xl uppercase w-fit gap-1 items-center px-8 md:px-10 py-3 border border-black dark:border-white transition-colors hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
