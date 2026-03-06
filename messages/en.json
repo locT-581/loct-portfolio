@@ -170,5 +170,97 @@
 				}
 			}
 		}
+	},
+	"AboutPage": {
+		"title": "About",
+		"subtitle": "Discover the journey, mindset, and creative drive that shape every project I take on.",
+		"aboutMe": {
+			"label": "About Me",
+			"heading": "I'm Yessa, a passionate designer with over eight years of experience turning ideas into visual experiences that connect, inspire, and convert.",
+			"description": "Every design I create is rooted in purpose. Whether it's a mobile app interface, a visual rebrand, or a complete web presence, I bring empathy, strategy, and clean aesthetics to the table.",
+			"imageAlt": "Designer portrait"
+		},
+		"experience": {
+			"label": "Job Experience",
+			"heading": "The Expertise Behind Every Detail",
+			"jobs": [
+				{
+					"role": "Visual Designer",
+					"company": "Nova Cosmetics / 2034",
+					"desc": "Led the redesign of the entire website and product packaging, creating a cohesive and elevated brand presence."
+				},
+				{
+					"role": "UI/UX Lead",
+					"company": "GlowUp Wellness App / 2033",
+					"desc": "Designed a wellness app interface from scratch with a clean, intuitive experience for daily habit tracking."
+				},
+				{
+					"role": "Brand Strategist",
+					"company": "Aurum Jewelry / 2032",
+					"desc": "Developed the full brand identity system, including logo, typography, and social content."
+				},
+				{
+					"role": "Art Director",
+					"company": "Pixel Pulse Agency / 2031",
+					"desc": "Oversaw visual direction for multiple creative campaigns, combining motion, branding, and UI work."
+				},
+				{
+					"role": "Junior Designer",
+					"company": "CodeWave Summit / 2030",
+					"desc": "Supported web and visual materials for a major tech conference, contributing to its refreshed identity."
+				},
+				{
+					"role": "Internship",
+					"company": "Creative House Studio / 2022",
+					"desc": "Assisted in logo design, layout exploration, and presentation decks, gaining strong foundation in design workflow."
+				}
+			]
+		},
+		"value": {
+			"label": "Value",
+			"heading": "Why with me?",
+			"description": "More than just visuals—here's what I bring to every collaboration.",
+			"items": {
+				"1": {
+					"number": "/01",
+					"title": "Creative Clarity",
+					"desc": "I turn complex ideas into clean, thoughtful visuals that communicate clearly and effectively."
+				},
+				"2": {
+					"number": "/02",
+					"title": "Reliable Communication",
+					"desc": "A smooth, transparent process is just as important as the final design. I prioritize clear, timely communication at every stage."
+				},
+				"3": {
+					"number": "/03",
+					"title": "User-Focused Design",
+					"desc": "I approach every project with empathy, always considering the user's journey, mindset, and experience."
+				},
+				"4": {
+					"number": "/04",
+					"title": "Quality Over Everything",
+					"desc": "I focus on detail and consistency to deliver work that not only looks great but also meets a high standard of excellence."
+				}
+			},
+			"images": {
+				"1": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000",
+				"2": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+			}
+		},
+		"capabilities": {
+			"label": "Expertise",
+			"heading": "My Core Capabilities",
+			"description": "Here's what I've mastered over the years—and continue to evolve.",
+			"items": {
+				"1": "UI/UX DESIGN",
+				"2": "BRAND IDENTITY",
+				"3": "WEB DESIGN",
+				"4": "ART DIRECTION"
+			}
+		},
+		"toolbox": {
+			"label": "Tools",
+			"heading": "Toolbox"
+		}
 	}
 }
