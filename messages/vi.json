@@ -36,6 +36,24 @@
 				"desc": "Định hướng hình ảnh nhất quán xuyên suốt tất cả các sản phẩm sáng tạo."
 			}
 		},
+		"featured": {
+			"subTitle": "Dự án Nổi bật",
+			"heading": "Những khoảnh khắc\nHợp tác",
+			"btnAll": "XEM TẤT CẢ DỰ ÁN",
+			"btnDetails": "XEM CHI TIẾT",
+			"items": {
+				"1": {
+					"title": "Tái định vị NüVara",
+					"year": "2034",
+					"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+				},
+				"2": {
+					"title": "Tái định vị CodeWave Summit",
+					"year": "2035",
+					"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+				}
+			}
+		},
 		"about": {
 			"title": "Tại sao chọn tôi?",
 			"desc": "Sự rõ ràng sáng tạo, giao tiếp đáng tin cậy, thiết kế tập trung vào người dùng và chất lượng trên hết.",
@@ -90,7 +108,67 @@
 				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
 			}
 		],
-		"contactTitle": "Sẵn sàng tạo ra điều tuyệt vời?",
-		"contactBtn": "Liên hệ với tôi ngay"
+		"discover": {
+			"subTitle": "Dự án",
+			"heading": "Khám phá thêm",
+			"categories": [
+				"Tất cả danh mục",
+				"Thiết kế UI/UX",
+				"Nhận diện Thương hiệu",
+				"Thiết kế Web",
+				"Chỉ đạo Nghệ thuật"
+			],
+			"btnAll": "XEM TẤT CẢ DỰ ÁN",
+			"items": {
+				"1": {
+					"title": "Website NeuroDash",
+					"category": "Thiết kế Web",
+					"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+				},
+				"2": {
+					"title": "Tái định vị Thời trang Velvette",
+					"category": "Bộ nhận diện",
+					"image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+				},
+				"3": {
+					"title": "Bộ nhận diện Aurum",
+					"category": "Bộ nhận diện",
+					"image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
+				}
+			}
+		},
+		"cta": {
+			"heading": "Sẵn sàng để kiến tạo\nnhững điều tuyệt vời?",
+			"phoneLabel": "Điện thoại:",
+			"phoneValue": "+1 (555) 123-4567",
+			"mailLabel": "Email:",
+			"mailValue": "hello@velisseportfolio.com",
+			"btn": "LIÊN HỆ NGAY"
+		},
+		"blog": {
+			"subTitle": "Blog",
+			"heading": "Nơi Sự Thấu Hiểu\nGặp Gỡ\nTrí Tưởng Tượng",
+			"description": "Tuyển tập những suy nghĩ sáng tạo, mẹo thiết kế hữu ích và cái nhìn hậu trường về quy trình làm việc của tôi — mang đến một góc nhìn sâu sắc hơn về cách các ý tưởng phát triển, thử thách được giải quyết và câu chuyện thị giác hình thành.",
+			"btnAll": "XEM TẤT CẢ BÀI VIẾT",
+			"readTime": "Đọc trong 5 phút",
+			"btnDetails": "Xem chi tiết",
+			"items": {
+				"1": {
+					"title": "Sức mạnh của sự Tối giản trong Thiết kế UI",
+					"date": "Ngày 03 tháng 06, 2035",
+					"image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1000"
+				},
+				"2": {
+					"title": "Tìm Cảm hứng Sáng tạo trong Đời sống Thường ngày",
+					"date": "Ngày 22 tháng 04, 2035",
+					"image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=1000"
+				},
+				"3": {
+					"title": "Cách xây dựng Thương hiệu Cá nhân qua Thiết kế",
+					"date": "Ngày 12 tháng 05, 2035",
+					"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
+				}
+			}
+		}
 	}
 }

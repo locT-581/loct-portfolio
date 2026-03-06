@@ -26,7 +26,7 @@ export default function AboutSection() {
 	return (
 		<section
 			id="about"
-			className="container flex flex-col lg:flex-row gap-8 lg:gap-[10%] px-6 py-16 md:py-24 border-t border-gray-200 dark:border-gray-800"
+			className="container flex flex-col lg:flex-row gap-8 lg:gap-[10%] px-6 pt-16 pb-6 md:py-24 border-t border-gray-200 dark:border-gray-800"
 		>
 			<div className="flex gap-1 text-nowrap shrink-0 h-fit lg:items-center lg:justify-center self-start items-center">
 				<div className="bg-black dark:bg-white rounded-full size-1" />

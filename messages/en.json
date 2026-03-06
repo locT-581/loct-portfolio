@@ -36,6 +36,24 @@
 				"desc": "Shaping cohesive visual direction across all creative outputs."
 			}
 		},
+		"featured": {
+			"subTitle": "Featured Project",
+			"heading": "Key Moments In\nCollaboration",
+			"btnAll": "VIEW ALL PROJECT",
+			"btnDetails": "VIEW DETAILS",
+			"items": {
+				"1": {
+					"title": "NüVara Rebrand",
+					"year": "2034",
+					"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+				},
+				"2": {
+					"title": "CodeWave Summit Rebrand",
+					"year": "2035",
+					"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+				}
+			}
+		},
 		"about": {
 			"title": "About Me",
 			"desc": "I’m Velisse — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences. From sleek UI design to engaging brand visuals, I help businesses and creators tell their stories with clarity, creativity, and confidence.",
@@ -90,7 +108,67 @@
 				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
 			}
 		],
-		"contactTitle": "Ready to Build Something Great Together?",
-		"contactBtn": "Contact Me Now"
+		"discover": {
+			"subTitle": "Projects",
+			"heading": "Discover More Work",
+			"categories": [
+				"All Categories",
+				"UI/UX Design",
+				"Brand Identity",
+				"Web Design",
+				"Art Direction"
+			],
+			"btnAll": "VIEW ALL PROJECT",
+			"items": {
+				"1": {
+					"title": "NeuroDash Website",
+					"category": "Web Design",
+					"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+				},
+				"2": {
+					"title": "Velvette Fashion Rebrand",
+					"category": "Brand Kit",
+					"image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+				},
+				"3": {
+					"title": "Aurum Brand Kit",
+					"category": "Brand Kit",
+					"image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
+				}
+			}
+		},
+		"cta": {
+			"heading": "Ready to Build Something\nGreat Together?",
+			"phoneLabel": "Phone:",
+			"phoneValue": "+1 (555) 123-4567",
+			"mailLabel": "Mail:",
+			"mailValue": "hello@velisseportfolio.com",
+			"btn": "CONTACT US NOW"
+		},
+		"blog": {
+			"subTitle": "Blog",
+			"heading": "Where Insight\nMeets\nImagination",
+			"description": "A collection of creative thoughts, practical design tips, and behind-the-scenes insights into my process—offering a deeper look at how ideas evolve, challenges are solved, and visual stories come to life.",
+			"btnAll": "VIEW ALL BLOGS",
+			"readTime": "5 mins read",
+			"btnDetails": "See Details",
+			"items": {
+				"1": {
+					"title": "The Power of Simplicity in UI Design",
+					"date": "June 03, 2035",
+					"image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1000"
+				},
+				"2": {
+					"title": "Finding Creative Inspiration in Everyday Life",
+					"date": "April 22, 2035",
+					"image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=1000"
+				},
+				"3": {
+					"title": "How to Build a Personal Brand Through Design",
+					"date": "May 12, 2035",
+					"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
+				}
+			}
+		}
 	}
 }
