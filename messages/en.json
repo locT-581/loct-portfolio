@@ -8,32 +8,32 @@
 			"projects": "Projects Completed",
 			"satisfaction": "Client Satisfaction"
 		},
-		"servicesHeading": "What Can I Help With",
-		"servicesSubTitle": "Service",
+		"servicesHeading": "Core Competencies",
+		"servicesSubTitle": "Expertise",
 		"services": {
 			"1": {
 				"number": "/01",
-				"title": "UI/UX Design",
-				"tags": ["User Research", "Wireframing", "Prototyping"],
-				"desc": "Designing intuitive interfaces and smooth user flows for digital products."
+				"title": "Front-end Development",
+				"tags": ["React.js", "Next.js", "TypeScript"],
+				"desc": "Building scalable, high-performance web and mobile applications using modern frameworks."
 			},
 			"2": {
 				"number": "/02",
-				"title": "Web Design",
-				"tags": ["Layout", "Responsive", "Visual Hierarchy"],
-				"desc": "Creating responsive, brand-aligned websites with visual impact."
+				"title": "Architecture & Optimization",
+				"tags": ["Micro-frontend", "DOM Pooling", "Core Web Vitals"],
+				"desc": "Designing robust architectures (Hexagonal, DDD) and optimizing state management for seamless, ultra-fast performance."
 			},
 			"3": {
 				"number": "/03",
-				"title": "Brand Identity",
-				"tags": ["Brand", "Strategy", "Communication"],
-				"desc": "Developing logos, systems, and visuals that define your brand."
+				"title": "UI & Web Animation",
+				"tags": ["GSAP", "Framer Motion"],
+				"desc": "Crafting fluid, engaging user interfaces with complex motion graphics and pixel-perfect design implementation."
 			},
 			"4": {
 				"number": "/04",
-				"title": "Art Direction",
-				"tags": ["Concept Development", "Responsive"],
-				"desc": "Shaping cohesive visual direction across all creative outputs."
+				"title": "AI-Driven Development",
+				"tags": ["AI Agents", "Claude", "Github Copilot"],
+				"desc": "Leveraging AI tools to drastically reduce coding time and rapidly prototype high-quality MVPs."
 			}
 		},
 		"featured": {
@@ -138,12 +138,12 @@
 			}
 		},
 		"cta": {
-			"heading": "Ready to Build Something\nGreat Together?",
+			"heading": "Ready to Code. \nAvailable for Full-time\nRoles & Projects.",
 			"phoneLabel": "Phone:",
 			"phoneValue": "(+84)927 038 604",
 			"mailLabel": "Mail:",
 			"mailValue": "loct.se581@gmail.com",
-			"btn": "CONTACT US NOW"
+			"btn": "GET IN TOUCH"
 		},
 		"blog": {
 			"subTitle": "Blog",
@@ -349,11 +349,11 @@
 	},
 	"Footer": {
 		"brand": "LocT®",
-		"description": "Designing clarity, creativity, and connection—one project at a time. Each design is a thoughtful blend of purpose, story, and visual impact.",
+		"description": "Architecting scalable web applications and delivering fluid user experiences. Every line of code is carefully optimized for performance, maintainability, and visual impact.",
 		"emailLabel": "Email:",
 		"phoneLabel": "Phone:",
 		"locationLabel": "Location:",
-		"locationValue": "Available worldwide",
+		"locationValue": "Can Tho, Vietnam | Remote Worldwide",
 		"quickLinks": {
 			"title": "Quick Links",
 			"home": "Home",
@@ -365,17 +365,16 @@
 		},
 		"morePages": {
 			"title": "More Pages",
-			"styleGuide": "Style Guide",
-			"licenses": "Licenses",
-			"404Page": "404 Page",
-			"privacy": "Policy Privacy"
+			"resume": "My Resume (CV)",
+			"techStack": "Tech Stack",
+			"sourceCode": "Source Code"
 		},
 		"socialMedia": {
 			"title": "Social Media",
-			"instagram": "Instagram",
-			"dribbble": "Dribbble",
+			"github": "GitHub",
 			"linkedin": "Linkedin",
-			"behance": "Behance"
+			"upwork": "Upwork",
+			"pinterest": "Pinterest"
 		},
 		"copyright": "© 2026 LocT. All Rights Reserved."
 	},

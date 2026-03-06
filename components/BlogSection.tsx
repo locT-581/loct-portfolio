@@ -61,10 +61,7 @@ export default function BlogSection() {
 	const locale = useLocale();
 
 	return (
-		<section
-			id="blog"
-			className="w-full px-6 md:px-[8%] py-16 md:py-24 bg-[#F2F2F2] dark:bg-[#111111]"
-		>
+		<section id="blog" className="w-full px-6 md:px-[8%] py-16 md:py-24">
 			<div className="flex gap-2 items-center text-lg md:text-xl font-switzer mb-5">
 				<div className="bg-black dark:bg-white rounded-full size-1" />
 				{t("blog.subTitle")}

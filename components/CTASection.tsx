@@ -8,7 +8,10 @@ export default function CTASection() {
 	const locale = useLocale();
 
 	return (
-		<section className="w-full bg-[#1c1c1c] text-[#F2F2F2] px-6 md:px-[10%] py-16 md:py-24">
+		<section
+			id="contact"
+			className="w-full bg-[#1c1c1c] text-[#F2F2F2] px-6 md:px-[10%] py-16 md:py-24"
+		>
 			<div className="flex flex-col gap-10 md:gap-14 w-full mx-auto">
 				<h2 className="text-5xl md:text-7xl lg:text-[86px] font-switzer font-medium leading-[1.1] tracking-tight whitespace-pre-line">
 					{t("cta.heading")}

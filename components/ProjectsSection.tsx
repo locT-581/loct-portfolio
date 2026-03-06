@@ -12,10 +12,7 @@ export default function ProjectsSection() {
 	const categories = t.raw("discover.categories") as string[];
 
 	return (
-		<section
-			id="projects"
-			className="w-full px-6 md:px-[10%] py-16 md:py-24 bg-[#EAEAEA] dark:bg-transparent"
-		>
+		<section id="projects" className="w-full px-6 md:px-[10%] py-16 md:py-24">
 			<div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
 				<div className="flex gap-2 items-center text-lg md:text-xl font-switzer">
 					<div className="bg-black dark:bg-white rounded-full size-1" />

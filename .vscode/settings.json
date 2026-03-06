@@ -22,6 +22,6 @@
 	"[jsonc]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"cSpell.words": ["satoshi", "Upwork"],
+	"cSpell.words": ["GSAP", "satoshi", "Upwork"],
 	"commentTranslate.targetLanguage": "vi"
 }

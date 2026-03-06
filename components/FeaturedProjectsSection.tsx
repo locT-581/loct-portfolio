@@ -9,10 +9,7 @@ export default function FeaturedProjectsSection() {
 	const t = useTranslations("Index");
 
 	return (
-		<section
-			id="featured-projects"
-			className="w-full px-12 py-16 md:py-24 bg-[#F2F2F2] dark:bg-transparent"
-		>
+		<section id="featured-projects" className="w-full px-12 py-16 md:py-24">
 			<div className="flex flex-col md:flex-row justify-between items-end mb- md:mb-24 gap-8">
 				<div className="flex flex-col gap-6">
 					<div className="flex gap-2 items-center text-lg md:text-xl font-switzer">

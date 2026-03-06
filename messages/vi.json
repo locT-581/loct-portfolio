@@ -8,32 +8,32 @@
 			"projects": "Dự án hoàn thành",
 			"satisfaction": "Độ hài lòng"
 		},
-		"servicesHeading": "Tôi có thể giúp được gì",
-		"servicesSubTitle": "Dịch vụ",
+		"servicesHeading": "Năng Lực Cốt Lõi",
+		"servicesSubTitle": "Chuyên môn",
 		"services": {
 			"1": {
 				"number": "/01",
-				"title": "Thiết kế UI/UX",
-				"tags": ["Nghiên cứu người dùng", "Wireframe", "Prototype"],
-				"desc": "Thiết kế giao diện trực quan và luồng người dùng mượt mà cho các sản phẩm kỹ thuật số."
+				"title": "Lập trình Front-end",
+				"tags": ["React.js", "Next.js", "TypeScript"],
+				"desc": "Xây dựng các ứng dụng web và mobile hiệu năng cao, dễ mở rộng với các framework hiện đại."
 			},
 			"2": {
 				"number": "/02",
-				"title": "Thiết kế Web",
-				"tags": ["Bố cục", "Responsive", "Phân cấp thị giác"],
-				"desc": "Tạo ra các trang web responsive, chuẩn thương hiệu và ấn tượng thị giác."
+				"title": "Kiến trúc & Tối ưu Hiệu năng",
+				"tags": ["Micro-frontend", "DOM Pooling", "Core Web Vitals"],
+				"desc": "Thiết kế kiến trúc phần mềm vững chắc (Hexagonal, DDD) và tối ưu quản trị dữ liệu mang lại trải nghiệm siêu mượt mà."
 			},
 			"3": {
 				"number": "/03",
-				"title": "Nhận diện thương hiệu",
-				"tags": ["Thương hiệu", "Chiến lược", "Truyền thông"],
-				"desc": "Phát triển logo, hệ thống định vị và hình ảnh định hình thương hiệu của bạn."
+				"title": "Giao diện & Hiệu ứng Web",
+				"tags": ["GSAP", "Framer Motion"],
+				"desc": "Tạo giao diện người dùng mượt mà, cuốn hút với các hiệu ứng chuyển động phức tạp và thiết kế hoàn hảo."
 			},
 			"4": {
 				"number": "/04",
-				"title": "Chỉ đạo nghệ thuật",
-				"tags": ["Phát triển ý tưởng", "Responsive"],
-				"desc": "Định hướng hình ảnh nhất quán xuyên suốt tất cả các sản phẩm sáng tạo."
+				"title": "Tích hợp AI Agent",
+				"tags": ["AI Agents", "Claude", "Github Copilot"],
+				"desc": "Tận dụng các công cụ AI để giảm thiểu thời gian code và phác thảo nhanh các sản phẩm MVP chất lượng cao."
 			}
 		},
 		"featured": {
@@ -138,7 +138,7 @@
 			}
 		},
 		"cta": {
-			"heading": "Sẵn sàng để kiến tạo\nnhững điều tuyệt vời?",
+			"heading": "Sẵn sàng làm việc. \nNhận dự án và các vị trí \nFull-time",
 			"phoneLabel": "Điện thoại:",
 			"phoneValue": "(+84)927 038 604",
 			"mailLabel": "Email:",
@@ -349,11 +349,11 @@
 	},
 	"Footer": {
 		"brand": "LocT®",
-		"description": "Thiết kế sự rõ ràng, sáng tạo và kết nối — từng dự án một. Mỗi thiết kế là một sự pha trộn chu đáo giữa mục đích, câu chuyện và tác động thị giác.",
+		"description": "Kiến tạo các ứng dụng web mở rộng và mang lại trải nghiệm người dùng mượt mà. Mỗi dòng code đều được tối ưu hóa cẩn thận để đạt hiệu năng cao, dễ bảo trì và hoàn thiện về mặt giao diện.",
 		"emailLabel": "Email:",
 		"phoneLabel": "Điện thoại:",
 		"locationLabel": "Địa điểm:",
-		"locationValue": "Sẵn sàng trên toàn thế giới",
+		"locationValue": "Cần Thơ, Việt Nam | Từ xa toàn cầu",
 		"quickLinks": {
 			"title": "Liên kết nhanh",
 			"home": "Trang chủ",
@@ -365,17 +365,16 @@
 		},
 		"morePages": {
 			"title": "Trang khác",
-			"styleGuide": "Hướng dẫn phong cách",
-			"licenses": "Giấy phép",
-			"404Page": "Trang 404",
-			"privacy": "Chính sách bảo mật"
+			"resume": "Hồ sơ của tôi (CV)",
+			"techStack": "Kỹ năng công nghệ",
+			"sourceCode": "Mã nguồn"
 		},
 		"socialMedia": {
 			"title": "Mạng xã hội",
-			"instagram": "Instagram",
-			"dribbble": "Dribbble",
+			"github": "GitHub",
 			"linkedin": "Linkedin",
-			"behance": "Behance"
+			"upwork": "Upwork",
+			"pinterest": "Pinterest"
 		},
 		"copyright": "© 2026 LocT. Bảo lưu mọi quyền."
 	},
