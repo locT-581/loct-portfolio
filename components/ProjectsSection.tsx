@@ -3,10 +3,11 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
 	const t = useTranslations("Index");
+	const locale = useLocale();
 
 	const categories = t.raw("discover.categories") as string[];
 
@@ -70,7 +71,7 @@ export default function ProjectsSection() {
 
 					{/* View All Button */}
 					<Link
-						href="/projects"
+						href={`/${locale}/projects`}
 						className="flex mt-auto items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer font-medium whitespace-nowrap"
 					>
 						{t("discover.btnAll")}

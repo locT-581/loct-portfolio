@@ -93,7 +93,7 @@
 				"id": 2,
 				"title": "Ứng dụng Fintech",
 				"category": "Thiết kế UI/UX",
-				"image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
+				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?q=80&w=2657&auto=format&fit=crop"
 			},
 			{
 				"id": 3,
@@ -168,6 +168,34 @@
 					"date": "Ngày 12 tháng 05, 2035",
 					"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
 				}
+			}
+		}
+	},
+	"BlogsPage": {
+		"title": "Blogs",
+		"subtitle": "Một tập hợp các suy nghĩ sáng tạo, mẹo thiết kế thực tế và cái nhìn hậu trường vào quy trình của tôi.",
+		"heading": "Bài viết & Quan điểm",
+		"items": {
+			"1": {
+				"title": "Sức mạnh của sự đơn giản trong thiết kế UI",
+				"date": "Ngày 03 tháng 06 năm 2035",
+				"category": "Chiến lược thiết kế",
+				"excerpt": "Cách các nguyên tắc tối giản có thể nâng cao trải nghiệm người dùng và tạo ra giao diện sạch hơn, hiệu quả hơn.",
+				"image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1000"
+			},
+			"2": {
+				"title": "Tìm nguồn cảm hứng sáng tạo trong cuộc sống hàng ngày",
+				"date": "Ngày 22 tháng 04 năm 2035",
+				"category": "Lối sống",
+				"excerpt": "Khám phá cách những khoảnh khắc và môi trường xung quanh bình thường có thể khơi dậy những ý tưởng thiết kế phi thường.",
+				"image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=1000"
+			},
+			"3": {
+				"title": "Cách xây dựng thương hiệu cá nhân qua thiết kế",
+				"date": "Ngày 12 tháng 05 năm 2035",
+				"category": "Thương hiệu",
+				"excerpt": "Hướng dẫn sử dụng các yếu tố thị giác và phong cách nhất quán để tạo ra một bản sắc cá nhân mạnh mẽ, dễ nhận diện.",
+				"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
 			}
 		}
 	},
@@ -262,5 +290,61 @@
 			"label": "Công cụ",
 			"heading": "Hộp công cụ"
 		}
+	},
+	"ProjectsPage": {
+		"title": "Dự án",
+		"subtitle": "Một tủ trưng bày chọn lọc các dự án thiết kế được tạo ra bằng chiến lược, phong cách và mục đích.",
+		"banner": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2000",
+		"portfolio": {
+			"label": "Dự án",
+			"heading": "Khám phá Portfolio",
+			"description": "Mỗi dự án phản ánh một câu chuyện riêng biệt, giải pháp phù hợp và tính thẩm mỹ vượt thời gian."
+		},
+		"categories": [
+			"Tất cả dự án",
+			"Thiết kế UI/UX",
+			"Thiết kế Web",
+			"Bộ nhận diện",
+			"Chỉ đạo nghệ thuật"
+		],
+		"projects": [
+			{
+				"id": "1",
+				"title": "Aurum Brand Kit",
+				"category": "Bộ nhận diện",
+				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "2",
+				"title": "Velvette Fashion Rebrand",
+				"category": "Bộ nhận diện",
+				"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "3",
+				"title": "Enade Theory",
+				"category": "Chỉ đạo nghệ thuật",
+				"image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "4",
+				"title": "NeuroDash Website",
+				"category": "Thiết kế Web",
+				"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "5",
+				"title": "Quantix UI Design",
+				"category": "Thiết kế UI/UX",
+				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "6",
+				"title": "Noir Studio Brand",
+				"category": "Bộ nhận diện",
+				"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+			}
+		],
+		"btnDetails": "XEM CHI TIẾT"
 	}
 }

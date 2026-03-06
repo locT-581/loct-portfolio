@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 const Item = ({
 	title,
@@ -22,6 +23,7 @@ const Item = ({
 
 export default function AboutSection() {
 	const t = useTranslations("Index");
+	const locale = useLocale();
 
 	return (
 		<section
@@ -58,9 +60,9 @@ export default function AboutSection() {
 						paragraph={t("about.items.4.paragraph")}
 					/>
 				</div>
-				<button
-					type="button"
-					className="flex text-lg md:text-xl uppercase w-fit gap-1 items-center px-8 md:px-10 py-3 border border-black"
+				<Link
+					href={`/${locale}/about`}
+					className="flex text-lg md:text-xl uppercase w-fit gap-1 items-center px-8 md:px-10 py-3 border border-black dark:border-white transition-colors hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
 				>
 					{t("about.btn")}
 					<svg
@@ -70,23 +72,24 @@ export default function AboutSection() {
 						height="15"
 						fill="none"
 						viewBox="0 0 19 18"
+						className="stroke-current"
 					>
 						<path
-							stroke="#222"
+							stroke="currentColor"
 							strokeLinecap="round"
 							strokeLinejoin="round"
 							strokeWidth="1.567"
 							d="m10.154 16.783 6.865-6.862a1.597 1.597 0 0 0 0-2.273L10.154.783"
 						/>
 						<path
-							stroke="#222"
+							stroke="currentColor"
 							strokeLinecap="round"
 							strokeMiterlimit="10"
 							strokeWidth="1.567"
 							d="M17.493 8.783H.783"
 						/>
 					</svg>
-				</button>
+				</Link>
 			</div>
 		</section>
 	);

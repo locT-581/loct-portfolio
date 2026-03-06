@@ -3,17 +3,19 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const BlogArticle = ({
 	item,
 	t,
 	index,
+	locale,
 	aspectClass = "aspect-4/3",
 }: {
 	item: number;
 	t: (key: string) => string;
 	index: number;
+	locale: string;
 	aspectClass?: string;
 }) => (
 	<motion.article
@@ -23,40 +25,40 @@ const BlogArticle = ({
 		transition={{ delay: index * 0.1 }}
 		className="group flex flex-col gap-4 cursor-pointer w-full"
 	>
-		<div
-			className={`relative w-full ${aspectClass} overflow-hidden bg-gray-200`}
-		>
-			<Image
-				src={t(`blog.items.${item}.image`)}
-				alt={t(`blog.items.${item}.title`)}
-				fill
-				className="object-cover transition-transform duration-700 group-hover:scale-105"
-			/>
-		</div>
-
-		<div className="flex flex-col gap-3 mt-2">
-			<div className="flex justify-between items-center text-sm font-satoshi text-gray-500">
-				<span>{t(`blog.items.${item}.date`)}</span>
-				<span>{t("blog.readTime")}</span>
+		<Link href={`/${locale}/blogs/${item}`} className="block w-full">
+			<div
+				className={`relative w-full ${aspectClass} overflow-hidden bg-gray-200`}
+			>
+				<Image
+					src={t(`blog.items.${item}.image`)}
+					alt={t(`blog.items.${item}.title`)}
+					fill
+					className="object-cover transition-transform duration-700 group-hover:scale-105"
+				/>
 			</div>
 
-			<h3 className="text-lg font-bold tracking-tight line-clamp-2">
-				{t(`blog.items.${item}.title`)}
-			</h3>
+			<div className="flex flex-col gap-3 mt-2">
+				<div className="flex justify-between items-center text-sm font-satoshi text-gray-500">
+					<span>{t(`blog.items.${item}.date`)}</span>
+					<span>{t("blog.readTime")}</span>
+				</div>
 
-			<Link
-				href="/projects"
-				className="flex items-center gap-1 text-sm font-medium w-fit border-b border-transparent hover:border-black dark:hover:border-white transition-colors pb-0.5 mt-1"
-			>
-				{t("blog.btnDetails")}
-				<ArrowUpRight className="w-4 h-4 ml-1" strokeWidth={2} />
-			</Link>
-		</div>
+				<h3 className="text-lg font-bold tracking-tight line-clamp-2 transition-colors group-hover:text-gray-600 dark:group-hover:text-gray-400">
+					{t(`blog.items.${item}.title`)}
+				</h3>
+
+				<div className="flex items-center gap-1 text-sm font-medium w-fit border-b border-transparent group-hover:border-black dark:group-hover:border-white transition-all pb-0.5 mt-1">
+					{t("blog.btnDetails")}
+					<ArrowUpRight className="w-4 h-4 ml-1" strokeWidth={2} />
+				</div>
+			</div>
+		</Link>
 	</motion.article>
 );
 
 export default function BlogSection() {
 	const t = useTranslations("Index");
+	const locale = useLocale();
 
 	return (
 		<section
@@ -67,7 +69,7 @@ export default function BlogSection() {
 				<div className="bg-black dark:bg-white rounded-full size-1" />
 				{t("blog.subTitle")}
 			</div>
-			<h2 className="text-5xl max-w-[60%] md:text-7xl lg:text-[86px] font-switzer font-medium leading-[1.1] tracking-tight mb-14">
+			<h2 className="text-5xl max-w-[60%] md:text-7xl lg:text-[86px] font-switzer font-medium leading-[1.1] tracking-tight mb-14 text-balance">
 				{t("blog.heading")}
 			</h2>
 
@@ -77,7 +79,7 @@ export default function BlogSection() {
 						{t("blog.description")}
 					</p>
 					<Link
-						href="/projects"
+						href={`/${locale}/blogs`}
 						className="flex items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer font-medium whitespace-nowrap mb-16 lg:mb-0"
 					>
 						{t("blog.btnAll")}
@@ -86,14 +88,26 @@ export default function BlogSection() {
 				</div>
 				{/* Left Column (5/12) */}
 				<div className="md:col-span-6 lg:col-span-5 flex flex-col gap-10">
-					<BlogArticle item={1} t={t} index={0} aspectClass="aspect-[1.4]" />
+					<BlogArticle
+						item={1}
+						t={t}
+						index={0}
+						aspectClass="aspect-[1.4]"
+						locale={locale}
+					/>
 				</div>
 
 				{/* Middle Column (4/12) */}
 				<div className="md:col-span-6 lg:col-span-4 flex flex-col h-full lg:mt-30">
 					{/* Spacer to push image down */}
 					<div className="mt-16 md:mt-24 lg:mt-45">
-						<BlogArticle item={2} t={t} index={1} aspectClass="aspect-[1.5]" />
+						<BlogArticle
+							item={2}
+							t={t}
+							index={1}
+							aspectClass="aspect-[1.5]"
+							locale={locale}
+						/>
 					</div>
 				</div>
 
@@ -101,7 +115,13 @@ export default function BlogSection() {
 				<div className="md:col-span-12 lg:col-span-3 flex flex-col items-start lg:items-end h-full lg:mt-30">
 					{/* Spacer to push image down */}
 					<div className="mt-8 md:mt-16 lg:mt-75 w-full md:w-1/2 lg:w-full">
-						<BlogArticle item={3} t={t} index={2} aspectClass="aspect-[5/6]" />
+						<BlogArticle
+							item={3}
+							t={t}
+							index={2}
+							aspectClass="aspect-[5/6]"
+							locale={locale}
+						/>
 					</div>
 				</div>
 			</div>

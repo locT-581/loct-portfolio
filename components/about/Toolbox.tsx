@@ -11,7 +11,7 @@ export default async function Toolbox() {
 		},
 		{
 			name: "Figma",
-			icon: "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?auto=format&fit=crop&q=80&w=200",
+			icon: "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=200",
 		},
 		{
 			name: "Framer",

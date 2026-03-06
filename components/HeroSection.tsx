@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 function ArrowIcon() {
 	return (
@@ -30,6 +31,7 @@ function ArrowIcon() {
 }
 
 export default function HeroSection() {
+	const locale = useLocale();
 	return (
 		<section className="hero-section">
 			<div className="hero-content">
@@ -48,7 +50,10 @@ export default function HeroSection() {
 							height={139}
 							className="featured-project-thumb"
 						/>
-						<Link href="#projects" className="featured-project-link">
+						<Link
+							href={`/${locale}/projects`}
+							className="featured-project-link"
+						>
 							<span className="featured-project-label">Featured Project</span>
 							<ArrowIcon />
 						</Link>

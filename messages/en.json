@@ -93,7 +93,7 @@
 				"id": 2,
 				"title": "Fintech App",
 				"category": "UI/UX Design",
-				"image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
+				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?q=80&w=2657&auto=format&fit=crop"
 			},
 			{
 				"id": 3,
@@ -168,6 +168,34 @@
 					"date": "May 12, 2035",
 					"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
 				}
+			}
+		}
+	},
+	"BlogsPage": {
+		"title": "Blogs",
+		"subtitle": "A collection of creative thoughts, practical design tips, and behind-the-scenes insights into my process.",
+		"heading": "Articles & Insights",
+		"items": {
+			"1": {
+				"title": "The Power of Simplicity in UI Design",
+				"date": "June 03, 2035",
+				"category": "Design Strategy",
+				"excerpt": "How minimalist principles can enhance user experience and create cleaner, more effective interfaces.",
+				"image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1000"
+			},
+			"2": {
+				"title": "Finding Creative Inspiration in Everyday Life",
+				"date": "April 22, 2035",
+				"category": "Lifestyle",
+				"excerpt": "Exploring how mundane moments and surroundings can spark extraordinary design ideas.",
+				"image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=1000"
+			},
+			"3": {
+				"title": "How to Build a Personal Brand Through Design",
+				"date": "May 12, 2035",
+				"category": "Branding",
+				"excerpt": "A guide on using visual elements and consistent style to forge a strong, recognizable personal identity.",
+				"image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
 			}
 		}
 	},
@@ -262,5 +290,61 @@
 			"label": "Tools",
 			"heading": "Toolbox"
 		}
+	},
+	"ProjectsPage": {
+		"title": "Project",
+		"subtitle": "A curated showcase of design projects crafted with strategy, style, and purpose.",
+		"banner": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2000",
+		"portfolio": {
+			"label": "Project",
+			"heading": "Explore the Portfolio",
+			"description": "Each project reflects a unique story, tailored solutions, and timeless aesthetics."
+		},
+		"categories": [
+			"All Project",
+			"UI/UX Design",
+			"Web Design",
+			"Brand Identity",
+			"Art Direction"
+		],
+		"projects": [
+			{
+				"id": "1",
+				"title": "Aurum Brand Kit",
+				"category": "Brand Kit",
+				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "2",
+				"title": "Velvette Fashion Rebrand",
+				"category": "Brand Kit",
+				"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "3",
+				"title": "Enade Theory",
+				"category": "Art Direction",
+				"image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "4",
+				"title": "NeuroDash Website",
+				"category": "Web Design",
+				"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "5",
+				"title": "Quantix UI Design",
+				"category": "UI/UX Design",
+				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000"
+			},
+			{
+				"id": "6",
+				"title": "Noir Studio Brand",
+				"category": "Brand Kit",
+				"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+			}
+		],
+		"btnDetails": "VIEW DETAILS"
 	}
 }

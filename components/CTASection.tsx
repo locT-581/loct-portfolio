@@ -1,10 +1,11 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function CTASection() {
 	const t = useTranslations("Index");
+	const locale = useLocale();
 
 	return (
 		<section className="w-full bg-[#1c1c1c] text-[#F2F2F2] px-6 md:px-[10%] py-16 md:py-24">
@@ -40,7 +41,7 @@ export default function CTASection() {
 					</div>
 
 					<Link
-						href="/contact"
+						href={`/${locale}#contact`}
 						className="flex items-center justify-center gap-3 bg-[#F2F2F2] text-[#1c1c1c] px-8 py-4 md:px-10 md:py-5 font-satoshi font-medium text-base hover:bg-gray-300 transition-colors shrink-0"
 					>
 						{t("cta.btn")}
