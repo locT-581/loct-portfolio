@@ -1,5 +1,8 @@
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=switzer@400,500,600,700,800&display=swap");
 @import "tailwindcss";
+@import "../styles/switzer.css";
+@import "../styles/satoshi.css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-background: var(--background);
@@ -9,8 +12,8 @@
   --color-border: var(--border);
 
   --font-sans: var(--font-sans);
-  --font-switzer: "Switzer", -apple-system, Roboto, Helvetica, sans-serif;
-  --font-satoshi: "Satoshi", -apple-system, Roboto, Helvetica, sans-serif;
+  --font-switzer: "Switzer";
+  --font-satoshi: "Satoshi";
 
   --color-black: #222222;
   --color-grey-1: #777777;
@@ -18,7 +21,7 @@
 
 @layer base {
   :root {
-    --background: #f8f8f5;
+    --background: #F2F2F2;
     --foreground: #1c1c1c;
     --card: #ffffff;
     --card-foreground: #1c1c1c;
@@ -34,12 +37,10 @@
   }
 }
 
-@layer base {
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    @apply antialiased font-sans transition-colors duration-300 selection:bg-gray-300 dark:selection:bg-gray-700;
-  }
+body {
+  color: var(--foreground);
+  font-family: var(--font-satoshi);
+  background: var(--background);
 }
 
 @theme {
@@ -199,11 +200,6 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: #ffffff;
-}
-
-.dark .hero-section {
-  background: #111111;
 }
 
 .hero-content {
@@ -267,10 +263,9 @@
 
 .hero-heading {
   font-family: var(--font-switzer);
-  font-size: 132px;
+  font-size: clamp(32px, 10vw, 132px);
   font-weight: 500;
   line-height: normal;
-  flex-shrink: 0;
   max-width: 1075px;
 }
 
@@ -284,20 +279,6 @@
   color: #f2f2f2;
 }
 
-.hero-location {
-  font-family: var(--font-switzer);
-  font-size: 24px;
-  font-weight: 600;
-  color: #222222;
-  text-align: right;
-  width: 221px;
-  flex-shrink: 0;
-  line-height: normal;
-}
-
-.dark .hero-location {
-  color: #f2f2f2;
-}
 
 .hero-image-wrapper {
   position: relative;
@@ -345,9 +326,6 @@
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-  }
-  .hero-location {
-    text-align: left;
   }
   .hero-image-wrapper {
     height: 320px;

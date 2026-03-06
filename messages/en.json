@@ -1,64 +1,96 @@
 {
-  "Index": {
-    "title": "Hello!",
-    "heroDesc": "I'm Velissa — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences.",
-    "stats": {
-      "clients": "Happy Clients",
-      "experience": "Years Experience",
-      "projects": "Projects Completed",
-      "satisfaction": "Client Satisfaction"
-    },
-    "servicesTitle": "What Can I Help With",
-    "services": {
-      "uiux": {
-        "title": "UI/UX Design",
-        "desc": "Designing intuitive interfaces that elevate user experiences."
-      },
-      "web": {
-        "title": "Web Design",
-        "desc": "Building beautiful, SEO-optimized websites for businesses."
-      },
-      "brand": {
-        "title": "Brand Identity",
-        "desc": "Crafting consistent and distinct brand identities."
-      },
-      "art": {
-        "title": "Art Direction",
-        "desc": "Guiding the visual direction and aesthetics for apps and brands."
-      }
-    },
-    "about": {
-      "title": "Why with me?",
-      "desc": "Creative clarity, reliable communication, user-focused design, and quality over everything."
-    },
-    "projectsTitle": "Portfolio Projects",
-    "projectsList": [
-      {
-        "id": 1,
-        "title": "Ecommerce Redesign",
-        "category": "Web Design",
-        "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
-      },
-      {
-        "id": 2,
-        "title": "Fintech App",
-        "category": "UI/UX Design",
-        "image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
-      },
-      {
-        "id": 3,
-        "title": "Brand Identity",
-        "category": "Branding",
-        "image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
-      },
-      {
-        "id": 4,
-        "title": "Agency Portfolio",
-        "category": "Web Design",
-        "image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
-      }
-    ],
-    "contactTitle": "Ready to Build Something Great Together?",
-    "contactBtn": "Contact Me Now"
-  }
+	"Index": {
+		"title": "Hello!",
+		"heroDesc": "I'm Velissa — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences.",
+		"stats": {
+			"clients": "Happy Clients",
+			"experience": "Years Experience",
+			"projects": "Projects Completed",
+			"satisfaction": "Client Satisfaction"
+		},
+		"servicesHeading": "What Can I Help With",
+		"servicesSubTitle": "Service",
+		"services": {
+			"1": {
+				"number": "/01",
+				"title": "UI/UX Design",
+				"tags": ["User Research", "Wireframing", "Prototyping"],
+				"desc": "Designing intuitive interfaces and smooth user flows for digital products."
+			},
+			"2": {
+				"number": "/02",
+				"title": "Web Design",
+				"tags": ["Layout", "Responsive", "Visual Hierarchy"],
+				"desc": "Creating responsive, brand-aligned websites with visual impact."
+			},
+			"3": {
+				"number": "/03",
+				"title": "Brand Identity",
+				"tags": ["Brand", "Strategy", "Communication"],
+				"desc": "Developing logos, systems, and visuals that define your brand."
+			},
+			"4": {
+				"number": "/04",
+				"title": "Art Direction",
+				"tags": ["Concept Development", "Responsive"],
+				"desc": "Shaping cohesive visual direction across all creative outputs."
+			}
+		},
+		"about": {
+			"title": "About Me",
+			"desc": "I’m Velisse — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences. From sleek UI design to engaging brand visuals, I help businesses and creators tell their stories with clarity, creativity, and confidence.",
+			"items": {
+				"1": {
+					"title": "50+",
+					"desc": "Loyal Clients Worldwide",
+					"paragraph": "Startups to global companies."
+				},
+				"2": {
+					"title": "2+",
+					"desc": "Years of Experience",
+					"paragraph": "Across tech, fashion, and lifestyle."
+				},
+				"3": {
+					"title": "4+",
+					"desc": "Project Successfully Delivered",
+					"paragraph": "From visuals to digital products."
+				},
+				"4": {
+					"title": "100%",
+					"desc": "Client Satisfaction",
+					"paragraph": "Built through trust, clarity, and results."
+				}
+			},
+			"btn": "About me"
+		},
+		"projectsTitle": "Portfolio Projects",
+		"projectsList": [
+			{
+				"id": 1,
+				"title": "Ecommerce Redesign",
+				"category": "Web Design",
+				"image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
+			},
+			{
+				"id": 2,
+				"title": "Fintech App",
+				"category": "UI/UX Design",
+				"image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
+			},
+			{
+				"id": 3,
+				"title": "Brand Identity",
+				"category": "Branding",
+				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
+			},
+			{
+				"id": 4,
+				"title": "Agency Portfolio",
+				"category": "Web Design",
+				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
+			}
+		],
+		"contactTitle": "Ready to Build Something Great Together?",
+		"contactBtn": "Contact Me Now"
+	}
 }

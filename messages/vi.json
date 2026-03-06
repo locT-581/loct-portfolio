@@ -1,64 +1,96 @@
 {
-  "Index": {
-    "title": "Xin chào!",
-    "heroDesc": "Tôi là Velissa — một nhà thiết kế đa ngành với niềm đam mê biến những ý tưởng thành trải nghiệm có tác động mạnh mẽ về mặt thị giác.",
-    "stats": {
-      "clients": "Khách hàng hài lòng",
-      "experience": "Năm kinh nghiệm",
-      "projects": "Dự án hoàn thành",
-      "satisfaction": "Độ hài lòng"
-    },
-    "servicesTitle": "Tôi có thể giúp được gì",
-    "services": {
-      "uiux": {
-        "title": "Thiết kế UI/UX",
-        "desc": "Thiết kế giao diện trực quan nhằm nâng cao trải nghiệm người dùng."
-      },
-      "web": {
-        "title": "Thiết kế Web",
-        "desc": "Xây dựng các trang web đẹp, chuẩn SEO cho doanh nghiệp."
-      },
-      "brand": {
-        "title": "Nhận diện thương hiệu",
-        "desc": "Tạo dựng bộ nhận diện thương hiệu nhất quán và khác biệt."
-      },
-      "art": {
-        "title": "Chỉ đạo nghệ thuật",
-        "desc": "Định hướng hình ảnh và thẩm mỹ cho ứng dụng và thương hiệu."
-      }
-    },
-    "about": {
-      "title": "Tại sao chọn tôi?",
-      "desc": "Sự rõ ràng sáng tạo, giao tiếp đáng tin cậy, thiết kế tập trung vào người dùng và chất lượng trên hết."
-    },
-    "projectsTitle": "Dự án Portfolio",
-    "projectsList": [
-      {
-        "id": 1,
-        "title": "Thiết kế lại E-commerce",
-        "category": "Thiết kế Web",
-        "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
-      },
-      {
-        "id": 2,
-        "title": "Ứng dụng Fintech",
-        "category": "Thiết kế UI/UX",
-        "image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
-      },
-      {
-        "id": 3,
-        "title": "Nhận diện Thương hiệu",
-        "category": "Branding",
-        "image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
-      },
-      {
-        "id": 4,
-        "title": "Portfolio Agency",
-        "category": "Thiết kế Web",
-        "image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
-      }
-    ],
-    "contactTitle": "Sẵn sàng tạo ra điều tuyệt vời?",
-    "contactBtn": "Liên hệ với tôi ngay"
-  }
+	"Index": {
+		"title": "Xin chào!",
+		"heroDesc": "Tôi là Velissa — một nhà thiết kế đa ngành với niềm đam mê biến những ý tưởng thành trải nghiệm có tác động mạnh mẽ về mặt thị giác.",
+		"stats": {
+			"clients": "Khách hàng hài lòng",
+			"experience": "Năm kinh nghiệm",
+			"projects": "Dự án hoàn thành",
+			"satisfaction": "Độ hài lòng"
+		},
+		"servicesHeading": "Tôi có thể giúp được gì",
+		"servicesSubTitle": "Dịch vụ",
+		"services": {
+			"1": {
+				"number": "/01",
+				"title": "Thiết kế UI/UX",
+				"tags": ["Nghiên cứu người dùng", "Wireframe", "Prototype"],
+				"desc": "Thiết kế giao diện trực quan và luồng người dùng mượt mà cho các sản phẩm kỹ thuật số."
+			},
+			"2": {
+				"number": "/02",
+				"title": "Thiết kế Web",
+				"tags": ["Bố cục", "Responsive", "Phân cấp thị giác"],
+				"desc": "Tạo ra các trang web responsive, chuẩn thương hiệu và ấn tượng thị giác."
+			},
+			"3": {
+				"number": "/03",
+				"title": "Nhận diện thương hiệu",
+				"tags": ["Thương hiệu", "Chiến lược", "Truyền thông"],
+				"desc": "Phát triển logo, hệ thống định vị và hình ảnh định hình thương hiệu của bạn."
+			},
+			"4": {
+				"number": "/04",
+				"title": "Chỉ đạo nghệ thuật",
+				"tags": ["Phát triển ý tưởng", "Responsive"],
+				"desc": "Định hướng hình ảnh nhất quán xuyên suốt tất cả các sản phẩm sáng tạo."
+			}
+		},
+		"about": {
+			"title": "Tại sao chọn tôi?",
+			"desc": "Sự rõ ràng sáng tạo, giao tiếp đáng tin cậy, thiết kế tập trung vào người dùng và chất lượng trên hết.",
+			"items": {
+				"1": {
+					"title": "50+",
+					"desc": "Khách hàng trên toàn thế giới",
+					"paragraph": "Từ các startup đến các công ty đa quốc gia."
+				},
+				"2": {
+					"title": "2+",
+					"desc": "Năm kinh nghiệm",
+					"paragraph": "Trong lĩnh vực công nghệ, thời trang và đời sống."
+				},
+				"3": {
+					"title": "4+",
+					"desc": "Dự án đã hoàn thành",
+					"paragraph": "Từ hình ảnh đến các sản phẩm kỹ thuật số."
+				},
+				"4": {
+					"title": "100%",
+					"desc": "Sự hài lòng của khách hàng",
+					"paragraph": "Xây dựng qua niềm tin, sự rõ ràng và kết quả."
+				}
+			},
+			"btn": "Về tôi"
+		},
+		"projectsTitle": "Dự án Portfolio",
+		"projectsList": [
+			{
+				"id": 1,
+				"title": "Thiết kế lại E-commerce",
+				"category": "Thiết kế Web",
+				"image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
+			},
+			{
+				"id": 2,
+				"title": "Ứng dụng Fintech",
+				"category": "Thiết kế UI/UX",
+				"image": "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=2657&auto=format&fit=crop"
+			},
+			{
+				"id": 3,
+				"title": "Nhận diện Thương hiệu",
+				"category": "Branding",
+				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
+			},
+			{
+				"id": 4,
+				"title": "Portfolio Agency",
+				"category": "Thiết kế Web",
+				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
+			}
+		],
+		"contactTitle": "Sẵn sàng tạo ra điều tuyệt vời?",
+		"contactBtn": "Liên hệ với tôi ngay"
+	}
 }
