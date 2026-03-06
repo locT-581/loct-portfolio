@@ -1,121 +1,156 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
 	const locale = useLocale();
+	const t = useTranslations("Footer");
+
 	return (
-		<footer className="bg-[#0f1521] text-white pt-16 pb-12 w-full overflow-hidden relative font-sans">
-			{/* Marquee Banner */}
-			<div className="w-full flex overflow-hidden whitespace-nowrap mb-24 opacity-90 select-none">
-				<div className="animate-marquee inline-block font-bold text-7xl md:text-[120px] tracking-tighter leading-none">
-					DESIGNED & CODE &nbsp; DESIGNED & CODE &nbsp; DESIGNED & CODE &nbsp;
-				</div>
-			</div>
-
+		<footer className="bg-[#1a1a1a] text-[#a0a0a0] pt-24 pb-12 w-full font-sans">
 			<div className="container mx-auto px-6 max-w-7xl">
-				<div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-4 lg:gap-12 relative w-full">
-					{/* Logo & Image Section (Left) */}
-					<div className="md:col-span-4 flex flex-col justify-between h-full min-h-100">
-						<h2 className="text-xl font-bold tracking-tight mb-8">Velisse®</h2>
+				{/* Top Section: Brand & Description */}
+				<div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-24">
+					<h1 className="text-white text-7xl md:text-8xl font-bold tracking-tighter leading-none">
+						{t("brand")}
+					</h1>
+					<p className="max-w-md text-lg leading-relaxed pt-2">
+						{t("description")}
+					</p>
+				</div>
 
-						{/* Profile image container at the bottom left */}
-						<div className="w-48 h-64 overflow-hidden mt-auto relative">
-							<Image
-								src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
-								className="w-full h-full object-cover"
-								alt="Profile"
-								fill
-							/>
+				{/* Grid Section */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-24">
+					{/* Contact Column */}
+					<div className="flex flex-col gap-6">
+						<div>
+							<p className="text-sm mb-2">{t("emailLabel")}</p>
+							<a
+								href="mailto:loct.se581@gmail.com"
+								className="text-white text-xl md:text-2xl hover:opacity-70 transition-opacity"
+							>
+								loct.se581@gmail.com
+							</a>
 						</div>
-					</div>
-
-					{/* Links Section (Middle) */}
-					<div className="md:col-span-3 lg:col-span-2 flex flex-col gap-4 pt-1">
-						<Link
-							href={`/${locale}`}
-							className="flex items-center gap-1 hover:opacity-70 transition-opacity"
-						>
-							<span className="text-xs">→</span>{" "}
-							<span className="text-sm font-medium">Home,</span>
-						</Link>
-						<Link
-							href={`/${locale}/about`}
-							className="flex items-center gap-1 hover:opacity-70 transition-opacity"
-						>
-							<span className="text-xs">→</span>{" "}
-							<span className="text-sm font-medium">About,</span>
-						</Link>
-						<Link
-							href={`/${locale}/projects`}
-							className="flex items-center gap-1 hover:opacity-70 transition-opacity"
-						>
-							<span className="text-xs">→</span>{" "}
-							<span className="text-sm font-medium">Projects,</span>
-						</Link>
-						<a
-							href="https://dribbble.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex items-center gap-1 hover:opacity-70 transition-opacity"
-						>
-							<span className="text-xs">→</span>{" "}
-							<span className="text-sm font-medium">Dribbble</span>
-						</a>
-					</div>
-
-					{/* Contact & Copyright Section (Right) */}
-					<div className="md:col-span-5 lg:col-span-6 flex flex-col justify-between h-full min-h-100">
-						<div className="flex flex-col gap-8 text-xl md:text-2xl font-normal tracking-tight">
-							<div className="flex flex-col gap-2">
-								<a
-									href="mailto:hello@velisse.me"
-									className="hover:opacity-70 transition-opacity"
-								>
-									hello@velisse.me
-								</a>
-								<a
-									href="tel:+84123456789"
-									className="hover:opacity-70 transition-opacity"
-								>
-									(+84) 123-456-789
-								</a>
-							</div>
-
-							<div className="flex flex-col">
-								<p>4140 Parker Rd. Allentown,</p>
-								<p>New Mexico 31134</p>
-							</div>
-
-							<div className="flex flex-col gap-2">
-								<a
-									href="https://instagram.com"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:opacity-70 transition-opacity"
-								>
-									Instagram
-								</a>
-								<a
-									href="https://linkedin.com"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:opacity-70 transition-opacity"
-								>
-									Linkedin
-								</a>
-							</div>
+						<div>
+							<p className="text-sm mb-2">{t("phoneLabel")}</p>
+							<a
+								href="tel:+84927038604"
+								className="text-white text-xl md:text-2xl hover:opacity-70 transition-opacity"
+							>
+								(+84)927 038 604
+							</a>
 						</div>
-
-						{/* Footer Bottom Quote/Copyright aligning with the right column */}
-						<div className="mt-auto flex flex-col lg:flex-row justify-between items-start lg:items-end text-lg opacity-90 pt-16">
-							<p className="max-w-70 leading-snug">
-								I design experiences that <br /> speak your users&apos; language
+						<div>
+							<p className="text-sm mb-2">{t("locationLabel")}</p>
+							<p className="text-white text-xl md:text-2xl">
+								{t("locationValue")}
 							</p>
-							<p className="mt-4 lg:mt-0 font-medium">©2026</p>
 						</div>
 					</div>
+
+					{/* Quick Links Column */}
+					<div className="flex flex-col gap-6 lg:pl-12">
+						<h3 className="text-white text-lg font-bold">
+							{t("quickLinks.title")}
+						</h3>
+						<div className="flex flex-col gap-3">
+							<Link
+								href={`/${locale}`}
+								className="hover:text-white transition-colors"
+							>
+								{t("quickLinks.home")}
+							</Link>
+							<Link
+								href={`/${locale}/about`}
+								className="hover:text-white transition-colors"
+							>
+								{t("quickLinks.about")}
+							</Link>
+							<Link
+								href={`/${locale}/projects`}
+								className="hover:text-white transition-colors"
+							>
+								{t("quickLinks.project")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("quickLinks.services")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("quickLinks.blog")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("quickLinks.contact")}
+							</Link>
+						</div>
+					</div>
+
+					{/* More Pages Column */}
+					<div className="flex flex-col gap-6 lg:pl-8">
+						<h3 className="text-white text-lg font-bold">
+							{t("morePages.title")}
+						</h3>
+						<div className="flex flex-col gap-3">
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("morePages.styleGuide")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("morePages.licenses")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("morePages.404Page")}
+							</Link>
+							<Link href="#" className="hover:text-white transition-colors">
+								{t("morePages.privacy")}
+							</Link>
+						</div>
+					</div>
+
+					{/* Social Media Column */}
+					<div className="flex flex-col gap-6 lg:pl-8">
+						<h3 className="text-white text-lg font-bold">
+							{t("socialMedia.title")}
+						</h3>
+						<div className="flex flex-col gap-3">
+							<a
+								href="https://instagram.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:text-white transition-colors"
+							>
+								{t("socialMedia.instagram")}
+							</a>
+							<a
+								href="https://dribbble.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:text-white transition-colors"
+							>
+								{t("socialMedia.dribbble")}
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:text-white transition-colors"
+							>
+								{t("socialMedia.linkedin")}
+							</a>
+							<a
+								href="https://behance.net"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:text-white transition-colors"
+							>
+								{t("socialMedia.behance")}
+							</a>
+						</div>
+					</div>
+				</div>
+
+				{/* Bottom Section */}
+				<div className="pt-12 border-t border-white/10 flex justify-end">
+					<p className="text-sm opacity-80">{t("copyright")}</p>
 				</div>
 			</div>
 		</footer>

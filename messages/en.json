@@ -56,7 +56,7 @@
 		},
 		"about": {
 			"title": "About Me",
-			"desc": "I’m Velisse — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences. From sleek UI design to engaging brand visuals, I help businesses and creators tell their stories with clarity, creativity, and confidence.",
+			"desc": "I’m LocT — a Front-end Developer specializing in robust, scalable web applications. By leveraging Next.js and AI tools, I optimize UI/UX to deliver clean code, fast load times, and intuitive digital experiences.",
 			"items": {
 				"1": {
 					"title": "50+",
@@ -140,9 +140,9 @@
 		"cta": {
 			"heading": "Ready to Build Something\nGreat Together?",
 			"phoneLabel": "Phone:",
-			"phoneValue": "+1 (555) 123-4567",
+			"phoneValue": "(+84)927 038 604",
 			"mailLabel": "Mail:",
-			"mailValue": "hello@velisseportfolio.com",
+			"mailValue": "loct.se581@gmail.com",
 			"btn": "CONTACT US NOW"
 		},
 		"blog": {
@@ -346,5 +346,49 @@
 			}
 		],
 		"btnDetails": "VIEW DETAILS"
+	},
+	"Footer": {
+		"brand": "LocT®",
+		"description": "Designing clarity, creativity, and connection—one project at a time. Each design is a thoughtful blend of purpose, story, and visual impact.",
+		"emailLabel": "Email:",
+		"phoneLabel": "Phone:",
+		"locationLabel": "Location:",
+		"locationValue": "Available worldwide",
+		"quickLinks": {
+			"title": "Quick Links",
+			"home": "Home",
+			"about": "About",
+			"project": "Project",
+			"services": "Services",
+			"blog": "Blog",
+			"contact": "Contact"
+		},
+		"morePages": {
+			"title": "More Pages",
+			"styleGuide": "Style Guide",
+			"licenses": "Licenses",
+			"404Page": "404 Page",
+			"privacy": "Policy Privacy"
+		},
+		"socialMedia": {
+			"title": "Social Media",
+			"instagram": "Instagram",
+			"dribbble": "Dribbble",
+			"linkedin": "Linkedin",
+			"behance": "Behance"
+		},
+		"copyright": "© 2026 LocT. All Rights Reserved."
+	},
+	"Navbar": {
+		"home": "Home",
+		"about": "About",
+		"project": "Project",
+		"blogs": "Blogs"
+	},
+	"Hero": {
+		"subheading": "Bridging the gap between robust architecture and pixel-perfect design. I build scalable frontend solutions with a deep focus on UI/UX and seamless performance.",
+		"featuredProject": "Featured Project",
+		"headingDark": "Code That Moves, ",
+		"headingGrey": "Architecture That Scales"
 	}
 }

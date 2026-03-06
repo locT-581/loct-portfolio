@@ -55,8 +55,8 @@
 			}
 		},
 		"about": {
-			"title": "Tại sao chọn tôi?",
-			"desc": "Sự rõ ràng sáng tạo, giao tiếp đáng tin cậy, thiết kế tập trung vào người dùng và chất lượng trên hết.",
+			"title": "Về tôi",
+			"desc": "Tôi là Lộc — một lập trình viên Front-end chuyên xây dựng các ứng dụng web hiệu năng cao. Tận dụng Next.js và các công cụ AI, tôi tối ưu hóa UI/UX để mang đến mã nguồn sạch, tốc độ tải nhanh và trải nghiệm mượt mà.",
 			"items": {
 				"1": {
 					"title": "50+",
@@ -140,9 +140,9 @@
 		"cta": {
 			"heading": "Sẵn sàng để kiến tạo\nnhững điều tuyệt vời?",
 			"phoneLabel": "Điện thoại:",
-			"phoneValue": "+1 (555) 123-4567",
+			"phoneValue": "(+84)927 038 604",
 			"mailLabel": "Email:",
-			"mailValue": "hello@velisseportfolio.com",
+			"mailValue": "loct.se581@gmail.com",
 			"btn": "LIÊN HỆ NGAY"
 		},
 		"blog": {
@@ -346,5 +346,49 @@
 			}
 		],
 		"btnDetails": "XEM CHI TIẾT"
+	},
+	"Footer": {
+		"brand": "LocT®",
+		"description": "Thiết kế sự rõ ràng, sáng tạo và kết nối — từng dự án một. Mỗi thiết kế là một sự pha trộn chu đáo giữa mục đích, câu chuyện và tác động thị giác.",
+		"emailLabel": "Email:",
+		"phoneLabel": "Điện thoại:",
+		"locationLabel": "Địa điểm:",
+		"locationValue": "Sẵn sàng trên toàn thế giới",
+		"quickLinks": {
+			"title": "Liên kết nhanh",
+			"home": "Trang chủ",
+			"about": "Giới thiệu",
+			"project": "Dự án",
+			"services": "Dịch vụ",
+			"blog": "Blog",
+			"contact": "Liên hệ"
+		},
+		"morePages": {
+			"title": "Trang khác",
+			"styleGuide": "Hướng dẫn phong cách",
+			"licenses": "Giấy phép",
+			"404Page": "Trang 404",
+			"privacy": "Chính sách bảo mật"
+		},
+		"socialMedia": {
+			"title": "Mạng xã hội",
+			"instagram": "Instagram",
+			"dribbble": "Dribbble",
+			"linkedin": "Linkedin",
+			"behance": "Behance"
+		},
+		"copyright": "© 2026 LocT. Bảo lưu mọi quyền."
+	},
+	"Navbar": {
+		"home": "Trang chủ",
+		"about": "Giới thiệu",
+		"project": "Dự án",
+		"blogs": "Blogs"
+	},
+	"Hero": {
+		"subheading": "Kết nối giữa kiến trúc phần mềm vững chắc và thiết kế giao diện hoàn hảo. Tôi xây dựng các giải pháp frontend dễ mở rộng với trọng tâm vào UI/UX và hiệu suất mượt mà.",
+		"featuredProject": "Dự án Nổi bật",
+		"headingDark": "Kiến trúc Vững chắc, ",
+		"headingGrey": "Chuyển động Mượt mà"
 	}
 }

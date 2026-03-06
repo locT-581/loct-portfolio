@@ -21,15 +21,15 @@ export async function generateMetadata({
 	const { locale } = await params;
 	if (locale === "en") {
 		return {
-			title: "Velissa - Multidisciplinary Designer",
+			title: "LocT - Frontend Developer",
 			description:
-				"Multidisciplinary designer with a passion for turning ideas into visually impactful experiences.",
+				"I build high-performance web applications and fluid user interfaces, blending technical architecture with smooth animations.",
 		};
 	}
 	return {
-		title: "Velissa - Portfolio cá nhân",
+		title: "Tran Nguyen Huu Loc - Lập trình viên Frontend",
 		description:
-			"Nhà thiết kế đa ngành với niềm đam mê biến những ý tưởng thành trải nghiệm có tác động mạnh mẽ về mặt thị giác.",
+			"Tôi xây dựng các ứng dụng web hiệu năng cao và giao diện mượt mà, kết hợp giữa kiến trúc kỹ thuật và hiệu ứng sống động.",
 	};
 }
 

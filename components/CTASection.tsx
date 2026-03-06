@@ -32,7 +32,7 @@ export default function CTASection() {
 								{t("cta.mailLabel")}
 							</span>
 							<a
-								href="mailto:hello@velisseportfolio.com"
+								href="mailto:loct.se581@gmail.com"
 								className="text-xl md:text-2xl font-satoshi pb-1 border-b border-[#F2F2F2] hover:text-gray-300 hover:border-gray-300 transition-colors w-fit"
 							>
 								{t("cta.mailValue")}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import ShinyText from "./ShinyText";
 
 function ArrowIcon() {
 	return (
@@ -32,15 +33,14 @@ function ArrowIcon() {
 
 export default function HeroSection() {
 	const locale = useLocale();
+	const t = useTranslations("Hero");
+
 	return (
 		<section className="hero-section">
 			<div className="hero-content">
 				{/* Top row: Subheading + Featured Project */}
 				<div className="hero-top-row">
-					<p className="hero-subheading">
-						From me to fellow creatives, makers, and dreamers — Velisse is built
-						to help you showcase your best work with clarity and confidence.
-					</p>
+					<p className="hero-subheading">{t("subheading")}</p>
 
 					<div className="featured-project-block">
 						<Image
@@ -54,7 +54,9 @@ export default function HeroSection() {
 							href={`/${locale}/projects`}
 							className="featured-project-link"
 						>
-							<span className="featured-project-label">Featured Project</span>
+							<span className="featured-project-label">
+								{t("featuredProject")}
+							</span>
 							<ArrowIcon />
 						</Link>
 					</div>
@@ -63,8 +65,22 @@ export default function HeroSection() {
 				{/* Heading row: Large title + Location */}
 				<div className="hero-heading-row">
 					<h1 className="hero-heading">
-						<span className="heading-dark">Show Your Work, </span>
-						<span className="heading-grey">Your Way</span>
+						<ShinyText
+							text={t("headingDark")}
+							disabled={false}
+							speed={5}
+							className="heading-dark"
+							color="#1a1a1a"
+							shineColor="#666666"
+						/>
+						<ShinyText
+							text={t("headingGrey")}
+							disabled={false}
+							speed={5}
+							className="heading-grey"
+							color="#999999"
+							shineColor="#aaaaaa"
+						/>
 					</h1>
 				</div>
 			</div>
