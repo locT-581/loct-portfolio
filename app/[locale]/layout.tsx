@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 import SmoothScroll from "@/components/SmoothScroll";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -64,6 +65,7 @@ export default async function LocaleLayout({
 							<Navbar />
 							<main className="grow pt-20 max-w-360 mx-auto">{children}</main>
 							<Footer />
+							<ScrollToTop />
 						</SmoothScroll>
 					</ThemeProvider>
 				</NextIntlClientProvider>
