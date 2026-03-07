@@ -38,19 +38,19 @@
 		},
 		"featured": {
 			"subTitle": "Dự án Nổi bật",
-			"heading": "Những khoảnh khắc\nHợp tác",
+			"heading": "Những dự án tiêu biểu",
 			"btnAll": "XEM TẤT CẢ DỰ ÁN",
 			"btnDetails": "XEM CHI TIẾT",
 			"items": {
 				"1": {
-					"title": "Tái định vị NüVara",
-					"year": "2034",
-					"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+					"title": "Short Video Feed SDK",
+					"year": "2025-2026",
+					"image": "/assets/images/sdk-short.png"
 				},
 				"2": {
-					"title": "Tái định vị CodeWave Summit",
-					"year": "2035",
-					"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+					"title": "Nền Tảng Đặt Sân Thể Thao",
+					"year": "2025-2026",
+					"image": "/assets/images/booking-sport.png"
 				}
 			}
 		},
@@ -201,94 +201,83 @@
 	},
 	"AboutPage": {
 		"title": "Giới thiệu",
-		"subtitle": "Khám phá hành trình, tư duy và động lực sáng tạo định hình mọi dự án tôi đảm nhận.",
+		"subtitle": "Khám phá tư duy lập trình, định hướng kiến trúc và niềm đam mê công nghệ định hình nên từng dự án của tôi.",
 		"aboutMe": {
 			"label": "Về tôi",
-			"heading": "Tôi là Yessa, một nhà thiết kế đam mê với hơn 8 năm kinh nghiệm biến những ý tưởng thành những trải nghiệm trực quan giúp kết nối, truyền cảm hứng và chuyển đổi.",
-			"description": "Mỗi thiết kế tôi tạo ra đều bắt nguồn từ một mục tiêu cốt lõi. Dù đó là giao diện ứng dụng di động, làm mới hình ảnh thương hiệu hay toàn bộ giao diện web, tôi luôn mang đến sự đồng cảm, tính chiến lược và tính thẩm mỹ cao.",
+			"heading": "Tôi là Lộc, một Front-end Developer chú trọng chi tiết, đam mê thiết kế các hệ thống mở rộng và kiến tạo những trải nghiệm số siêu mượt mà.",
+			"description": "Mỗi dự án tôi đảm nhận đều bắt nguồn từ hiệu năng và mã nguồn sạch. Với nền tảng về 2D Animation kết hợp chuyên môn sâu về Next.js và Micro-frontends, tôi thu hẹp khoảng cách giữa logic phức tạp và UI/UX mượt mà. Tôi mang đến các giải pháp kiến trúc vững chắc, tối ưu quản trị dữ liệu và thiết kế giao diện hoàn hảo.",
 			"imageAlt": "Chân dung nhà thiết kế"
 		},
 		"experience": {
-			"label": "Kinh nghiệm làm việc",
-			"heading": "Chuyên môn đằng sau từng chi tiết",
+			"label": "Kinh nghiệm & Học vấn",
+			"heading": "Hành Trình Sự Nghiệp Của Tôi",
 			"jobs": [
 				{
-					"role": "Thiết kế Trực quan",
-					"company": "Nova Cosmetics / 2034",
-					"desc": "Dẫn dắt việc thiết kế lại toàn bộ trang web và bao bì sản phẩm, tạo ra một hình ảnh thương hiệu gắn kết và đẳng cấp."
+					"role": "Lập trình viên Front-end",
+					"company": "CÔNG TY CP KCKMTECH - CN CẦN THƠ / 03.2024 - 02.2026",
+					"desc": "Đề xuất kiến trúc, lựa chọn công nghệ và giữ vai trò chủ chốt phần Frontend cho 4 dự án quan trọng với Next.js. Phối hợp tối ưu UI/UX và sử dụng AI Agent để tăng 80% tốc độ triển khai MVP."
 				},
 				{
-					"role": "Trưởng nhóm UI/UX",
+					"role": "2D Animator (Freelance)",
 					"company": "GlowUp Wellness App / 2033",
-					"desc": "Thiết kế giao diện ứng dụng từ đầu với trải nghiệm tối giản, trực quan giúp người dùng theo dõi thói quen hàng ngày."
+					"desc": "Thiết kế ý tưởng và sản xuất motion graphics, animation cho đa dạng dự án. Duy trì 100% đánh giá tích cực từ khách hàng trên nền tảng Upwork nhờ kỹ năng giao tiếp hiệu quả."
 				},
 				{
-					"role": "Chiến lược Thương hiệu",
-					"company": "Aurum Jewelry / 2032",
-					"desc": "Phát triển toàn bộ hệ thống định vị thương hiệu, bao gồm logo, phông chữ và nội dung mạng xã hội."
-				},
-				{
-					"role": "Giám đốc Nghệ thuật",
-					"company": "Pixel Pulse Agency / 2031",
-					"desc": "Quản lý định hướng hình ảnh cho nhiều chiến dịch sáng tạo, kết hợp giữa đồ hoạ chuyển động, thương hiệu và UI."
-				},
-				{
-					"role": "Thiết kế Junior",
-					"company": "CodeWave Summit / 2030",
-					"desc": "Hỗ trợ các tài liệu web và hình ảnh cho một hội nghị công nghệ lớn, góp phần làm mới bộ phận nhận diện."
-				},
-				{
-					"role": "Thực tập sinh",
-					"company": "Creative House Studio / 2022",
-					"desc": "Hỗ trợ thiết kế logo, bố cục và bản thuyết trình, xây dựng nền tảng vững chắc trong quy trình thiết kế."
+					"role": "Cử nhân Kỹ thuật Phần mềm (Software Engineering)",
+					"company": "Trường Đại Học Cần Thơ / 2020 - 2025",
+					"desc": "Tốt nghiệp loại Giỏi. Xây dựng nền tảng vững chắc về tư duy thuật toán, cấu trúc dữ liệu và phát triển hệ thống phần mềm."
 				}
 			]
 		},
 		"value": {
-			"label": "Giá trị",
-			"heading": "Tại sao chọn tôi?",
-			"description": "Không chỉ là hình ảnh—đây là những gì tôi mang đến cho mỗi lần hợp tác.",
+			"label": "Giá trị cốt lõi",
+			"heading": "Tại sao nên làm việc cùng tôi?",
+			"description": "Không chỉ là viết code—đây là tư duy kỹ thuật và giá trị chiến lược tôi mang lại cho mỗi dự án.",
 			"items": {
 				"1": {
 					"number": "/01",
-					"title": "Sự sáng tạo rõ ràng",
-					"desc": "Tôi biến những ý tưởng phức tạp thành hình ảnh súc tích, tinh tế và truyền đạt thông điệp một cách rõ ràng và hiệu quả."
+					"title": "Tư duy Kiến trúc Vững chắc",
+					"desc": "Ưu tiên thiết kế các kiến trúc vững chắc ngay từ đầu, đảm bảo mã nguồn dễ dàng mở rộng, bảo trì và hoạt động độc lập."
 				},
 				"2": {
 					"number": "/02",
 					"title": "Giao tiếp đáng tin cậy",
-					"desc": "Một quy trình minh bạch cũng quan trọng như bản thiết kế cuối cùng. Tôi luôn ưu tiên việc giao tiếp rõ ràng và kịp thời ở mọi giai đoạn."
+					"desc": "Kết nối mượt mà giữa BA, Designer và logic kỹ thuật. Duy trì tỷ lệ hài lòng tuyệt đối từ khách hàng thông qua sự minh bạch và chủ động trong giao tiếp."
 				},
 				"3": {
 					"number": "/03",
-					"title": "Thiết kế lấy người dùng làm trung tâm",
-					"desc": "Tôi tiếp cận mỗi dự án bằng sự thấu cảm, luôn xem xét hành trình, tư duy và trải nghiệm của người dùng."
+					"title": "Tối ưu Trải nghiệm",
+					"desc": "Kết hợp sự am hiểu sâu sắc về UI/UX với các kỹ thuật tối ưu cấp thấp (DOM Pooling, RAF) để mang lại các ứng dụng mượt mà và tốc độ phản hồi chớp nhoáng."
 				},
 				"4": {
 					"number": "/04",
-					"title": "Chất lượng là trên hết",
-					"desc": "Tôi tập trung vào chi tiết và tính nhất quán để mang lại các sản phẩm không chỉ đẹp mắt mà còn đạt tiêu chuẩn cao về chất lượng."
+					"title": "Triển khai nhanh với AI",
+					"desc": "Ứng dụng thành thạo các AI Agent (Claude, Copilot) để tăng tốc phát triển MVP, tiết kiệm đến 80% thời gian code mà vẫn đảm bảo tiêu chuẩn chất lượng khắt khe."
 				}
 			},
 			"images": {
-				"1": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000",
-				"2": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+				"1": "/assets/images/scalable-architecture-banner.jpg",
+				"2": "/assets/images/ai-accelerated-delivery-banner.jpg"
 			}
 		},
 		"capabilities": {
-			"label": "Chuyên môn",
-			"heading": "Năng lực cốt lõi rèn giũa",
-			"description": "Đây là những gì tôi đã hoàn thiện qua bao năm tháng—và tiếp tục không ngừng phát triển.",
+			"label": "Kinh nghiệm Nghiệp vụ",
+			"heading": "Lĩnh Vực Chuyên Môn",
+			"description": "Chuyển hóa các bài toán nghiệp vụ phức tạp thành những giải pháp kỹ thuật mở rộng trên đa dạng lĩnh vực.",
 			"items": {
-				"1": "THIẾT KẾ UI/UX",
-				"2": "NHẬN DIỆN THƯƠNG HIỆU",
-				"3": "THIẾT KẾ WEB",
-				"4": "CHỈ ĐẠO NGHỆ THUẬT"
+				"1": "MẠNG XÃ HỘI",
+				"2": "ĐẶT CHỖ THỂ THAO",
+				"3": "WEB3 & BLOCKCHAIN",
+				"4": "ĐỒ HOẠ CHUYỂN ĐỘNG"
 			}
 		},
 		"toolbox": {
-			"label": "Công cụ",
-			"heading": "Hộp công cụ"
+			"label": "Công cụ & Nền tảng",
+			"heading": "Bộ Công Cụ Cốt Lõi",
+			"state": "Quản lý trạng tháis",
+			"realtime": "Xử lý thời gian thực",
+			"ui": "Thư viện UI",
+			"another": "Công cụ khác"
 		}
 	},
 	"ProjectsPage": {

@@ -21,7 +21,7 @@ export default async function JobExperience() {
 					</h2>
 
 					<div className="flex flex-col">
-						{[0, 1, 2, 3, 4, 5].map((index) => (
+						{[0, 1, 2].map((index) => (
 							<div
 								key={index}
 								className="group grid grid-cols-1 md:grid-cols-2 gap-6 py-7.5"

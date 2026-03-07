@@ -35,9 +35,9 @@ export default function FeaturedProjectsSection() {
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					className="flex flex-col gap-4 group w-full lg:w-[90%]"
+					className="flex flex-col gap-5 group w-full lg:w-[90%]"
 				>
-					<div className="relative w-full aspect-4/5 overflow-hidden bg-gray-200">
+					<div className="relative w-full aspect-4/5 overflow-hidden">
 						<Image
 							src={t("featured.items.1.image")}
 							alt={t("featured.items.1.title")}
@@ -54,11 +54,11 @@ export default function FeaturedProjectsSection() {
 							</Link>
 						</div>
 					</div>
-					<div className="flex justify-between items-start text-xl lg:text-3xl font-switzer font-bold">
-						<h3 className="tracking-tight">{t("featured.items.1.title")}</h3>
-						<span className="text-gray-400 font-medium">
-							{t("featured.items.1.year")}
-						</span>
+					<div className="flex justify-between items-start text-xl lg:text-3xl">
+						<h3 className="font-switzer tracking-tight font-semibold">
+							{t("featured.items.1.title")}
+						</h3>
+						<span className="text-gray-400">{t("featured.items.1.year")}</span>
 					</div>
 				</motion.div>
 
@@ -70,12 +70,12 @@ export default function FeaturedProjectsSection() {
 					transition={{ delay: 0.2 }}
 					className="flex flex-col gap-4 group md:mt-32 lg:mt-48 w-full"
 				>
-					<div className="relative w-full aspect-16/10 overflow-hidden bg-gray-200">
+					<div className="relative w-full aspect-16/10 overflow-hidden ">
 						<Image
 							src={t("featured.items.2.image")}
 							alt={t("featured.items.2.title")}
 							fill
-							className="object-cover transition-transform duration-700 group-hover:scale-105"
+							className="object-contain transition-transform duration-700 group-hover:scale-105"
 						/>
 						{/* Overlay Button */}
 						<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -87,11 +87,11 @@ export default function FeaturedProjectsSection() {
 							</Link>
 						</div>
 					</div>
-					<div className="flex justify-between items-start text-xl lg:text-3xl font-switzer font-bold">
-						<h3 className="tracking-tight">{t("featured.items.2.title")}</h3>
-						<span className="text-gray-400 font-medium">
-							{t("featured.items.2.year")}
-						</span>
+					<div className="flex justify-between items-start text-xl lg:text-3xl ">
+						<h3 className="tracking-tight font-switzer font-semibold">
+							{t("featured.items.2.title")}
+						</h3>
+						<span className="text-gray-400">{t("featured.items.2.year")}</span>
 					</div>
 				</motion.div>
 			</div>

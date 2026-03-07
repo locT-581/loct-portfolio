@@ -38,19 +38,19 @@
 		},
 		"featured": {
 			"subTitle": "Featured Project",
-			"heading": "Key Moments In\nCollaboration",
+			"heading": "Selected Projects",
 			"btnAll": "VIEW ALL PROJECT",
 			"btnDetails": "VIEW DETAILS",
 			"items": {
 				"1": {
-					"title": "NüVara Rebrand",
-					"year": "2034",
-					"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+					"title": "Short Video Feed SDK",
+					"year": "2025-2026",
+					"image": "/assets/images/sdk-short.png"
 				},
 				"2": {
-					"title": "CodeWave Summit Rebrand",
-					"year": "2035",
-					"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
+					"title": "Hybrid Mobile Sports Booking",
+					"year": "2025-2026",
+					"image": "/assets/images/booking-sport.png"
 				}
 			}
 		},
@@ -201,94 +201,83 @@
 	},
 	"AboutPage": {
 		"title": "About",
-		"subtitle": "Discover the journey, mindset, and creative drive that shape every project I take on.",
+		"subtitle": "Discover the engineering mindset, architectural choices, and technical drive that shape every web application I build.",
 		"aboutMe": {
 			"label": "About Me",
-			"heading": "I'm Yessa, a passionate designer with over eight years of experience turning ideas into visual experiences that connect, inspire, and convert.",
-			"description": "Every design I create is rooted in purpose. Whether it's a mobile app interface, a visual rebrand, or a complete web presence, I bring empathy, strategy, and clean aesthetics to the table.",
+			"heading": "I'm LocT, a detail-oriented Front-end Developer dedicated to architecting scalable systems and delivering ultra-smooth digital experiences.",
+			"description": "Every project I take on is rooted in performance and clean code. With a background in 2D Animation and deep expertise in Next.js and Micro-frontends, I bridge the gap between complex logic and fluid UI/UX. I bring robust architecture, state management optimization, and pixel-perfect design to the table.",
 			"imageAlt": "Designer portrait"
 		},
 		"experience": {
-			"label": "Job Experience",
-			"heading": "The Expertise Behind Every Detail",
+			"label": "Experience & Education",
+			"heading": "My Professional Journey",
 			"jobs": [
 				{
-					"role": "Visual Designer",
-					"company": "Nova Cosmetics / 2034",
-					"desc": "Led the redesign of the entire website and product packaging, creating a cohesive and elevated brand presence."
+					"role": "Front-end Developer",
+					"company": "KCKMTECH JSC • Cần Thơ / 03.2024 - 02.2026",
+					"desc": "Led Frontend architecture for 4 key Next.js projects. Optimized UI/UX workflows and utilized AI Agents to accelerate MVP deployment by 80%."
 				},
 				{
-					"role": "UI/UX Lead",
-					"company": "GlowUp Wellness App / 2033",
-					"desc": "Designed a wellness app interface from scratch with a clean, intuitive experience for daily habit tracking."
+					"role": "2D Animator (Freelance)",
+					"company": "Upwork / 06.2022 - 01.2024",
+					"desc": "Designed and produced motion graphics and character animations for various projects. Maintained a 100% positive client rating on Upwork through effective communication."
 				},
 				{
-					"role": "Brand Strategist",
-					"company": "Aurum Jewelry / 2032",
-					"desc": "Developed the full brand identity system, including logo, typography, and social content."
-				},
-				{
-					"role": "Art Director",
-					"company": "Pixel Pulse Agency / 2031",
-					"desc": "Oversaw visual direction for multiple creative campaigns, combining motion, branding, and UI work."
-				},
-				{
-					"role": "Junior Designer",
-					"company": "CodeWave Summit / 2030",
-					"desc": "Supported web and visual materials for a major tech conference, contributing to its refreshed identity."
-				},
-				{
-					"role": "Internship",
-					"company": "Creative House Studio / 2022",
-					"desc": "Assisted in logo design, layout exploration, and presentation decks, gaining strong foundation in design workflow."
+					"role": "B.S. in Software Engineering",
+					"company": "Can Tho University / 2020 - 2025",
+					"desc": "Graduated with Excellence. Built a strong foundation in algorithmic thinking, data structures, and software systems development."
 				}
 			]
 		},
 		"value": {
-			"label": "Value",
-			"heading": "Why with me?",
-			"description": "More than just visuals—here's what I bring to every collaboration.",
+			"label": "Core Values",
+			"heading": "Why work with me?",
+			"description": "More than just writing code—here is the engineering mindset and strategic value I bring to every project.",
 			"items": {
 				"1": {
 					"number": "/01",
-					"title": "Creative Clarity",
-					"desc": "I turn complex ideas into clean, thoughtful visuals that communicate clearly and effectively."
+					"title": "Scalable Architecture",
+					"desc": "I approach development with a focus on robust architectures, ensuring the codebase is scalable, maintainable, and independent."
 				},
 				"2": {
 					"number": "/02",
-					"title": "Reliable Communication",
-					"desc": "A smooth, transparent process is just as important as the final design. I prioritize clear, timely communication at every stage."
+					"title": "Collaborative Workflow",
+					"desc": "Bridging the gap between BA, Designers, and logic. I maintain a 100% client satisfaction rate through transparent, proactive communication and problem-solving."
 				},
 				"3": {
 					"number": "/03",
-					"title": "User-Focused Design",
-					"desc": "I approach every project with empathy, always considering the user's journey, mindset, and experience."
+					"title": "Performance-Driven UX",
+					"desc": "Combining a deep understanding of mobile UI/UX with hardcore optimization (DOM Pooling, RAF) to deliver fluid applications and ultra-fast load times."
 				},
 				"4": {
 					"number": "/04",
-					"title": "Quality Over Everything",
-					"desc": "I focus on detail and consistency to deliver work that not only looks great but also meets a high standard of excellence."
+					"title": "AI-Accelerated Delivery",
+					"desc": "Leveraging advanced AI Agents (Claude, Copilot,etc) to accelerate MVP development, saving up to 80% of coding time while maintaining high code quality standards."
 				}
 			},
 			"images": {
-				"1": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000",
-				"2": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
+				"1": "/assets/images/scalable-architecture-banner.jpg",
+				"2": "/assets/images/ai-accelerated-delivery-banner.jpg"
 			}
 		},
 		"capabilities": {
-			"label": "Expertise",
-			"heading": "My Core Capabilities",
-			"description": "Here's what I've mastered over the years—and continue to evolve.",
+			"label": "Industry Experience",
+			"heading": "Domains of Expertise",
+			"description": "Translating complex business logic into scalable technical solutions across diverse industries.",
 			"items": {
-				"1": "UI/UX DESIGN",
-				"2": "BRAND IDENTITY",
-				"3": "WEB DESIGN",
-				"4": "ART DIRECTION"
+				"1": "SOCIAL NETWORKS",
+				"2": "SPORTS BOOKING",
+				"3": "WEB3 & BLOCKCHAIN",
+				"4": "MOTION GRAPHICS"
 			}
 		},
 		"toolbox": {
-			"label": "Tools",
-			"heading": "Toolbox"
+			"label": "Tech Stack",
+			"heading": "Everyday Tools",
+			"state": "State Management",
+			"realtime": "Realtime",
+			"ui": "UI Library",
+			"another": "Another"
 		}
 	},
 	"ProjectsPage": {

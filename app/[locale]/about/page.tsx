@@ -7,13 +7,13 @@ import ValueSection from "@/components/about/ValueSection";
 
 export default function AboutPage() {
 	return (
-		<main className="w-full bg-[#e3e3e3] dark:bg-[#111111] pt-32 lg:pt-48">
+		<>
 			<AboutHeader />
 			<AboutMe />
 			<JobExperience />
 			<ValueSection />
 			<Capabilities />
 			<Toolbox />
-		</main>
+		</>
 	);
 }
