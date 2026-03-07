@@ -6,7 +6,7 @@ export default async function AboutMe() {
 	const t = await getTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] pb-32">
+		<section className="px-6 md:px-[8%] pb-24 md:pb-32">
 			<div className="py-17.5 relative flex justify-between">
 				{/* Left Column */}
 				<div className="lg:col-span-4 flex flex-col gap-10">
@@ -17,7 +17,7 @@ export default async function AboutMe() {
 				</div>
 
 				{/* Right Column */}
-				<div className="flex flex-col items-end gap-40 justify-end max-w-[65%]">
+				<div className="flex flex-col items-end gap-24 md:gap-32 justify-end max-w-[65%]">
 					<ScrollRevealText
 						text={t("aboutMe.heading")}
 						className="text-2xl md:text-3xl lg:text-5xl"
@@ -27,7 +27,7 @@ export default async function AboutMe() {
 					</p>
 				</div>
 
-				<div className="absolute bottom-[3%] left-4 max-w-87.5 w-[20vw] aspect-3/4 overflow-hidden">
+				<div className="absolute bottom-[3%] min-w-50 left-4 max-w-87.5 w-[20vw] aspect-3/4 overflow-hidden">
 					<Image
 						src="/assets/images/avatar.jpg"
 						alt={t("aboutMe.imageAlt")}

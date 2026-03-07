@@ -66,7 +66,7 @@ export default function Capabilities() {
 
 						{/* Attached Image */}
 						<div
-							className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30vw] aspect-4/2.5 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] z-10 ${
+							className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30vw] min-w-45 aspect-4/2.5 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] z-10 ${
 								hoveredIndex === item.id
 									? "opacity-100 scale-100 rotate-12 blur-none -translate-x-[50%] -translate-y-[40%]"
 									: "opacity-0 scale-90 rotate-6 blur-md"

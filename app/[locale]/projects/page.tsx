@@ -25,13 +25,13 @@ export default async function ProjectsPage() {
 	const locale = await getLocale();
 
 	return (
-		<main className="w-full bg-[#f2f2f2] dark:bg-[#111111] pt-32 lg:pt-48 pb-20">
+		<>
 			{/* Top Header */}
-			<section className="px-6 md:px-[8%] mb-12">
+			<section className="px-6 pt-32 lg:pt-48 md:px-[8%] mb-12">
 				<h1 className="text-6xl md:text-8xl lg:text-[120px] font-switzer font-medium tracking-tight mb-6">
 					{t("title")}
 				</h1>
-				<p className="text-gray-500 font-satoshi text-base md:text-lg max-w-2xl">
+				<p className="text-gray-500 font-satoshi text-base md:text-lg">
 					{t("subtitle")}
 				</p>
 			</section>
@@ -66,7 +66,7 @@ export default async function ProjectsPage() {
 			</section>
 
 			{/* Related Projects Section */}
-			<section className="w-full bg-[#EAEAEA] dark:bg-[#111111] pt-24 md:pt-32 pb-20 mt-32 border-t border-black/10 dark:border-white/10">
+			<section className="pt-24 md:pt-32 pb-20 mt-32 border-t border-black/10 dark:border-white/10">
 				<div className="px-6 md:px-[8%]">
 					{/* Heading */}
 					<div className="flex flex-col items-center gap-4 mb-20 text-center">
@@ -124,6 +124,6 @@ export default async function ProjectsPage() {
 					</div>
 				</div>
 			</section>
-		</main>
+		</>
 	);
 }

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
 
 // Using dummy data for demonstration.
 const PROJECT_DETAIL = {
@@ -73,8 +72,7 @@ export default async function ProjectDetail({
 }: {
 	params: Promise<{ locale: string; id: string }>;
 }) {
-	const { locale, id } = await params;
-	const t = await getTranslations("ProjectsPage"); // Reuse or update if there's a specific key
+	const { locale } = await params;
 	return (
 		<main className="min-h-screen pt-32 pb-24 bg-[#F2F2F2] dark:bg-[#111111] text-[#111111] dark:text-[#F2F2F2]">
 			<div className="w-full">
@@ -82,7 +80,7 @@ export default async function ProjectDetail({
 					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
 						{PROJECT_DETAIL.title}
 					</h1>
-					<p className="text-gray-500 font-satoshi text-base md:text-lg max-w-2xl">
+					<p className="text-gray-500 font-satoshi text-base md:text-lg">
 						{PROJECT_DETAIL.subtitle}
 					</p>
 				</div>
@@ -273,7 +271,7 @@ export default async function ProjectDetail({
 			</div>
 
 			{/* Related Projects Section */}
-			<section className="w-full bg-[#EAEAEA] dark:bg-[#111111] pt-24 md:pt-32 pb-20 mt-32 border-t border-black/10 dark:border-white/10">
+			<section className="pt-24 md:pt-32 pb-20 mt-32 border-t border-black/10 dark:border-white/10">
 				<div className="px-6 md:px-[8%]">
 					{/* Heading */}
 					<div className="flex flex-col items-center gap-4 mb-20 text-center">
