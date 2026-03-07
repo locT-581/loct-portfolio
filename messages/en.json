@@ -243,7 +243,8 @@
 		"viewAppStore": "App Store",
 		"keyFeatures": "Key Features",
 		"myRole": "My Role:",
-		"backToProjects": "Back to Projects"
+		"backToProjects": "Back to Projects",
+		"viewProject": "View Project"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -292,30 +293,43 @@
 		"short-video-feed-sdk": {
 			"title": "Short Video Feed SDK",
 			"year": "2025-2026",
-			"subtitle": "A premium SDK system providing video solutions for mobile apps.",
+			"subtitle": "This is an internal software development kit (SDK), specifically designed to build the Short Video Feed feature.",
 			"details": {
-				"headingPart1": "Short Video Feed SDK delivers ",
-				"headingPart2": "a powerful video solution.",
-				"description": "This is a modern SDK solution to seamlessly integrate a short video system."
+				"headingPart1": "The project focuses on providing a powerful \"Plug-and-Play\" solution, allowing host applications (Host Apps) to embed short video streams with just a few lines of code while ensuring maximum performance.",
+				"description": "The project is built on a Headless SDK model, completely separating processing logic and display interface. This SDK is optimized for resource-constrained environments like Mobile, where playing multiple videos at the same time often causes memory and lag issues."
 			},
 			"meta": {
 				"client": "KCKM Tech",
-				"industry": "Software",
+				"industry": "Software / AdTech",
+				"role": "Technology Lead, responsible for architectural design, core video engine implementation, and developer experience (DX) optimization.",
 				"duration": "6 Months"
 			},
 			"painPoints": {
-				"heading": "The Challenge: Seamless Video Integration",
+				"heading": "Developing a seamless short-video SDK demanded overcoming strict WebView resource limits, network latency, and rigorous bundle size constraints.",
 				"list": [
-					"Low performance on older devices.",
-					"Difficult integration into existing apps."
+					"**WebView Resource Limits**: Mitigating high RAM consumption and OS-level terminations within low-priority mobile WebViews while continuously rendering high-quality video streams.",
+					"**Zero-latency Instant Play**: Overcoming network latency to engineer a flawless \"Instant Play\" mechanic upon scrolling, completely eliminating disruptive loading states.",
+					"**Deep UI Customizability**: Architecting a flexible UI interface (ActionBar, AuthorInfo) that allows deep client customization without compromising the complex core video-sliding logic.",
+					"**Strict Bundle Size Control**: Keeping the JavaScript payload exceptionally lightweight to ensure the embedded SDK does not degrade the host application's initial load performance."
+				]
+			},
+			"keyFeatures": {
+				"heading": "A robust, backend-agnostic SDK engineered for 60fps performance, strict memory safety, and seamless integration into any host application.",
+				"list": [
+					"**Zero-Crash & DOM Pooling**: Achieved absolute WebView stability by implementing a strict Resource Governor that pools a maximum of 3 video DOM nodes, completely eliminating memory leaks.",
+					"**60FPS Performance & Ultra-light Gestures**: Delivered sub-second video loads and buttery-smooth 60fps swiping using a custom-built, ultra-lightweight (~1.5KB) gesture handler instead of bloated libraries.",
+					"**Backend-Agnostic Hexagonal Architecture**: Structured on a Hexagonal Architecture, ensuring the SDK remains completely decoupled from any specific backend API, allowing effortless plug-and-play integration.",
+					"**Optimistic UI & Zero-Latency Feel**: Engineered an Optimistic UI for instant social interactions (likes, comments) with automatic background rollbacks, creating a lag-free user experience.",
+					"**Mixed Content Ecosystem**: Architected a flexible feed system capable of seamlessly rendering both short-form videos and rich-text articles within the same continuous scroll."
 				]
 			},
 			"result": {
-				"headingPart1": "The new SDK helps ",
-				"headingPart2": "maximize the user experience.",
+				"heading": "Delivering an ultra-lightweight, ~90KB embeddable SDK that guarantees 60fps performance, absolute WebView stability, and effortless integration with any client data structure.",
 				"list": [
-					"Increased video watch time by 50%",
-					"Integrated in just 2 days"
+					"**Ultra-lightweight Bundle**: Engineered a highly optimized SDK weighing only ~90KB (gzipped), ensuring zero negative impact on the host application's initial load time.",
+					"**Flawless 60FPS Performance**: Achieved absolute smoothness and a stable 60fps frame rate via direct DOM manipulation for progress bars and a custom position-based virtual scroller.",
+					"**Universal API Compatibility**: Enabled seamless integration with any client data structure using Preset Configurations and Custom Transformers, requiring zero core code modifications.",
+					"**Zero-Crash Reliability**: Eradicated WebView memory leaks and crashes entirely by deploying a strict Resource Governor to safely manage concurrent video playbacks."
 				]
 			}
 		},

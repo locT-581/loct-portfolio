@@ -243,7 +243,8 @@
 		"viewAppStore": "App Store",
 		"keyFeatures": "Tính năng cốt lõi",
 		"myRole": "Vai trò:",
-		"backToProjects": "Quay lại dự án"
+		"backToProjects": "Quay lại dự án",
+		"viewProject": "Xem dự án"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -292,28 +293,44 @@
 		"short-video-feed-sdk": {
 			"title": "Short Video Feed SDK",
 			"year": "2025-2026",
-			"subtitle": "Một hệ thống SDK chất lượng cao cung cấp giải pháp video cho ứng dụng di động.",
+			"subtitle": "Đây là một bộ công cụ phát triển phần mềm (SDK) nội bộ, được thiết kế chuyên biệt để xây dựng tính năng Short Video Feed.",
 			"details": {
-				"headingPart1": "Short Video Feed SDK mang đến ",
-				"headingPart2": "giải pháp video mạnh mẽ.",
-				"description": "Đây là một giải pháp SDK hiện đại giúp tích hợp hệ thống video ngắn một cách liền mạch."
+				"headingPart1": "Dự án tập trung vào việc cung cấp một giải pháp \"Plug-and-Play\" (cắm là chạy) mạnh mẽ, giúp các ứng dụng chủ (Host Apps) có thể nhúng luồng video ngắn chỉ với vài dòng code mà vẫn đảm bảo hiệu năng tối đa.",
+				"description": "Dự án được xây dựng theo mô hình Headless SDK, tách biệt hoàn toàn giữa logic xử lý và giao diện hiển thị. SDK này được tối ưu hóa cho các môi trường hạn chế tài nguyên như Mobile, nơi mà việc phát nhiều video cùng lúc thường gây ra các vấn đề về bộ nhớ và giật lag."
 			},
 			"meta": {
 				"client": "KCKM Tech",
-				"industry": "Software",
-				"duration": "6 Months"
+				"industry": "Phần mềm / AdTech",
+				"role": "Trưởng nhóm kỹ thuật, chịu trách nhiệm thiết kế kiến trúc, triển khai lõi xử lý video và tối ưu hóa trải nghiệm nhà phát triển (DX).",
+				"duration": "6 Tháng"
 			},
 			"painPoints": {
-				"heading": "Thử thách: Tích hợp video mượt mà",
+				"heading": "Việc phát triển SDK video ngắn đòi hỏi phải vượt qua các giới hạn khắt khe về tài nguyên của WebView, độ trễ mạng và yêu cầu tối ưu dung lượng mã nguồn (bundle size).",
 				"list": [
-					"Hiệu suất thấp trên thiết bị cũ.",
-					"Khó tích hợp vào ứng dụng hiện tại."
+					"**Hạn chế Tài nguyên WebView**: Giải quyết bài toán ngốn RAM và nguy cơ bị hệ điều hành \"kill\" tiến trình khi phát video chất lượng cao trên môi trường WebView vốn bị hạn chế tài nguyên.",
+					"**Độ trễ Mạng & Phát tức thì**: Xử lý độ trễ mạng để đạt được cơ chế \"Instant Play\" (Phát tức thì) khi cuộn, loại bỏ hoàn toàn các trạng thái chờ gây gián đoạn trải nghiệm.",
+					"**Khả năng Tùy biến Giao diện Cao**: Thiết kế kiến trúc linh hoạt, cho phép khách hàng tự do tùy biến giao diện (ActionBar, AuthorInfo) mà không làm gãy vỡ logic chuyển đổi video cốt lõi.",
+					"**Giới hạn Dung lượng SDK**: Tối ưu hóa dung lượng file JavaScript xuống mức tối thiểu, đảm bảo SDK nhúng không làm chậm tốc độ tải trang ban đầu của ứng dụng gốc."
+				]
+			},
+			"keyFeatures": {
+				"heading": "Một SDK độc lập, mạnh mẽ được thiết kế để đạt hiệu năng 60fps, an toàn bộ nhớ tuyệt đối và tích hợp mượt mà vào bất kỳ ứng dụng gốc nào.",
+				"list": [
+					"**Ổn định Tuyệt đối & Quản trị Tài nguyên**: Đạt độ ổn định tuyệt đối trên WebView thông qua cơ chế quản trị tài nguyên khắt khe (chỉ duy trì tối đa 3 DOM video cùng lúc), loại bỏ hoàn toàn lỗi tràn RAM.",
+					"**Hiệu năng 60fps & Cử chỉ Siêu nhẹ**: Đạt tốc độ tải video dưới 1 giây và cuộn mượt mà 60fps nhờ tự phát triển bộ xử lý cử chỉ vuốt chạm siêu nhẹ (chỉ ~1.5KB), thay thế hoàn toàn các thư viện cồng kềnh.",
+					"**Kiến trúc Hexagonal Độc lập**: Ứng dụng kiến trúc Hexagonal đa lớp, giúp SDK hoàn toàn độc lập với cấu trúc Backend và dễ dàng \"plug-and-play\" vào bất kỳ hệ thống lõi nào của khách hàng.",
+					"**Giao diện Lạc quan & Phản hồi Tức thì**: Tối ưu trải nghiệm \"không độ trễ\" với cơ chế Optimistic UI, cập nhật tức thời các tương tác (like, comment) và tự động ẩn danh rollback nếu API báo lỗi.",
+					"**Hỗ trợ Nội dung Hỗn hợp**: Xây dựng luồng Feed linh hoạt, hỗ trợ hiển thị đan xen mượt mà giữa Video ngắn giải trí và Bài viết (Article) trong cùng một trải nghiệm cuộn vô tận."
 				]
 			},
 			"result": {
-				"headingPart1": "SDK mới giúp ",
-				"headingPart2": "tăng cường trải nghiệm người dùng tối đa.",
-				"list": ["Tăng 50% thời gian xem video", "Tích hợp chỉ trong 2 ngày"]
+				"heading": "Cung cấp một SDK nhúng siêu nhẹ chỉ ~90KB, đảm bảo hiệu năng 60fps mượt mà, độ ổn định tuyệt đối trên WebView và khả năng tích hợp linh hoạt với mọi dữ liệu khách hàng.",
+				"list": [
+					"**SDK Siêu gọn**: Tối ưu hóa toàn diện để đạt kích thước SDK siêu gọn chỉ khoảng 90KB (gzipped), đảm bảo không làm giảm tốc độ tải trang ban đầu của ứng dụng gốc.",
+					"**Hiệu năng 60FPS Tuyệt đối**: Đạt độ mượt mà 60fps tuyệt đối nhờ áp dụng kỹ thuật thao tác DOM trực tiếp (Direct DOM manipulation) cho thanh tiến trình và cơ chế cuộn ảo dựa trên vị trí.",
+					"**Tương thích API Toàn diện**: Hỗ trợ map với bất kỳ cấu trúc dữ liệu API nào từ khách hàng nhờ cơ chế Preset Configuration và Custom Transformers mà không cần chỉnh sửa mã nguồn lõi.",
+					"**Độ tin cậy Zero-Crash**: Giải quyết triệt để bài toán crash WebView do quá tải tài nguyên nhờ cơ chế Resource Governor kiểm soát nghiêm ngặt số lượng video phát đồng thời."
+				]
 			}
 		},
 		"yaah-connect": {

@@ -33,6 +33,7 @@ export type Project = {
 	squareImage: string; // The square image
 	panoramaImage?: string; // The panorama image
 	appStoreLink?: string; // Link to the App Store
+	liveLink?: string; // Link to live site or documentation
 };
 
 export const PROJECTS: Project[] = [
@@ -46,26 +47,26 @@ export const PROJECTS: Project[] = [
 			{
 				type: "image",
 				src: "/assets/images/sdk-short.png",
-				size: "full",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
 				size: "portrait",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/short/a.png",
 				size: "square",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/short/b.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/short/c.png",
 				size: "landscape",
 			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/projects/short/detail.png",
+		liveLink: "https://xhub-short-document.vercel.app/",
 	},
 	{
 		id: "yaah-connect",

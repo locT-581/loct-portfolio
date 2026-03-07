@@ -32,7 +32,7 @@ export default async function ProjectDetail({
 			id: rId,
 			title: t(`${rId}.title`),
 			category: tCat(relConfig?.categoryId || ""),
-			image: relConfig?.image,
+			image: relConfig?.squareImage,
 		};
 	});
 
