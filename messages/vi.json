@@ -242,7 +242,8 @@
 		"exploreSimilarDesc": "Các dự án phần mềm khác với trọng tâm vào thiết kế hệ thống vững chắc và tối ưu hiệu năng UI/UX.",
 		"viewAppStore": "App Store",
 		"keyFeatures": "Tính năng cốt lõi",
-		"myRole": "Vai trò:"
+		"myRole": "Vai trò:",
+		"backToProjects": "Quay lại dự án"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -315,28 +316,48 @@
 				"list": ["Tăng 50% thời gian xem video", "Tích hợp chỉ trong 2 ngày"]
 			}
 		},
-		"hybrid-mobile-sports-booking": {
-			"title": "Nền Tảng Đặt Sân Thể Thao",
+		"yaah-connect": {
+			"title": "Yaah Connect",
 			"year": "2025-2026",
-			"subtitle": "Ứng dụng đa nền tảng tối ưu cho việc đặt lịch và quản lý sân thể thao.",
+			"subtitle": "Ứng dụng tối ưu cho việc đặt lịch và quản lý sân thể thao.",
 			"details": {
-				"headingPart1": "Giải pháp đặt sân ",
-				"headingPart2": "nhanh chóng và tiện lợi.",
-				"description": "Chúng tôi mang đến hệ thống kết nối người chơi và chủ sân hiệu quả nhất."
+				"headingPart1": "Yaah Connect là một nền tảng hiện đại, cao cấp, không chỉ dừng lại ở việc cung cấp thông tin mà còn là một hệ sinh thái kết nối người chơi, sân đấu và các tổ chức thể thao chuyên nghiệp.",
+				"description": "Dự án được xây dựng mang lại cảm giác mạnh mẽ, chuyên nghiệp với tông màu chủ đạo là màu tối kết hợp với sắc xanh Neon. Mục tiêu của ứng dụng là tối ưu hóa quy trình tìm kiếm, đặt sân và theo dõi trình độ thi đấu thông qua việc tích hợp sâu với các hệ thống xếp hạng quốc tế."
 			},
 			"meta": {
 				"client": "Sports Club",
-				"industry": "Sports",
-				"duration": "4 Months"
+				"industry": "Thể thao & Giải trí",
+				"duration": "4 Tháng",
+				"role": "Trong vai trò Kỹ sư Frontend chính, tôi trực tiếp thiết kế kiến trúc kỹ thuật và lựa chọn hệ sinh thái công nghệ cốt lõi. Tôi chịu trách nhiệm chính về phát triển mã nguồn, xử lý các hiệu ứng đồ họa mượt mà và đồng bộ dữ liệu thực tế, đồng thời phối hợp với BA/Designer để tối ưu UI/UX trên thiết bị di động."
 			},
 			"painPoints": {
-				"heading": "Vấn đề: Quản lý lịch chéo",
-				"list": ["Trùng lịch phức tạp.", "Thiếu tính năng thanh toán."]
+				"heading": "Đối mặt với các tiêu chuẩn khắt khe về UX, dự án đòi hỏi khả năng giải quyết các thách thức lớn về hiệu năng đa phương tiện, đồng bộ dữ liệu phức tạp và tối ưu hóa trên mọi môi trường di động.",
+				"list": [
+					"**Hiệu năng Đa phương tiện & Đồ họa**: Giải quyết bài toán quá tải render trên trình duyệt di động khi phải tải đồng thời luồng video Reels, hình ảnh phân giải cao và các hiệu ứng GSAP phức tạp.",
+					"**Đồng bộ Dữ liệu Đa nguồn**: Xử lý logic đồng bộ mượt mà khi phải kết hợp dữ liệu từ nhiều nguồn độc lập: DUPR API (bên thứ 3), Backend hệ thống và Local State (danh sách yêu thích).",
+					"**Quản trị Đa ngôn ngữ**: Quản lý chặt chẽ hệ thống dịch thuật, đảm bảo độ phủ 100% cho các nội dung động phức tạp như trạng thái đặt sân theo thời gian thực và thông báo lỗi.",
+					"**Tối ưu Trình duyệt In-app & Thiết bị yếu**: Giữ vững chất lượng thiết kế cao cấp và tương tác mượt mà trên các thiết bị cấu hình thấp cũng như các môi trường trình duyệt nhúng khắt khe."
+				]
+			},
+			"keyFeatures": {
+				"heading": "Khám phá hệ sinh thái thể thao toàn diện, kết hợp mượt mà giữa công cụ đặt sân thời gian thực, tích hợp xếp hạng toàn cầu và nền tảng tương tác cộng đồng.",
+				"list": [
+					"**Công cụ Đặt sân Thông minh**: Hệ thống khám phá sân đấu dựa trên GPS (Near You), tích hợp bộ lọc tiện ích chuyên sâu, giá cả và trạng thái sẵn sàng theo thời gian thực.",
+					"**Tích hợp Hệ thống DUPR Toàn cầu**: Điểm nhấn cốt lõi: Tích hợp trực tiếp API DUPR (hệ thống xếp hạng Pickleball toàn cầu) để đồng bộ trình độ, hỗ trợ ghép trận và tham gia giải đấu xếp hạng.",
+					"**Lướt video & Truyền thông**: Tích hợp nền tảng video ngắn (Reels), bảng tin thể thao (News) và hệ thống trò chuyện trực tuyến kết nối người chơi.",
+					"**Quản lý Sự kiện & Giải đấu**: Hệ thống quản lý và hiển thị trực quan qua Hero Banner động, cho phép người chơi dễ dàng theo dõi và ghi danh vào các sự kiện, giải đấu sắp tới.",
+					"**Trải nghiệm Cá nhân hóa Toàn diện**: Hồ sơ người dùng chuyên sâu đi kèm tính năng quản lý danh sách sân yêu thích (Favorites), lịch sử đặt chỗ và các tùy chỉnh cá nhân hóa đa dạng.",
+					"**Cập nhật Thời gian thực**: Đảm bảo luồng thông tin xuyên suốt với các cập nhật trạng thái đặt sân và tin nhắn tức thời thông qua kết nối Socket thời gian thực."
+				]
 			},
 			"result": {
-				"headingPart1": "Nền tảng đã giúp ",
-				"headingPart2": "tự động hóa 80% công việc.",
-				"list": ["Giảm 90% lỗi đặt trùng", "Tăng 30% doanh thu"]
+				"heading": "Mang đến một nền tảng cao cấp, ổn định tuyệt đối, cân bằng hoàn hảo giữa hiệu ứng thị giác ấn tượng và kiến trúc module hóa chặt chẽ.",
+				"list": [
+					"**Hiệu ứng Thị giác Đẳng cấp**: Kiến tạo \"Hiệu ứng Wow\" bùng nổ thị giác ngay từ lần truy cập đầu tiên nhờ kết hợp các hoạt ảnh GSAP tinh tế và dải màu Neon thương hiệu.",
+					"**Cấu trúc Module Hóa Triệt để**: Loại bỏ hoàn toàn tình trạng \"spaghetti code\" dù ở quy mô khổng lồ nhờ áp dụng kiến trúc phân chia chặt chẽ theo từng module tính năng (`src/features`).",
+					"**Tối ưu Hệ thống Định vị**: Cung cấp trải nghiệm thực dụng, mượt m thông qua tích hợp Google Maps API và hệ thống tính toán khoảng cách địa lý theo thời gian thực.",
+					"**Tính Ổn định & An toàn Tuyệt đối**: Giảm thiểu tối đa lỗi runtime và logic bằng cách áp dụng bộ tiêu chuẩn khắt khe với TypeScript nghiêm ngặt, xác thực dữ liệu Zod và linter Biome."
+				]
 			}
 		},
 		"rainydays-wallpaper": {

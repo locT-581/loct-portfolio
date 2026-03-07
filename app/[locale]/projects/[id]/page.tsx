@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -19,6 +20,7 @@ export default async function ProjectDetail({
 
 	const t = await getTranslations("ProjectsData");
 	const tCat = await getTranslations("Categories");
+	const tBase = await getTranslations("ProjectDetailPage");
 
 	const relatedIds = getRelatedProjectIds(id);
 	const relatedProjects = relatedIds.map((rId) => {
@@ -34,7 +36,17 @@ export default async function ProjectDetail({
 	return (
 		<>
 			<div className="w-full">
-				<div className="px-6 md:px-12.5 mb-12">
+				<div className="px-6 md:px-12.5 mb-12 mt-6 md:mt-37.5">
+					<Link
+						href={`/${locale}#projects`}
+						className="group inline-flex items-center gap-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 font-switzer text-sm md:text-base"
+					>
+						<ArrowLeft
+							size={20}
+							className="transition-transform group-hover:-translate-x-1"
+						/>
+						<span>{tBase("backToProjects")}</span>
+					</Link>
 					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
 						{t(`${id}.title`)}
 					</h1>
@@ -60,7 +72,7 @@ export default async function ProjectDetail({
 					{/* Detail Section */}
 					<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400 mb-8">
 						<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
-						Detail
+						{tBase("detail")}
 					</div>
 
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-32 border-b border-black/10 dark:border-white/10 pb-32">
@@ -122,7 +134,7 @@ export default async function ProjectDetail({
 						<div className="lg:col-span-3">
 							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
-								Pain Points
+								{tBase("painPoints")}
 							</div>
 						</div>
 
@@ -200,7 +212,7 @@ export default async function ProjectDetail({
 						<div className="lg:col-span-3">
 							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
-								Result
+								{tBase("result")}
 							</div>
 						</div>
 

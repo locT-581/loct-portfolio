@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
 	},
 	{
-		id: "hybrid-mobile-sports-booking",
+		id: "yaah-connect",
 		categoryId: "mobile-app",
 		image: "/assets/images/booking-sport.png",
 		portalImage: "/assets/images/booking-sport.png",
@@ -76,27 +76,37 @@ export const PROJECTS: Project[] = [
 		gallery: [
 			{
 				type: "image",
-				src: "/assets/images/booking-sport.png",
-				size: "full",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/yaah/a.png",
 				size: "portrait",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/yaah/c.png",
 				size: "square",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
-				size: "landscape",
+				src: "/assets/images/projects/yaah/d.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/yaah/e.png",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/yaah/f.png",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/yaah/b.png",
+				size: "portrait",
 			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/projects/yaah/detail.png",
+		appStoreLink: "https://apps.apple.com/vn/app/yaah-connect/id6757145656",
 	},
 	{
 		id: "rainydays-wallpaper",
@@ -244,7 +254,7 @@ export const getProjectById = (id: string) => PROJECTS.find((p) => p.id === id);
 
 export const FEATURED_PROJECT_IDS = [
 	"short-video-feed-sdk",
-	"hybrid-mobile-sports-booking",
+	"yaah-connect",
 	"sudoku-game",
 ];
 
@@ -253,7 +263,7 @@ export const DISCOVER_PROJECT_IDS = ["mimic-mcp", "rainydays-wallpaper"];
 export const PORTFOLIO_PROJECT_IDS = [
 	"uni-portal",
 	"short-video-feed-sdk",
-	"hybrid-mobile-sports-booking",
+	"yaah-connect",
 	"sudoku-game",
 	"rainydays-wallpaper",
 	"mimic-mcp",

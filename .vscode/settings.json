@@ -22,7 +22,16 @@
 	"[jsonc]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"cSpell.words": ["GSAP", "rainydays", "satoshi", "uniportal", "Upwork"],
+	"cSpell.words": [
+		"DUPR",
+		"GSAP",
+		"Pickleball",
+		"rainydays",
+		"satoshi",
+		"uniportal",
+		"Upwork",
+		"yaah"
+	],
 	"commentTranslate.targetLanguage": "vi",
 	"i18n-ally.localesPaths": ["i18n", "messages"]
 }

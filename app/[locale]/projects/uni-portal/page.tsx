@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -38,7 +39,17 @@ export default async function ProjectDetail({
 	return (
 		<>
 			<div className="w-full">
-				<div className="px-6 md:px-12.5 mb-12">
+				<div className="px-6 md:px-12.5 mb-12 mt-6 md:mt-37.5">
+					<Link
+						href={`/${locale}#projects`}
+						className="group inline-flex items-center gap-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 font-switzer text-sm md:text-base"
+					>
+						<ArrowLeft
+							size={20}
+							className="transition-transform group-hover:-translate-x-1"
+						/>
+						<span>{tBase("backToProjects")}</span>
+					</Link>
 					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
 						UniPortal
 					</h1>

@@ -242,7 +242,8 @@
 		"exploreSimilarDesc": "More engineering works focusing on robust system design and high-performance UI/UX.",
 		"viewAppStore": "App Store",
 		"keyFeatures": "Key Features",
-		"myRole": "My Role:"
+		"myRole": "My Role:",
+		"backToProjects": "Back to Projects"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -318,166 +319,48 @@
 				]
 			}
 		},
-		"hybrid-mobile-sports-booking": {
-			"title": "Hybrid Mobile Sports Booking",
+		"yaah-connect": {
+			"title": "Yaah Connect",
 			"year": "2025-2026",
-			"subtitle": "Cross-platform app optimized for booking and managing sports fields.",
+			"subtitle": "App optimized for booking and managing sports fields.",
 			"details": {
-				"headingPart1": "Sports booking solution ",
-				"headingPart2": "fast and convenient.",
-				"description": "We provide the most effective system connecting players and field owners."
+				"headingPart1": "Yaah connect is a modern, high-end platform, not only providing information but also an ecosystem connecting players, courts and professional sports organizations.",
+				"description": "The project is built to bring a strong, professional feeling with the main color tone being dark colors combined with Neon green. The goal of the application is to optimize the process of searching, booking courts and tracking competition levels through deep integration with international ranking systems."
 			},
 			"meta": {
 				"client": "Sports Club",
-				"industry": "Sports",
-				"duration": "4 Months"
+				"industry": "Sports & Recreation",
+				"duration": "4 Months",
+				"role": "As Frontend Engineer, I designed the technical architecture and selected the core tech stack. I took primary responsibility for development, implementation of smooth animations, and real-time data synchronization, while collaborating with BAs and Designers to refine UI/UX for optimal mobile performance."
 			},
 			"painPoints": {
-				"heading": "The Problem: Cross-scheduling",
-				"list": ["Complex schedule overlap.", "Lack of payment features."]
+				"heading": "Driven by rigorous user experience standards, the project demanded solving major hurdles in rich media performance, complex data synchronization, and cross-browser optimization.",
+				"list": [
+					"**Media & Animation Performance**: Mitigating mobile browser overload while simultaneously rendering continuous video Reels, high-res court images, and complex GSAP animations.",
+					"**Multi-source Data Synchronization**: Seamlessly orchestrating and combining real-time data logic across third-party endpoints (DUPR API), the core system Backend, and local Client State (Favorites).",
+					"**Comprehensive i18n Management**: Strictly managing dynamic translations to ensure 100% language coverage for complex app states, real-time booking statuses, and system error messages.",
+					"**In-app Browser & Low-end Optimization**: Maintaining high-end UI/UX fidelity and smooth interactions across low-tier mobile devices and constrained in-app browser environments."
+				]
+			},
+			"keyFeatures": {
+				"heading": "An all-in-one sports booking ecosystem seamlessly blending real-time reservations, global ranking integrations, and interactive community engagement.",
+				"list": [
+					"**Smart Booking Engine**: A location-based discovery engine (Near You) featuring real-time court availability, dynamic pricing, and complex amenity filters.",
+					"**Global DUPR Integration**: The platform's defining feature: direct integration with the global DUPR API to sync Pickleball ratings, enabling skill-based matchmaking and ranked tournament entries.",
+					"**Media Hub**: A built-in community ecosystem featuring interactive short-form video Reels, curated sports news, and online chat functionalities.",
+					"**Event & Tournament Management**: Dynamic Hero Banners and dedicated modules for effortlessly showcasing and registering for upcoming Pickleball events and tournaments.",
+					"**Personalized User Experience**: Comprehensive user profiles equipped with personalized favorites management, detailed booking histories, and tailored preferences.",
+					"**Real-time Socket Updates**: Instant push notifications, live booking status updates, and seamless in-app messaging powered by robust WebSocket connections."
+				]
 			},
 			"result": {
-				"headingPart1": "The platform helped ",
-				"headingPart2": "automate 80% of tasks.",
-				"list": ["Reduced scheduling errors by 90%", "Increased revenue by 30%"]
-			}
-		},
-		"aurum-brand-kit": {
-			"title": "Aurum Brand Kit",
-			"subtitle": "A premium identity system built to reflect elegance, craftsmanship, and modern luxury.",
-			"details": {
-				"headingPart1": "Aurum is a rising jewelry brand that blends timeless ",
-				"headingPart2": "craftsmanship with contemporary design.",
-				"description": "From logo and color palette, we crafted a cohesive brand kit that elevated their presence."
-			},
-			"meta": {
-				"client": "Aurum",
-				"industry": "Jewelry",
-				"duration": "4 Weeks"
-			},
-			"painPoints": {
-				"heading": "The Challenge: Inconsistent visual system",
-				"list": ["Old logo didn't reflect elegance."]
-			},
-			"result": {
-				"headingPart1": "The new brand kit ",
-				"headingPart2": "changed the market's perspective.",
-				"list": ["3x increase in engagement"]
-			}
-		},
-		"velvette-fashion-rebrand": {
-			"title": "Velvette Fashion Rebrand",
-			"subtitle": "Elegance for modern fashion.",
-			"details": {
-				"headingPart1": "Velvette represents ",
-				"headingPart2": "sophistication.",
-				"description": "Project focusing on brand experience."
-			},
-			"meta": {
-				"client": "Velvette",
-				"industry": "Fashion",
-				"duration": "5 Weeks"
-			},
-			"painPoints": {
-				"heading": "Challenge: Renewal",
-				"list": []
-			},
-			"result": {
-				"headingPart1": "Velvette ",
-				"headingPart2": "achieved great results.",
-				"list": []
-			}
-		},
-		"enade-theory": {
-			"title": "Enade Theory",
-			"subtitle": "A different perspective.",
-			"details": {
-				"headingPart1": "Enade Theory ",
-				"headingPart2": "...",
-				"description": "..."
-			},
-			"meta": {
-				"client": "Enade",
-				"industry": "Art",
-				"duration": "3 Weeks"
-			},
-			"painPoints": {
-				"heading": "Focus",
-				"list": []
-			},
-			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
-			}
-		},
-		"neurodash-website": {
-			"title": "NeuroDash Website",
-			"subtitle": "Dashboards reinvented.",
-			"details": {
-				"headingPart1": "Neurodash ",
-				"headingPart2": "...",
-				"description": "..."
-			},
-			"meta": {
-				"client": "Neuro",
-				"industry": "Tech",
-				"duration": "6 Weeks"
-			},
-			"painPoints": {
-				"heading": "Focus",
-				"list": []
-			},
-			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
-			}
-		},
-		"quantix-ui-design": {
-			"title": "Quantix UI Design",
-			"subtitle": "Data at a glance.",
-			"details": {
-				"headingPart1": "Quantix ",
-				"headingPart2": "...",
-				"description": "..."
-			},
-			"meta": {
-				"client": "Quantix",
-				"industry": "Finance",
-				"duration": "4 Weeks"
-			},
-			"painPoints": {
-				"heading": "Focus",
-				"list": []
-			},
-			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
-			}
-		},
-		"noir-studio-brand": {
-			"title": "Noir Studio Brand",
-			"subtitle": "Dark aesthetics.",
-			"details": {
-				"headingPart1": "Noir ",
-				"headingPart2": "...",
-				"description": "..."
-			},
-			"meta": {
-				"client": "Noir",
-				"industry": "Studio",
-				"duration": "3 Weeks"
-			},
-			"painPoints": {
-				"heading": "Focus",
-				"list": []
-			},
-			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"heading": "Delivering a premium, rock-solid platform that seamlessly balances striking visual impact with a strictly modular, type-safe architecture.",
+				"list": [
+					"**Premium Visual Impact**: Engineered a striking \"Wow effect\" upon the first visit by leveraging complex GSAP animations and a bold Neon brand color system.",
+					"**Absolute Modularity**: Eliminated \"spaghetti code\" despite the massive scale (hundreds of files) by strictly adhering to a feature-sliced architecture (`src/features`).",
+					"**Seamless Location Engine**: Delivered a highly practical user experience with flawless Google Maps API integration and real-time spatial distance calculations.",
+					"**Rock-solid Stability**: Minimized runtime and logic errors by enforcing rigorous code standards using strict TypeScript, Zod schema validations, and Biome."
+				]
 			}
 		},
 		"rainydays-wallpaper": {
