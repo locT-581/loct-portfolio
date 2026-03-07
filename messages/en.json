@@ -591,6 +591,7 @@
 			}
 		},
 		"uni-portal": {
+			"title": "UniPortal",
 			"subtitle": "Join UniPortal in building a modern, connected, and smart campus.",
 			"details": {
 				"headingPart1": "Expanded app for students, provides academic features (View timetable, register courses, study plans), update news, and chat messaging.",

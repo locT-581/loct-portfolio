@@ -450,6 +450,7 @@
 			}
 		},
 		"uni-portal": {
+			"title": "UniPortal",
 			"subtitle": "Cùng UniPortal kiến tạo một môi trường đại học hiện đại, kết nối và thông minh.",
 			"details": {
 				"headingPart1": "Ứng dụng mở rộng dành cho sinh viên, cung cấp các tính năng học thuật (xem thời khóa biểu, đăng ký học phần, kế hoạch học tập), cập nhật tin tức, tương tác qua nhắn tin chat.",

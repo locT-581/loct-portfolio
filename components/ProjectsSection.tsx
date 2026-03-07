@@ -17,13 +17,13 @@ export default function ProjectsSection() {
 
 	const tCat = useTranslations("Categories");
 
-	const project1Id = DISCOVER_PROJECT_IDS[0]; // NeuroDash Website
-	const project2Id = DISCOVER_PROJECT_IDS[1]; // Velvette Fashion Rebrand
-	const project3Id = DISCOVER_PROJECT_IDS[2]; // Aurum Brand Kit
+	const project1Id = DISCOVER_PROJECT_IDS[0];
+	const project2Id = DISCOVER_PROJECT_IDS[1];
+	const project3Id = DISCOVER_PROJECT_IDS[2];
 
-	const project1 = getProjectById(project1Id)!;
-	const project2 = getProjectById(project2Id)!;
-	const project3 = getProjectById(project3Id)!;
+	const project1 = project1Id ? getProjectById(project1Id) : null;
+	const project2 = project2Id ? getProjectById(project2Id) : null;
+	const project3 = project3Id ? getProjectById(project3Id) : null;
 
 	return (
 		<section id="projects" className="w-full px-6 md:px-[10%] py-16 md:py-24">
@@ -56,35 +56,37 @@ export default function ProjectsSection() {
 						))}
 					</div>
 
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="flex flex-col gap-4 group w-full"
-					>
-						<Link
-							href={`/${locale}/projects/${project2Id}`}
-							className="relative w-full aspect-square md:aspect-4/5.5 overflow-hidden"
+					{project2 && (
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							className="flex flex-col gap-4 group w-full"
 						>
-							<Image
-								src={project2.image}
-								alt={tProjects(`${project2Id}.title`)}
-								fill
-								className="object-contain transition-transform duration-700 group-hover:scale-105"
-							/>
-						</Link>
-						<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
 							<Link
 								href={`/${locale}/projects/${project2Id}`}
-								className="tracking-tight hover:underline"
+								className="relative w-full aspect-square md:aspect-4/5.5 overflow-hidden"
 							>
-								{tProjects(`${project2Id}.title`)}
+								<Image
+									src={project2.image}
+									alt={tProjects(`${project2Id}.title`)}
+									fill
+									className="object-contain transition-transform duration-700 group-hover:scale-105"
+								/>
 							</Link>
-							<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
-								{tCat(project2.categoryId)}
-							</span>
-						</div>
-					</motion.div>
+							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
+								<Link
+									href={`/${locale}/projects/${project2Id}`}
+									className="tracking-tight hover:underline"
+								>
+									{tProjects(`${project2Id}.title`)}
+								</Link>
+								<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
+									{tCat(project2.categoryId)}
+								</span>
+							</div>
+						</motion.div>
+					)}
 
 					{/* View All Button */}
 					<Link
@@ -99,67 +101,71 @@ export default function ProjectsSection() {
 				{/* Right Column: NeuroDash (1), Aurum (3) */}
 				<div className="md:col-span-7 lg:col-span-8 flex flex-col gap-16 lg:gap-24 w-full lg:pl-12">
 					{/* Project 1 (NeuroDash) */}
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="flex flex-col gap-4 group w-full lg:w-[75%] lg:self-center"
-					>
-						<Link
-							href={`/${locale}/projects/${project1Id}`}
-							className="relative w-full aspect-4/5 overflow-hidden bg-gray-200 block"
+					{project1 && (
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							className="flex flex-col gap-4 group w-full lg:w-[75%] lg:self-center"
 						>
-							<Image
-								src={project1.image}
-								alt={tProjects(`${project1Id}.title`)}
-								fill
-								className="object-cover transition-transform duration-700 group-hover:scale-105"
-							/>
-						</Link>
-						<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
 							<Link
 								href={`/${locale}/projects/${project1Id}`}
-								className="tracking-tight hover:underline"
+								className="relative w-full aspect-4/5 overflow-hidden bg-gray-200 block"
 							>
-								{tProjects(`${project1Id}.title`)}
+								<Image
+									src={project1.image}
+									alt={tProjects(`${project1Id}.title`)}
+									fill
+									className="object-cover transition-transform duration-700 group-hover:scale-105"
+								/>
 							</Link>
-							<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
-								{tCat(project1.categoryId)}
-							</span>
-						</div>
-					</motion.div>
+							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
+								<Link
+									href={`/${locale}/projects/${project1Id}`}
+									className="tracking-tight hover:underline"
+								>
+									{tProjects(`${project1Id}.title`)}
+								</Link>
+								<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
+									{tCat(project1.categoryId)}
+								</span>
+							</div>
+						</motion.div>
+					)}
 
 					{/* Project 3 (Aurum) */}
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ delay: 0.1 }}
-						className="flex flex-col gap-4 group w-full lg:w-[90%] lg:self-end mt-4 lg:mt-0"
-					>
-						<Link
-							href={`/${locale}/projects/${project3Id}`}
-							className="relative w-full aspect-video md:aspect-16/10 overflow-hidden bg-gray-200 block"
+					{project3 && (
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{ delay: 0.1 }}
+							className="flex flex-col gap-4 group w-full lg:w-[90%] lg:self-end mt-4 lg:mt-0"
 						>
-							<Image
-								src={project3.image}
-								alt={tProjects(`${project3Id}.title`)}
-								fill
-								className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-							/>
-						</Link>
-						<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold mt-2">
 							<Link
 								href={`/${locale}/projects/${project3Id}`}
-								className="tracking-tight hover:underline"
+								className="relative w-full aspect-video md:aspect-16/10 overflow-hidden bg-gray-200 block"
 							>
-								{tProjects(`${project3Id}.title`)}
+								<Image
+									src={project3.image}
+									alt={tProjects(`${project3Id}.title`)}
+									fill
+									className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+								/>
 							</Link>
-							<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
-								{tCat(project3.categoryId)}
-							</span>
-						</div>
-					</motion.div>
+							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold mt-2">
+								<Link
+									href={`/${locale}/projects/${project3Id}`}
+									className="tracking-tight hover:underline"
+								>
+									{tProjects(`${project3Id}.title`)}
+								</Link>
+								<span className="text-gray-400 font-medium whitespace-nowrap text-sm md:text-base">
+									{tCat(project3.categoryId)}
+								</span>
+							</div>
+						</motion.div>
+					)}
 				</div>
 			</div>
 		</section>
