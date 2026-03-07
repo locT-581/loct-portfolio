@@ -3,46 +3,67 @@
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import {
+	CATEGORY_IDS,
+	getProjectById,
+	PORTFOLIO_PROJECT_IDS,
+} from "@/lib/data/projects";
 
-export default function PortfolioGrid() {
-	const t = useTranslations("ProjectsPage");
+function PortfolioGridContent() {
+	const tPage = useTranslations("ProjectsPage");
+	const tProjects = useTranslations("ProjectsData");
+	const tCat = useTranslations("Categories");
 	const locale = useLocale();
 
-	const categories = t.raw("categories") as string[];
-	const projects = t.raw("projects") as Array<{
-		id: string;
-		title: string;
-		category: string;
-		image: string;
-	}>;
-	const btnDetails = t("btnDetails");
+	const projects = PORTFOLIO_PROJECT_IDS.map((id) => {
+		const config = getProjectById(id);
+		return {
+			id,
+			squareImage: config?.squareImage,
+			image: config?.image,
+			title: tProjects(`${id}.title`),
+			category: tCat(config?.categoryId || ""),
+			categoryId: config?.categoryId,
+		};
+	});
 
-	const [activeCategory, setActiveCategory] = useState(categories[0]);
+	const btnDetails = tPage("btnDetails");
+
+	const searchParams = useSearchParams();
+	const catParam = searchParams.get("cat");
+	const initialIndex = catParam ? parseInt(catParam, 10) : 0;
+	const initialCategoryId =
+		!Number.isNaN(initialIndex) && CATEGORY_IDS[initialIndex]
+			? CATEGORY_IDS[initialIndex]
+			: CATEGORY_IDS[0];
+
+	const [activeCategoryId, setActiveCategoryId] = useState(initialCategoryId);
 
 	// Filter projects
 	const filteredProjects =
-		activeCategory === categories[0]
+		activeCategoryId === CATEGORY_IDS[0]
 			? projects
-			: projects.filter((p) => p.category === activeCategory);
+			: projects.filter((p) => p.categoryId === activeCategoryId);
 
 	return (
 		<div className="flex flex-col gap-10">
 			{/* Categories Nav */}
 			<div className="flex flex-wrap items-center gap-6 md:gap-10 border-b border-black/10 dark:border-white/10 pb-6 mb-6">
-				{categories.map((cat) => (
+				{CATEGORY_IDS.map((catId) => (
 					<button
-						key={cat}
+						key={catId}
 						type="button"
-						onClick={() => setActiveCategory(cat)}
+						onClick={() => setActiveCategoryId(catId)}
 						className={`font-switzer text-base md:text-xl font-medium transition-colors ${
-							activeCategory === cat
+							activeCategoryId === catId
 								? "text-black dark:text-white"
 								: "text-gray-400 hover:text-black dark:hover:text-white"
 						}`}
 					>
-						{cat}
+						{tCat(catId)}
 					</button>
 				))}
 			</div>
@@ -67,9 +88,12 @@ export default function PortfolioGrid() {
 								href={`/${locale}/projects/${project.id}`}
 								className="block relative w-full aspect-square overflow-hidden bg-gray-200 dark:bg-gray-800"
 							>
+								{/* Gradient Overlay for Text Readability */}
+								<div className="absolute top-0 left-0 right-0 h-40 bg-linear-to-b from-black/70 to-transparent z-10 pointer-events-none" />
+
 								{/* Top Right & Top Left Labels */}
-								<div className="absolute top-6 left-6 right-6 z-10 flex justify-between items-start text-white pointer-events-none drop-shadow-md">
-									<h3 className="font-switzer font-bold text-xl md:text-2xl max-w-[60%]">
+								<div className="absolute top-6 left-6 right-6 z-20 flex justify-between items-start text-white pointer-events-none drop-shadow-md">
+									<h3 className="font-switzer font-semibold text-xl md:text-2xl max-w-[60%]">
 										{project.title}
 									</h3>
 									<span className="font-satoshi font-medium text-sm md:text-base opacity-90">
@@ -79,7 +103,7 @@ export default function PortfolioGrid() {
 
 								{/* Image */}
 								<Image
-									src={project.image}
+									src={project.squareImage || "/assets/images/placeholder.png"}
 									alt={project.title}
 									fill
 									sizes="(max-width: 768px) 100vw, 50vw"
@@ -98,5 +122,13 @@ export default function PortfolioGrid() {
 				</AnimatePresence>
 			</motion.div>
 		</div>
+	);
+}
+
+export default function PortfolioGrid() {
+	return (
+		<Suspense fallback={<div className="min-h-125 w-full" />}>
+			<PortfolioGridContent />
+		</Suspense>
 	);
 }

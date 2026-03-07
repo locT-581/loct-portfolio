@@ -40,19 +40,7 @@
 			"subTitle": "Dự án Nổi bật",
 			"heading": "Những dự án tiêu biểu",
 			"btnAll": "XEM TẤT CẢ DỰ ÁN",
-			"btnDetails": "XEM CHI TIẾT",
-			"items": {
-				"1": {
-					"title": "Short Video Feed SDK",
-					"year": "2025-2026",
-					"image": "/assets/images/sdk-short.png"
-				},
-				"2": {
-					"title": "Nền Tảng Đặt Sân Thể Thao",
-					"year": "2025-2026",
-					"image": "/assets/images/booking-sport.png"
-				}
-			}
+			"btnDetails": "XEM CHI TIẾT"
 		},
 		"about": {
 			"title": "Về tôi",
@@ -82,60 +70,10 @@
 			"btn": "Về tôi"
 		},
 		"projectsTitle": "Dự án Portfolio",
-		"projectsList": [
-			{
-				"id": 1,
-				"title": "Thiết kế lại E-commerce",
-				"category": "Thiết kế Web",
-				"image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
-			},
-			{
-				"id": 2,
-				"title": "Ứng dụng Fintech",
-				"category": "Thiết kế UI/UX",
-				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?q=80&w=2657&auto=format&fit=crop"
-			},
-			{
-				"id": 3,
-				"title": "Nhận diện Thương hiệu",
-				"category": "Branding",
-				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
-			},
-			{
-				"id": 4,
-				"title": "Portfolio Agency",
-				"category": "Thiết kế Web",
-				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
-			}
-		],
 		"discover": {
 			"subTitle": "Dự án",
 			"heading": "Khám phá thêm",
-			"categories": [
-				"Tất cả danh mục",
-				"Thiết kế UI/UX",
-				"Nhận diện Thương hiệu",
-				"Thiết kế Web",
-				"Chỉ đạo Nghệ thuật"
-			],
-			"btnAll": "XEM TẤT CẢ DỰ ÁN",
-			"items": {
-				"1": {
-					"title": "Website NeuroDash",
-					"category": "Thiết kế Web",
-					"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
-				},
-				"2": {
-					"title": "Tái định vị Thời trang Velvette",
-					"category": "Bộ nhận diện",
-					"image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-				},
-				"3": {
-					"title": "Bộ nhận diện Aurum",
-					"category": "Bộ nhận diện",
-					"image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
-				}
-			}
+			"btnAll": "XEM TẤT CẢ DỰ ÁN"
 		},
 		"cta": {
 			"heading": "Sẵn sàng làm việc. \nNhận dự án và các vị trí \nFull-time",
@@ -282,58 +220,13 @@
 	},
 	"ProjectsPage": {
 		"title": "Dự án",
-		"subtitle": "Một tủ trưng bày chọn lọc các dự án thiết kế được tạo ra bằng chiến lược, phong cách và mục đích.",
-		"banner": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2000",
+		"subtitle": "Tuyển tập các dự án phần mềm được xây dựng với kiến trúc vững chắc, hiệu năng tối ưu và trải nghiệm người dùng mượt mà.",
+		"banner": "/assets/images/project-banner.jpg",
 		"portfolio": {
 			"label": "Dự án",
 			"heading": "Khám phá Portfolio",
-			"description": "Mỗi dự án phản ánh một câu chuyện riêng biệt, giải pháp phù hợp và tính thẩm mỹ vượt thời gian."
+			"description": "Mỗi dự án đại diện cho một bài toán kỹ thuật phức tạp được giải quyết bằng các kiến trúc mở rộng, mã nguồn sạch và các công nghệ hiện đại."
 		},
-		"categories": [
-			"Tất cả dự án",
-			"Thiết kế UI/UX",
-			"Thiết kế Web",
-			"Bộ nhận diện",
-			"Chỉ đạo nghệ thuật"
-		],
-		"projects": [
-			{
-				"id": "1",
-				"title": "Aurum Brand Kit",
-				"category": "Bộ nhận diện",
-				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "2",
-				"title": "Velvette Fashion Rebrand",
-				"category": "Bộ nhận diện",
-				"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "3",
-				"title": "Enade Theory",
-				"category": "Chỉ đạo nghệ thuật",
-				"image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "4",
-				"title": "NeuroDash Website",
-				"category": "Thiết kế Web",
-				"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "5",
-				"title": "Quantix UI Design",
-				"category": "Thiết kế UI/UX",
-				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "6",
-				"title": "Noir Studio Brand",
-				"category": "Bộ nhận diện",
-				"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
-			}
-		],
 		"btnDetails": "XEM CHI TIẾT"
 	},
 	"Footer": {
@@ -378,5 +271,180 @@
 		"featuredProject": "Dự án Nổi bật",
 		"headingDark": "Kiến trúc Vững chắc, ",
 		"headingGrey": "Chuyển động Mượt mà"
+	},
+	"ProjectsData": {
+		"short-video-feed-sdk": {
+			"title": "Short Video Feed SDK",
+			"year": "2025-2026",
+			"subtitle": "Một hệ thống SDK chất lượng cao cung cấp giải pháp video cho ứng dụng di động.",
+			"details": {
+				"headingPart1": "Short Video Feed SDK mang đến ",
+				"headingPart2": "giải pháp video mạnh mẽ.",
+				"description": "Đây là một giải pháp SDK hiện đại giúp tích hợp hệ thống video ngắn một cách liền mạch."
+			},
+			"meta": {
+				"client": "KCKM Tech",
+				"industry": "Software",
+				"duration": "6 Months"
+			},
+			"painPoints": {
+				"heading": "Thử thách: Tích hợp video mượt mà",
+				"list": [
+					"Hiệu suất thấp trên thiết bị cũ.",
+					"Khó tích hợp vào ứng dụng hiện tại."
+				]
+			},
+			"result": {
+				"headingPart1": "SDK mới giúp ",
+				"headingPart2": "tăng cường trải nghiệm người dùng tối đa.",
+				"list": ["Tăng 50% thời gian xem video", "Tích hợp chỉ trong 2 ngày"]
+			}
+		},
+		"hybrid-mobile-sports-booking": {
+			"title": "Nền Tảng Đặt Sân Thể Thao",
+			"year": "2025-2026",
+			"subtitle": "Ứng dụng đa nền tảng tối ưu cho việc đặt lịch và quản lý sân thể thao.",
+			"details": {
+				"headingPart1": "Giải pháp đặt sân ",
+				"headingPart2": "nhanh chóng và tiện lợi.",
+				"description": "Chúng tôi mang đến hệ thống kết nối người chơi và chủ sân hiệu quả nhất."
+			},
+			"meta": {
+				"client": "Sports Club",
+				"industry": "Sports",
+				"duration": "4 Months"
+			},
+			"painPoints": {
+				"heading": "Vấn đề: Quản lý lịch chéo",
+				"list": ["Trùng lịch phức tạp.", "Thiếu tính năng thanh toán."]
+			},
+			"result": {
+				"headingPart1": "Nền tảng đã giúp ",
+				"headingPart2": "tự động hóa 80% công việc.",
+				"list": ["Giảm 90% lỗi đặt trùng", "Tăng 30% doanh thu"]
+			}
+		},
+		"rainydays-wallpaper": {
+			"title": "Hình nền Rainydays",
+			"subtitle": "Hình nền động thư giãn.",
+			"details": {
+				"headingPart1": "Rainydays ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Rainy",
+				"industry": "Giải trí",
+				"duration": "2 Tuần"
+			},
+			"painPoints": {
+				"heading": "Tập trung",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Thành công",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"mimic-mcp": {
+			"title": "Mimic MCP",
+			"subtitle": "Kiến trúc và SDK cho Mimic.",
+			"details": {
+				"headingPart1": "Mimic MCP ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Mimic",
+				"industry": "Công nghệ",
+				"duration": "4 Tuần"
+			},
+			"painPoints": {
+				"heading": "Tập trung",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Thành công",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"sudoku-game": {
+			"title": "Trò chơi Sudoku",
+			"subtitle": "Trò chơi Sudoku cổ điển trên web.",
+			"details": {
+				"headingPart1": "Trò chơi Sudoku ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Cá nhân",
+				"industry": "Trò chơi",
+				"duration": "2 Tuần"
+			},
+			"painPoints": {
+				"heading": "Tập trung",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Thành công",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"graph-builder": {
+			"title": "Graph Builder",
+			"subtitle": "Công cụ xây dựng đồ thị tương tác.",
+			"details": {
+				"headingPart1": "Graph Builder ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Mã nguồn mở",
+				"industry": "Công cụ",
+				"duration": "3 Tuần"
+			},
+			"painPoints": {
+				"heading": "Tập trung",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Thành công",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"uni-portal": {
+			"title": "Cổng sinh viên Uni",
+			"subtitle": "Cổng thông tin dành cho sinh viên.",
+			"details": {
+				"headingPart1": "Cổng sinh viên Uni ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Trường học",
+				"industry": "Giáo dục",
+				"duration": "6 Tuần"
+			},
+			"painPoints": {
+				"heading": "Tập trung",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Thành công",
+				"headingPart2": "",
+				"list": []
+			}
+		}
+	},
+	"Categories": {
+		"all": "Tất cả dự án",
+		"web-app": "Ứng dụng Web",
+		"mobile-app": "Ứng dụng Hybrid",
+		"architecture": "Kiến trúc & SDK",
+		"motion-ui": "Hiệu ứng & Chuyển động"
 	}
 }

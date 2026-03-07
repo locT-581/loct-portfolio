@@ -6,7 +6,7 @@ export default async function AboutMe() {
 	const t = await getTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] pb-24 md:pb-32">
+		<section className="px-6 md:px-12.5 pb-24 md:pb-32">
 			<div className="py-17.5 relative flex justify-between">
 				{/* Left Column */}
 				<div className="lg:col-span-4 flex flex-col gap-10">

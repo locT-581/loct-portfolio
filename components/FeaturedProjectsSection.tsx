@@ -3,10 +3,19 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { FEATURED_PROJECT_IDS, getProjectById } from "@/lib/data/projects";
 
 export default function FeaturedProjectsSection() {
-	const t = useTranslations("Index");
+	const tIndex = useTranslations("Index");
+	const tProjects = useTranslations("ProjectsData");
+	const locale = useLocale();
+
+	const project1Id = FEATURED_PROJECT_IDS[0];
+	const project2Id = FEATURED_PROJECT_IDS[1];
+
+	const project1 = getProjectById(project1Id)!;
+	const project2 = getProjectById(project2Id)!;
 
 	return (
 		<section id="featured-projects" className="w-full px-12 py-16 md:py-24">
@@ -14,17 +23,17 @@ export default function FeaturedProjectsSection() {
 				<div className="flex flex-col gap-6">
 					<div className="flex gap-2 items-center text-lg md:text-xl font-switzer">
 						<div className="bg-black dark:bg-white rounded-full size-1" />
-						{t("featured.subTitle")}
+						{tIndex("featured.subTitle")}
 					</div>
 					<h2 className="text-5xl md:text-7xl lg:text-8xl font-switzer leading-tight tracking-tight whitespace-pre-line">
-						{t("featured.heading")}
+						{tIndex("featured.heading")}
 					</h2>
 				</div>
 				<Link
-					href="/projects"
+					href={`/${locale}/projects`}
 					className="flex items-center gap-2 border border-black dark:border-white px-6 py-3 text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer whitespace-nowrap"
 				>
-					{t("featured.btnAll")}
+					{tIndex("featured.btnAll")}
 					<ArrowRight className="w-5 h-5 ml-2" strokeWidth={1.5} />
 				</Link>
 			</div>
@@ -39,26 +48,28 @@ export default function FeaturedProjectsSection() {
 				>
 					<div className="relative w-full aspect-4/5 overflow-hidden">
 						<Image
-							src={t("featured.items.1.image")}
-							alt={t("featured.items.1.title")}
+							src={project1.image}
+							alt={tProjects(`${project1Id}.title`)}
 							fill
 							className="object-cover transition-transform duration-700 group-hover:scale-105"
 						/>
 						{/* Overlay Button */}
 						<div className="absolute inset-0 flex items-end justify-center pb-8 lg:pb-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 							<Link
-								href="/projects"
+								href={`/${locale}/projects/${project1Id}`}
 								className="bg-white/90 text-black px-8 py-3 font-switzer font-medium hover:bg-white transition-colors"
 							>
-								{t("featured.btnDetails")}
+								{tIndex("featured.btnDetails")}
 							</Link>
 						</div>
 					</div>
 					<div className="flex justify-between items-start text-xl lg:text-3xl">
 						<h3 className="font-switzer tracking-tight font-semibold">
-							{t("featured.items.1.title")}
+							{tProjects(`${project1Id}.title`)}
 						</h3>
-						<span className="text-gray-400">{t("featured.items.1.year")}</span>
+						<span className="text-gray-400">
+							{tProjects(`${project1Id}.year`)}
+						</span>
 					</div>
 				</motion.div>
 
@@ -72,26 +83,28 @@ export default function FeaturedProjectsSection() {
 				>
 					<div className="relative w-full aspect-16/10 overflow-hidden ">
 						<Image
-							src={t("featured.items.2.image")}
-							alt={t("featured.items.2.title")}
+							src={project2.image}
+							alt={tProjects(`${project2Id}.title`)}
 							fill
 							className="object-contain transition-transform duration-700 group-hover:scale-105"
 						/>
 						{/* Overlay Button */}
 						<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 							<Link
-								href="/projects"
+								href={`/${locale}/projects/${project2Id}`}
 								className="bg-white/90 text-black px-8 py-3 font-switzer font-medium hover:bg-white transition-colors"
 							>
-								{t("featured.btnDetails")}
+								{tIndex("featured.btnDetails")}
 							</Link>
 						</div>
 					</div>
 					<div className="flex justify-between items-start text-xl lg:text-3xl ">
 						<h3 className="tracking-tight font-switzer font-semibold">
-							{t("featured.items.2.title")}
+							{tProjects(`${project2Id}.title`)}
 						</h3>
-						<span className="text-gray-400">{t("featured.items.2.year")}</span>
+						<span className="text-gray-400">
+							{tProjects(`${project2Id}.year`)}
+						</span>
 					</div>
 				</motion.div>
 			</div>

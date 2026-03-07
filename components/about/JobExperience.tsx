@@ -4,7 +4,7 @@ export default async function JobExperience() {
 	const t = await getTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] py-17.5">
+		<section className="px-6 md:px-12.5 py-17.5">
 			<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
 				{/* Left Column */}
 				<div className="lg:col-span-3 flex items-start">

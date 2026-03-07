@@ -4,7 +4,7 @@ export default async function AboutHeader() {
 	const t = await getTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] mb-10 lg:mb-12 pt-32 lg:pt-36">
+		<section className="px-6 md:px-12.5 mb-10 lg:mb-12 pt-32 lg:pt-36">
 			<h1 className="text-6xl md:text-8xl lg:text-[120px] font-switzer font-medium tracking-tight mb-2">
 				{t("title")}
 			</h1>

@@ -239,7 +239,7 @@ export default function Toolbox() {
 	const t = useTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] py-16 overflow-hidden">
+		<section className="px-6 md:px-12.5 py-16 overflow-hidden">
 			<motion.div
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}

@@ -40,19 +40,7 @@
 			"subTitle": "Featured Project",
 			"heading": "Selected Projects",
 			"btnAll": "VIEW ALL PROJECT",
-			"btnDetails": "VIEW DETAILS",
-			"items": {
-				"1": {
-					"title": "Short Video Feed SDK",
-					"year": "2025-2026",
-					"image": "/assets/images/sdk-short.png"
-				},
-				"2": {
-					"title": "Hybrid Mobile Sports Booking",
-					"year": "2025-2026",
-					"image": "/assets/images/booking-sport.png"
-				}
-			}
+			"btnDetails": "VIEW DETAILS"
 		},
 		"about": {
 			"title": "About Me",
@@ -82,60 +70,10 @@
 			"btn": "About me"
 		},
 		"projectsTitle": "Portfolio Projects",
-		"projectsList": [
-			{
-				"id": 1,
-				"title": "Ecommerce Redesign",
-				"category": "Web Design",
-				"image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2670&auto=format&fit=crop"
-			},
-			{
-				"id": 2,
-				"title": "Fintech App",
-				"category": "UI/UX Design",
-				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?q=80&w=2657&auto=format&fit=crop"
-			},
-			{
-				"id": 3,
-				"title": "Brand Identity",
-				"category": "Branding",
-				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
-			},
-			{
-				"id": 4,
-				"title": "Agency Portfolio",
-				"category": "Web Design",
-				"image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2670&auto=format&fit=crop"
-			}
-		],
 		"discover": {
 			"subTitle": "Projects",
 			"heading": "Discover More Work",
-			"categories": [
-				"All Categories",
-				"UI/UX Design",
-				"Brand Identity",
-				"Web Design",
-				"Art Direction"
-			],
-			"btnAll": "VIEW ALL PROJECT",
-			"items": {
-				"1": {
-					"title": "NeuroDash Website",
-					"category": "Web Design",
-					"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
-				},
-				"2": {
-					"title": "Velvette Fashion Rebrand",
-					"category": "Brand Kit",
-					"image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-				},
-				"3": {
-					"title": "Aurum Brand Kit",
-					"category": "Brand Kit",
-					"image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
-				}
-			}
+			"btnAll": "VIEW ALL PROJECT"
 		},
 		"cta": {
 			"heading": "Ready to Code. \nAvailable for Full-time\nRoles & Projects.",
@@ -282,58 +220,13 @@
 	},
 	"ProjectsPage": {
 		"title": "Project",
-		"subtitle": "A curated showcase of design projects crafted with strategy, style, and purpose.",
-		"banner": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2000",
+		"subtitle": "A curated showcase of engineering projects crafted with robust architecture, optimized performance, and fluid user experiences.",
+		"banner": "/assets/images/project-banner.jpg",
 		"portfolio": {
 			"label": "Project",
 			"heading": "Explore the Portfolio",
-			"description": "Each project reflects a unique story, tailored solutions, and timeless aesthetics."
+			"description": "Each project represents a complex technical challenge solved with scalable architecture, clean code, and modern frameworks."
 		},
-		"categories": [
-			"All Project",
-			"UI/UX Design",
-			"Web Design",
-			"Brand Identity",
-			"Art Direction"
-		],
-		"projects": [
-			{
-				"id": "1",
-				"title": "Aurum Brand Kit",
-				"category": "Brand Kit",
-				"image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "2",
-				"title": "Velvette Fashion Rebrand",
-				"category": "Brand Kit",
-				"image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "3",
-				"title": "Enade Theory",
-				"category": "Art Direction",
-				"image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "4",
-				"title": "NeuroDash Website",
-				"category": "Web Design",
-				"image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "5",
-				"title": "Quantix UI Design",
-				"category": "UI/UX Design",
-				"image": "https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000"
-			},
-			{
-				"id": "6",
-				"title": "Noir Studio Brand",
-				"category": "Brand Kit",
-				"image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000"
-			}
-		],
 		"btnDetails": "VIEW DETAILS"
 	},
 	"Footer": {
@@ -378,5 +271,321 @@
 		"featuredProject": "Featured Project",
 		"headingDark": "Code That Moves, ",
 		"headingGrey": "Architecture That Scales"
+	},
+	"ProjectsData": {
+		"short-video-feed-sdk": {
+			"title": "Short Video Feed SDK",
+			"year": "2025-2026",
+			"subtitle": "A premium SDK system providing video solutions for mobile apps.",
+			"details": {
+				"headingPart1": "Short Video Feed SDK delivers ",
+				"headingPart2": "a powerful video solution.",
+				"description": "This is a modern SDK solution to seamlessly integrate a short video system."
+			},
+			"meta": {
+				"client": "KCKM Tech",
+				"industry": "Software",
+				"duration": "6 Months"
+			},
+			"painPoints": {
+				"heading": "The Challenge: Seamless Video Integration",
+				"list": [
+					"Low performance on older devices.",
+					"Difficult integration into existing apps."
+				]
+			},
+			"result": {
+				"headingPart1": "The new SDK helps ",
+				"headingPart2": "maximize the user experience.",
+				"list": [
+					"Increased video watch time by 50%",
+					"Integrated in just 2 days"
+				]
+			}
+		},
+		"hybrid-mobile-sports-booking": {
+			"title": "Hybrid Mobile Sports Booking",
+			"year": "2025-2026",
+			"subtitle": "Cross-platform app optimized for booking and managing sports fields.",
+			"details": {
+				"headingPart1": "Sports booking solution ",
+				"headingPart2": "fast and convenient.",
+				"description": "We provide the most effective system connecting players and field owners."
+			},
+			"meta": {
+				"client": "Sports Club",
+				"industry": "Sports",
+				"duration": "4 Months"
+			},
+			"painPoints": {
+				"heading": "The Problem: Cross-scheduling",
+				"list": ["Complex schedule overlap.", "Lack of payment features."]
+			},
+			"result": {
+				"headingPart1": "The platform helped ",
+				"headingPart2": "automate 80% of tasks.",
+				"list": ["Reduced scheduling errors by 90%", "Increased revenue by 30%"]
+			}
+		},
+		"aurum-brand-kit": {
+			"title": "Aurum Brand Kit",
+			"subtitle": "A premium identity system built to reflect elegance, craftsmanship, and modern luxury.",
+			"details": {
+				"headingPart1": "Aurum is a rising jewelry brand that blends timeless ",
+				"headingPart2": "craftsmanship with contemporary design.",
+				"description": "From logo and color palette, we crafted a cohesive brand kit that elevated their presence."
+			},
+			"meta": {
+				"client": "Aurum",
+				"industry": "Jewelry",
+				"duration": "4 Weeks"
+			},
+			"painPoints": {
+				"heading": "The Challenge: Inconsistent visual system",
+				"list": ["Old logo didn't reflect elegance."]
+			},
+			"result": {
+				"headingPart1": "The new brand kit ",
+				"headingPart2": "changed the market's perspective.",
+				"list": ["3x increase in engagement"]
+			}
+		},
+		"velvette-fashion-rebrand": {
+			"title": "Velvette Fashion Rebrand",
+			"subtitle": "Elegance for modern fashion.",
+			"details": {
+				"headingPart1": "Velvette represents ",
+				"headingPart2": "sophistication.",
+				"description": "Project focusing on brand experience."
+			},
+			"meta": {
+				"client": "Velvette",
+				"industry": "Fashion",
+				"duration": "5 Weeks"
+			},
+			"painPoints": {
+				"heading": "Challenge: Renewal",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Velvette ",
+				"headingPart2": "achieved great results.",
+				"list": []
+			}
+		},
+		"enade-theory": {
+			"title": "Enade Theory",
+			"subtitle": "A different perspective.",
+			"details": {
+				"headingPart1": "Enade Theory ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Enade",
+				"industry": "Art",
+				"duration": "3 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"neurodash-website": {
+			"title": "NeuroDash Website",
+			"subtitle": "Dashboards reinvented.",
+			"details": {
+				"headingPart1": "Neurodash ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Neuro",
+				"industry": "Tech",
+				"duration": "6 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"quantix-ui-design": {
+			"title": "Quantix UI Design",
+			"subtitle": "Data at a glance.",
+			"details": {
+				"headingPart1": "Quantix ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Quantix",
+				"industry": "Finance",
+				"duration": "4 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"noir-studio-brand": {
+			"title": "Noir Studio Brand",
+			"subtitle": "Dark aesthetics.",
+			"details": {
+				"headingPart1": "Noir ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Noir",
+				"industry": "Studio",
+				"duration": "3 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"rainydays-wallpaper": {
+			"title": "Rainydays Wallpaper",
+			"subtitle": "Relaxing animated wallpapers.",
+			"details": {
+				"headingPart1": "Rainydays ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Rainy",
+				"industry": "Entertainment",
+				"duration": "2 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"mimic-mcp": {
+			"title": "Mimic MCP",
+			"subtitle": "Architecture and SDK for Mimic.",
+			"details": {
+				"headingPart1": "Mimic MCP ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Mimic",
+				"industry": "Technology",
+				"duration": "4 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"sudoku-game": {
+			"title": "Sudoku Game",
+			"subtitle": "Classic Sudoku on the web.",
+			"details": {
+				"headingPart1": "Sudoku Game ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Personal",
+				"industry": "Gaming",
+				"duration": "2 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"graph-builder": {
+			"title": "Graph Builder",
+			"subtitle": "Interactive graph building tool.",
+			"details": {
+				"headingPart1": "Graph Builder ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "Open Source",
+				"industry": "Tools",
+				"duration": "3 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		},
+		"uni-portal": {
+			"title": "Uni Portal",
+			"subtitle": "University student portal.",
+			"details": {
+				"headingPart1": "Uni Portal ",
+				"headingPart2": "...",
+				"description": "..."
+			},
+			"meta": {
+				"client": "University",
+				"industry": "Education",
+				"duration": "6 Weeks"
+			},
+			"painPoints": {
+				"heading": "Focus",
+				"list": []
+			},
+			"result": {
+				"headingPart1": "Success",
+				"headingPart2": "",
+				"list": []
+			}
+		}
+	},
+	"Categories": {
+		"all": "All Projects",
+		"web-app": "Web Applications",
+		"mobile-app": "Mobile & Hybrid",
+		"architecture": "Architecture & SDK",
+		"motion-ui": "Motion & UI"
 	}
 }

@@ -5,7 +5,7 @@ export default async function ValueSection() {
 	const t = await getTranslations("AboutPage");
 
 	return (
-		<section className="px-6 md:px-[8%] py-16 border-t border-black/10 dark:border-white/10">
+		<section className="px-6 md:px-12.5 py-16 border-t border-black/10 dark:border-white/10">
 			{/* Top Section */}
 			<div className="flex flex-col gap-10 mb-20 lg:mb-32">
 				<div className="flex items-center gap-2 text-lg md:text-xl font-switzer text-gray-600 dark:text-gray-400">
