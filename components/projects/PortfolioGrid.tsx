@@ -96,7 +96,7 @@ function PortfolioGridContent() {
 									<h3 className="font-switzer font-semibold text-xl md:text-2xl max-w-[60%]">
 										{project.title}
 									</h3>
-									<span className="font-satoshi font-medium text-sm md:text-base opacity-90">
+									<span className="text-sm md:text-base opacity-90">
 										{project.category}
 									</span>
 								</div>
