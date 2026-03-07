@@ -229,6 +229,21 @@
 		},
 		"btnDetails": "XEM CHI TIẾT"
 	},
+	"ProjectDetailPage": {
+		"detail": "Chi tiết",
+		"client": "Khách hàng:",
+		"industry": "Lĩnh vực:",
+		"category": "Danh mục:",
+		"duration": "Thời gian:",
+		"painPoints": "Vấn đề",
+		"result": "Kết quả",
+		"relatedProject": "Dự án liên quan",
+		"exploreSimilar": "Khám phá dự án tương tự",
+		"exploreSimilarDesc": "Giới thiệu những dự án sáng tạo với trọng tâm vào chiến lược, tác động thị giác và tính khả dụng.",
+		"viewAppStore": "App Store",
+		"keyFeatures": "Tính năng cốt lõi",
+		"myRole": "Vai trò:"
+	},
 	"Footer": {
 		"brand": "LocT®",
 		"description": "Kiến tạo các ứng dụng web mở rộng và mang lại trải nghiệm người dùng mượt mà. Mỗi dòng code đều được tối ưu hóa cẩn thận để đạt hiệu năng cao, dễ bảo trì và hoàn thiện về mặt giao diện.",
@@ -348,12 +363,12 @@
 			}
 		},
 		"mimic-mcp": {
-			"title": "Mimic MCP",
-			"subtitle": "Kiến trúc và SDK cho Mimic.",
+			"title": "Kiến trúc Mimic MCP",
+			"subtitle": "Xây dựng kiến trúc AI agent linh hoạt thông qua Model Context Protocol.",
 			"details": {
-				"headingPart1": "Mimic MCP ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Mimic MCP kết nối ",
+				"headingPart2": "các giới hạn.",
+				"description": "Mimic MCP cung cấp bộ SDK và kiến trúc nền tảng giúp kết nối các mô hình ngôn ngữ lớn (LLM) với các công cụ bên ngoài vô cùng mượt mà."
 			},
 			"meta": {
 				"client": "Mimic",
@@ -361,22 +376,28 @@
 				"duration": "4 Tuần"
 			},
 			"painPoints": {
-				"heading": "Tập trung",
-				"list": []
+				"heading": "Thử thách: Tích hợp công cụ",
+				"list": [
+					"Thiếu sự chuẩn hóa trong giao tiếp.",
+					"Khó khăn trong quản lý các tác vụ agent phức tạp."
+				]
 			},
 			"result": {
-				"headingPart1": "Thành công",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "Một nền tảng vững chắc ",
+				"headingPart2": "cho AI Agent.",
+				"list": [
+					"Giao thức hợp nhất cho mọi công cụ",
+					"SDK thân thiện để phát triển nhanh chóng"
+				]
 			}
 		},
 		"sudoku-game": {
-			"title": "Trò chơi Sudoku",
-			"subtitle": "Trò chơi Sudoku cổ điển trên web.",
+			"title": "Web Sudoku",
+			"subtitle": "Trò chơi Sudoku tương tác hiện đại trên tảng nền web.",
 			"details": {
-				"headingPart1": "Trò chơi Sudoku ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Web Sudoku mang lại ",
+				"headingPart2": "sức sống mới cho giải đố.",
+				"description": "Trải nghiệm Sudoku tuyệt vời trên web với nhiều độ khó, khả năng tự động lưu và giao diện tối giản hiện đại."
 			},
 			"meta": {
 				"client": "Cá nhân",
@@ -384,22 +405,28 @@
 				"duration": "2 Tuần"
 			},
 			"painPoints": {
-				"heading": "Tập trung",
-				"list": []
+				"heading": "Vấn đề: Trải nghiệm người dùng kém",
+				"list": [
+					"Giao diện các game hiện tại thường lỗi thời.",
+					"Mất trạng thái game khi tải lại trang."
+				]
 			},
 			"result": {
-				"headingPart1": "Thành công",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "Một tựa game ",
+				"headingPart2": "hoàn hảo.",
+				"list": [
+					"Thẩm mỹ sạch sẽ, hiện đại",
+					"Tương tác mượt mà và lưu lịch sử đầy đủ"
+				]
 			}
 		},
 		"graph-builder": {
-			"title": "Graph Builder",
-			"subtitle": "Công cụ xây dựng đồ thị tương tác.",
+			"title": "Graph Builder X",
+			"subtitle": "Công cụ kéo thả tương tác để tạo và quản lý đồ thị node.",
 			"details": {
-				"headingPart1": "Graph Builder ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Graph Builder X đơn giản hóa ",
+				"headingPart2": "dữ liệu phức tạp.",
+				"description": "Một công cụ mạnh mẽ cho phép người dùng tạo, kết nối và trực quan hóa các đồ thị phức tạp thông qua giao diện kéo-thả vô cùng thuận tiện."
 			},
 			"meta": {
 				"client": "Mã nguồn mở",
@@ -407,36 +434,63 @@
 				"duration": "3 Tuần"
 			},
 			"painPoints": {
-				"heading": "Tập trung",
-				"list": []
+				"heading": "Thử thách: Trực quan hóa logic",
+				"list": [
+					"Trực quan hóa các mối quan hệ phức tạp thường rất rối.",
+					"Thiếu một bộ edit node bằng kéo thả mượt mà."
+				]
 			},
 			"result": {
-				"headingPart1": "Thành công",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "Một không gian node ",
+				"headingPart2": "cực kỳ linh hoạt.",
+				"list": [
+					"Chỉnh sửa cấu trúc node thời gian thực",
+					"Quy trình làm việc tùy biến cực cao"
+				]
 			}
 		},
 		"uni-portal": {
-			"title": "Cổng sinh viên Uni",
-			"subtitle": "Cổng thông tin dành cho sinh viên.",
+			"subtitle": "Cùng UniPortal kiến tạo một môi trường đại học hiện đại, kết nối và thông minh.",
 			"details": {
-				"headingPart1": "Cổng sinh viên Uni ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Ứng dụng mở rộng dành cho sinh viên, cung cấp các tính năng học thuật (xem thời khóa biểu, đăng ký học phần, kế hoạch học tập), cập nhật tin tức, tương tác qua nhắn tin chat.",
+				"description": "Chào mừng bạn đến với UniPortal - ứng dụng tiên phong trong hành trình chuyển đổi số toàn diện cho các trường đại học và cộng đồng sinh viên tại Việt Nam! UniPortal không chỉ là một ứng dụng; đây là trợ lý thông minh giúp cuộc sống học đường của bạn trở nên dễ dàng, hiệu quả và kết nối hơn bao giờ hết."
 			},
 			"meta": {
 				"client": "Trường học",
 				"industry": "Giáo dục",
-				"duration": "6 Tuần"
+				"role": "Với vai trò Kỹ sư Frontend chính, tôi trực tiếp đề xuất kiến trúc hệ thống và lựa chọn hệ sinh thái công nghệ cốt lõi. Tôi chịu trách nhiệm chính trong việc phát triển và hoàn chỉnh mã nguồn, đồng thời phối hợp chặt chẽ với đội ngũ BA và Designer để phân tích yêu cầu, từ đó đưa ra những đề xuất cải tiến UX/UI chiến lược nhằm tối ưu hóa trải nghiệm người dùng."
 			},
 			"painPoints": {
-				"heading": "Tập trung",
-				"list": []
+				"heading": "Thách thức ở việc duy trì sự ổn định và hiệu năng cho một hệ sinh thái đa tính năng (Tài chính, Giáo dục, Tin tức) chạy trên nền tảng Hybrid.",
+				"list": [
+					"**Giao tiếp Hybrid (Web - Native)**: Đồng bộ chặt chẽ logic giữa Next.js và Flutter Shell, giải quyết bài toán debug chéo phức tạp và rủi ro gãy vỡ giao tiếp trên WebView.",
+					"**Quản trị State & Hydration**: Xử lý xung đột kiến trúc giữa Server Components và Client State (Redux Persist) khi phải lưu trữ khối lượng lớn dữ liệu cục bộ.",
+					"**Tối ưu Hiệu năng Di động**: Đảm bảo trải nghiệm 60fps mượt mà khi nhúng các UI nặng (Bản đồ, Video, Dnd-kit, Motion) trên các thiết bị cấu hình thấp.",
+					"**Logic Đa nghiệp vụ & Auth**: Tích hợp an toàn Ví điện tử, hệ thống Học tập và SSO tùy chỉnh, đòi hỏi xử lý khắt khe các kịch bản rớt mạng hoặc app chạy ngầm.",
+					"**Tương thích Công nghệ Tiên phong**: Quản lý rủi ro và tự tay giải quyết các xung đột thư viện khi áp dụng stack công nghệ mới nhất (Next.js 15, React 19, Tailwind v4)."
+				]
+			},
+			"keyFeatures": {
+				"heading": "Khám phá bộ tính năng toàn diện được thiết kế chuyên sâu, mang lại trải nghiệm học đường chuẩn Native, dễ dàng mở rộng trên kiến trúc đa nền tảng (Multi-tenant).",
+				"list": [
+					"**Quản trị Học thuật Toàn diện**: Tích hợp trọn bộ module học thuật, tối ưu hóa các luồng nghiệp vụ phức tạp như đăng ký học phần, thời khóa biểu động và lập kế hoạch học tập cá nhân.",
+					"**Xác thực & Kiến trúc Đa trường**: Triển khai `next-auth` nâng cao, hỗ trợ kiến trúc Multi-tenant cho phép chuyển đổi mượt mà giữa các trường học và quản lý vòng đời token bảo mật khắt khe.",
+					"**Trải nghiệm Di động chuẩn Native**: Xóa nhòa ranh giới Web-App nhờ khả năng giao tiếp phần cứng (Rung, Giữ sáng màn hình, Quét QR) và các thao tác UI linh hoạt (Kéo thả widget, Pull-to-refresh, Bàn phím ảo).",
+					"**Truyền thông & Phát Video HLS**: Hệ thống truyền tải đa phương tiện hiệu năng cao, tích hợp luồng tin tức nội bộ và trình phát video trực tuyến mượt mà theo chuẩn HLS (`VideoPlayerHLS`).",
+					"**Giao tiếp & Nhắn tin Thời gian thực**: Hệ sinh thái nhắn tin nội bộ theo thời gian thực được nhúng trực tiếp vào ứng dụng thông qua bộ SDK nội bộ mạnh mẽ.",
+					"**Bản đồ, Tiện ích & Đa ngôn ngữ**: Tích hợp bản đồ tương tác (OpenStreetMap/Leaflet) hỗ trợ tìm đường, API thời tiết trực tiếp và hệ thống định tuyến đa ngôn ngữ toàn diện nhờ `next-intl`."
+				]
 			},
 			"result": {
-				"headingPart1": "Thành công",
-				"headingPart2": "",
-				"list": []
+				"heading": "Vượt qua các rào cản kiến trúc phức tạp, dự án đã mang đến một hệ sinh thái hiệu năng cao, sẵn sàng cho tương lai và tái định nghĩa trải nghiệm học đường số.",
+				"list": [
+					"**Trải nghiệm chuẩn Native:** Xóa nhòa ranh giới Web-App qua tối ưu Flutter Bridge, mang lại trải nghiệm tương tác với phần cứng (Camera, GPS, QR) mượt mà như ứng dụng gốc.",
+					"**Hệ thống Widget Cá nhân hóa:** Cung cấp hệ thống Dashboard kéo thả linh hoạt (Dnd-kit), giúp người dùng tự do tùy biến tiện ích (Lịch học, Số dư) nhằm tối ưu UX, tránh \"ngợp\" thông tin.",
+					"**Quản trị Trạng thái Đồng bộ:** Cấu hình Redux Persistence chuyên sâu để \"ghi nhớ\" thao tác, đảm bảo luồng trải nghiệm liền mạch tuyệt đối ngay cả khi rớt mạng hay thoát ứng dụng ngầm.",
+					"**Hiệu suất Đa phương tiện:** Xử lý trơn tru các luồng truyền thông và đồ họa nặng (XGPlayer, Leaflet, Framer Motion), đảm bảo tính năng News, Reels và Biểu đồ tài chính hoạt động mượt mà 60fps.",
+					"**Kiến trúc dễ Mở rộng trong Tương lai:** Tiên phong xây dựng nền tảng với Next.js 15, React 19 và Tailwind v4, tối ưu tốc độ build (Turbopack) và sẵn sàng mở rộng các \"Mini App\" không cần tái cấu trúc.",
+					"**Hệ sinh thái Tất cả trong một:** Hợp nhất thành công Ví điện tử, Cổng học tập và Mạng xã hội thành một \"điểm chạm\" duy nhất, nâng cao tối đa mức độ gắn kết của sinh viên."
+				]
 			}
 		}
 	},

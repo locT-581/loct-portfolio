@@ -12,14 +12,27 @@ export const CATEGORY_IDS: ("all" | CategoryId)[] = [
 	"motion-ui",
 ];
 
+export type MediaType = "image" | "video";
+export type MediaSize = "full" | "half" | "landscape" | "portrait" | "square";
+
+export type ProjectMedia = {
+	type: MediaType;
+	src: string;
+	size: MediaSize;
+	poster?: string;
+	alt?: string;
+};
+
 export type Project = {
 	id: string;
 	categoryId: CategoryId;
 	image: string; // Used in grid/list
-	gallery: string[]; // Used in detail page, hero is gallery[0] usually
+	gallery: ProjectMedia[]; // Used in detail page
 	detailsImage: string; // The detail image
 	portalImage: string; // The portal image
 	squareImage: string; // The square image
+	panoramaImage?: string; // The panorama image
+	appStoreLink?: string; // Link to the App Store
 };
 
 export const PROJECTS: Project[] = [
@@ -28,12 +41,28 @@ export const PROJECTS: Project[] = [
 		categoryId: "architecture",
 		image: "/assets/images/sdk-short.png",
 		portalImage: "/assets/images/sdk-short.png",
-		squareImage: "/assets/images/short-square.png",
+		squareImage: "/assets/images/projects/short/square.png",
 		gallery: [
-			"/assets/images/sdk-short.png",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/sdk-short.png",
+				size: "full",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				size: "landscape",
+			},
 		],
 		detailsImage:
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
@@ -45,10 +74,26 @@ export const PROJECTS: Project[] = [
 		portalImage: "/assets/images/booking-sport.png",
 		squareImage: "/assets/images/booking-square.png",
 		gallery: [
-			"/assets/images/booking-sport.png",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/booking-sport.png",
+				size: "full",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				size: "landscape",
+			},
 		],
 		detailsImage:
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
@@ -60,10 +105,26 @@ export const PROJECTS: Project[] = [
 		portalImage: "/assets/images/rainydays-wallpaper.png",
 		squareImage: "/assets/images/rainydays-wallpaper.png",
 		gallery: [
-			"/assets/images/booking-sport.png",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/booking-sport.png",
+				size: "full",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				size: "landscape",
+			},
 		],
 		detailsImage:
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
@@ -75,10 +136,26 @@ export const PROJECTS: Project[] = [
 		portalImage: "/assets/images/mimic-mcp.png",
 		squareImage: "/assets/images/mimic-mcp.png",
 		gallery: [
-			"/assets/images/mimic-mcp.png",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/mimic-mcp.png",
+				size: "full",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				size: "landscape",
+			},
 		],
 		detailsImage:
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
@@ -90,10 +167,26 @@ export const PROJECTS: Project[] = [
 		portalImage: "/assets/images/sudoku-game.jpeg",
 		squareImage: "/assets/images/sudoku-game.jpeg",
 		gallery: [
-			"/assets/images/sudoku-game.jpeg",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/sudoku-game.jpeg",
+				size: "full",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				size: "landscape",
+			},
 		],
 		detailsImage:
 			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
@@ -105,28 +198,45 @@ export const PROJECTS: Project[] = [
 		portalImage: "/assets/images/graph-builder.jpeg",
 		squareImage: "/assets/images/graph-builder.jpeg",
 		gallery: [
-			"/assets/images/graph-builder.jpeg",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/graph-builder.jpeg",
+				size: "full",
+			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/graph-builder.jpeg",
 	},
 	{
 		id: "uni-portal",
 		categoryId: "mobile-app",
-		image: "/assets/images/uni-portal.jpeg",
-		portalImage: "/assets/images/uni-portal.jpeg",
-		squareImage: "/assets/images/uniportal-square.png",
+		image: "/assets/images/projects/uniportal/square.png",
+		portalImage: "/assets/images/square.png",
+		squareImage: "/assets/images/projects/uniportal/square.png",
+		panoramaImage: "/assets/images/projects/uniportal/panoramic.png",
 		gallery: [
-			"/assets/images/uni-portal.jpeg",
-			"https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-			"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+			{
+				type: "image",
+				src: "/assets/images/projects/uniportal/a.png",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/uniportal/b.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/uniportal/c.png",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/uniportal/h.png",
+				size: "portrait",
+			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/projects/uniportal/detail.png",
+		appStoreLink: "https://apps.apple.com/vn/app/uniportal/id6749141245",
 	},
 ];
 
@@ -135,13 +245,10 @@ export const getProjectById = (id: string) => PROJECTS.find((p) => p.id === id);
 export const FEATURED_PROJECT_IDS = [
 	"short-video-feed-sdk",
 	"hybrid-mobile-sports-booking",
+	"sudoku-game",
 ];
 
-export const DISCOVER_PROJECT_IDS = [
-	"sudoku-game",
-	"mimic-mcp",
-	"rainydays-wallpaper",
-];
+export const DISCOVER_PROJECT_IDS = ["mimic-mcp", "rainydays-wallpaper"];
 
 export const PORTFOLIO_PROJECT_IDS = [
 	"uni-portal",
@@ -155,6 +262,6 @@ export const PORTFOLIO_PROJECT_IDS = [
 
 export const getRelatedProjectIds = (currentId: string) => {
 	const others = PORTFOLIO_PROJECT_IDS.filter((id) => id !== currentId);
-	// Return up to 2 items
-	return others.slice(0, 2);
+	// Return up to 3 items
+	return others.slice(0, 3);
 };

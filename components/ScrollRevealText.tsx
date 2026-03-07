@@ -21,7 +21,7 @@ export default function ScrollRevealText({
 	const element = useRef<HTMLParagraphElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: element,
-		offset: ["start 0.9", "start 0.25"],
+		offset: ["start 0.65", "start 0.2"],
 	});
 
 	const words = text.split(" ");

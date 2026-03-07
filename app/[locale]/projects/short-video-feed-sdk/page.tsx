@@ -8,9 +8,10 @@ import { getProjectById, getRelatedProjectIds } from "@/lib/data/projects";
 export default async function ProjectDetail({
 	params,
 }: {
-	params: Promise<{ locale: string; id: string }>;
+	params: Promise<{ locale: string }>;
 }) {
-	const { locale, id } = await params;
+	const { locale } = await params;
+	const id = "short-video-feed-sdk";
 	const projectConfig = getProjectById(id);
 
 	if (!projectConfig) {

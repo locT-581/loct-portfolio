@@ -8,9 +8,10 @@ import { getProjectById, getRelatedProjectIds } from "@/lib/data/projects";
 export default async function ProjectDetail({
 	params,
 }: {
-	params: Promise<{ locale: string; id: string }>;
+	params: Promise<{ locale: string }>;
 }) {
-	const { locale, id } = await params;
+	const { locale } = await params;
+	const id = "hybrid-mobile-sports-booking";
 	const projectConfig = getProjectById(id);
 
 	if (!projectConfig) {

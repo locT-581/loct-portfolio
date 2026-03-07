@@ -229,6 +229,21 @@
 		},
 		"btnDetails": "VIEW DETAILS"
 	},
+	"ProjectDetailPage": {
+		"detail": "Detail",
+		"client": "Client:",
+		"industry": "Industry:",
+		"category": "Category:",
+		"duration": "Duration:",
+		"painPoints": "Pain Points",
+		"result": "Result",
+		"relatedProject": "Related Project",
+		"exploreSimilar": "Explore Similar Work",
+		"exploreSimilarDesc": "More creative work with a focus on strategy, visual impact, and usability.",
+		"viewAppStore": "App Store",
+		"keyFeatures": "Key Features",
+		"myRole": "My Role:"
+	},
 	"Footer": {
 		"brand": "LocT®",
 		"description": "Architecting scalable web applications and delivering fluid user experiences. Every line of code is carefully optimized for performance, maintainability, and visual impact.",
@@ -489,12 +504,12 @@
 			}
 		},
 		"mimic-mcp": {
-			"title": "Mimic MCP",
-			"subtitle": "Architecture and SDK for Mimic.",
+			"title": "Mimic MCP Architecture",
+			"subtitle": "Building a scalable AI agent architecture with Model Context Protocol.",
 			"details": {
 				"headingPart1": "Mimic MCP ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart2": "bridges the gap.",
+				"description": "Mimic MCP provides a robust SDK and architecture for linking large language models with external tools, enabling seamless AI capabilities."
 			},
 			"meta": {
 				"client": "Mimic",
@@ -502,22 +517,28 @@
 				"duration": "4 Weeks"
 			},
 			"painPoints": {
-				"heading": "Focus",
-				"list": []
+				"heading": "The Challenge: Tool Integration",
+				"list": [
+					"Lack of standardized tool integration.",
+					"Difficult to orchestrate complex agent tasks."
+				]
 			},
 			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "A robust foundation ",
+				"headingPart2": "for AI.",
+				"list": [
+					"Unified protocol for all tools",
+					"Easy-to-use SDK for rapid development"
+				]
 			}
 		},
 		"sudoku-game": {
-			"title": "Sudoku Game",
-			"subtitle": "Classic Sudoku on the web.",
+			"title": "Web Sudoku",
+			"subtitle": "A modernized, interactive Sudoku game built for the web.",
 			"details": {
-				"headingPart1": "Sudoku Game ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Web Sudoku brings ",
+				"headingPart2": "classic puzzles to life.",
+				"description": "An engaging web-based Sudoku experience with multiple difficulty levels, auto-saving, and a sleek user interface."
 			},
 			"meta": {
 				"client": "Personal",
@@ -525,22 +546,28 @@
 				"duration": "2 Weeks"
 			},
 			"painPoints": {
-				"heading": "Focus",
-				"list": []
+				"heading": "The Problem: Poor UX",
+				"list": [
+					"Outdated UI in existing browser games.",
+					"Loss of game progress on reload."
+				]
 			},
 			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "A perfect ",
+				"headingPart2": "pastime.",
+				"list": [
+					"Clean, modern aesthetic",
+					"Persistent state and smooth interactions"
+				]
 			}
 		},
 		"graph-builder": {
-			"title": "Graph Builder",
-			"subtitle": "Interactive graph building tool.",
+			"title": "Graph Builder X",
+			"subtitle": "Interactive drag-and-drop tool for generating complex node graphs.",
 			"details": {
-				"headingPart1": "Graph Builder ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Graph Builder X simplifies ",
+				"headingPart2": "complex data.",
+				"description": "A powerful tool that allows users to create, connect, and visualize complex graphs through an intuitive drag-and-drop interface."
 			},
 			"meta": {
 				"client": "Open Source",
@@ -548,36 +575,63 @@
 				"duration": "3 Weeks"
 			},
 			"painPoints": {
-				"heading": "Focus",
-				"list": []
+				"heading": "The Challenge: Visualizing Logic",
+				"list": [
+					"Visualizing complex relationships is hard.",
+					"Lack of fluid drag-and-drop node editors."
+				]
 			},
 			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"headingPart1": "A dynamic ",
+				"headingPart2": "node playground.",
+				"list": [
+					"Real-time visual node editing",
+					"Seamless export and flexible workflows"
+				]
 			}
 		},
 		"uni-portal": {
-			"title": "Uni Portal",
-			"subtitle": "University student portal.",
+			"subtitle": "Join UniPortal in building a modern, connected, and smart campus.",
 			"details": {
-				"headingPart1": "Uni Portal ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Expanded app for students, provides academic features (View timetable, register courses, study plans), update news, and chat messaging.",
+				"description": "Welcome to UniPortal - the pioneering application in the comprehensive digital transformation journey for universities and the student community in Vietnam! UniPortal is not just an app; it is a smart assistant that makes your campus life easier, more efficient, and more connected than ever before."
 			},
 			"meta": {
 				"client": "University",
 				"industry": "Education",
-				"duration": "6 Weeks"
+				"role": "As the Frontend Engineer, I architected the project's technical foundation and selected the core tech stack. I took full responsibility for the primary development, while actively collaborating with BAs and Designers to define requirements and propose critical UX/UI refinements to enhance the overall user journey."
 			},
 			"painPoints": {
-				"heading": "Focus",
-				"list": []
+				"heading": "The challenge is to maintain stability and performance for a multi-functional ecosystem (Finance, Education, News) running on a Hybrid platform.",
+				"list": [
+					"**Hybrid communication (Web - Native)**: Closely synchronizes logic between Next.js and Flutter Shell, solving complex cross-debugging problems and the risk of broken communication on WebView.",
+					"**State & Hydration Management**: Handles architectural conflicts between Server Components and Client State (Redux Persist) when storing large amounts of local data.",
+					"**Mobile Performance Optimization**: Ensures smooth 60fps experience when embedding heavy UIs (Maps, Video, Dnd-kit, Motion) on low-configuration devices.",
+					"**Multi-business Logic & Auth**: Securely integrates Digital Wallets, Learning systems, and custom SSO, requiring strict handling of network failure or background app scenarios.",
+					"**Cutting-edge Technology Compatibility**: Manages risks and resolves library conflicts when applying the latest tech stack (Next.js 15, React 19, Tailwind v4)."
+				]
+			},
+			"keyFeatures": {
+				"heading": "A comprehensive suite of robust modules engineered to deliver a scalable, multi-tenant, and native-like digital campus experience.",
+				"list": [
+					"**Academic Management**: Fully integrated LMS modules streamlining complex workflows like course registration, dynamic timetables, and personalized study planning.",
+					"**Multi-tenant Authentication**: Advanced `next-auth` implementation supporting seamless multi-school tenant selection and highly secure, complex token lifecycles.",
+					"**Native-grade Mobile UX**: Bridging the web-app gap with hardware-level interactions (Vibration, Wakelock, QR Scanning) and fluid UI elements (Drag-and-drop widgets, Pull-to-refresh, Virtual Numpad).",
+					"**Rich Media & Streaming**: High-performance media delivery featuring an integrated campus news feed and smooth HLS video streaming via custom `VideoPlayerHLS`.",
+					"**Real-time Communication**: A built-in, real-time campus messaging ecosystem powered by the robust internal SDK.",
+					"**Maps, Utilities & i18n**: Interactive campus navigation via OpenStreetMap/Leaflet, live weather APIs, and seamless multi-language routing powered by `next-intl`."
+				]
 			},
 			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"heading": "By overcoming complex architectural bottlenecks, we delivered a high-performance, future-proof ecosystem that redefines the digital campus experience.",
+				"list": [
+					"**Native-like Web Experience:** Eradicated the Web-App boundary via an optimized Flutter Bridge, delivering instant hardware capabilities (Camera, GPS, QR) directly on the web interface.",
+					"**Highly Customizable Dashboard:** Empowered users with a modular drag-and-drop dashboard (Dnd-kit), optimizing complex UX by allowing personalized widget layouts without information overload.",
+					"**Persistent State Management:** Implemented deep Redux Persistence to secure user states, ensuring an absolutely seamless experience even during network drops, updates, or background kills.",
+					"**Flawless Media Performance:** Handled heavy media and graphic logic seamlessly (XGPlayer, Leaflet, Framer Motion), ensuring News feeds, Reels, and financial charts run flawlessly without jank.",
+					"**Future-proof Architecture:** Built a pioneering foundation using Next.js 15, React 19, and Tailwind v4, enabling faster builds (Turbopack) and effortless scaling of future \"Mini Apps\".",
+					"**All-in-one Ecosystem:** Successfully merged an E-wallet, an LMS portal, and an Internal Social Network into a single touchpoint, maximizing engagement for the student community."
+				]
 			}
 		}
 	},
