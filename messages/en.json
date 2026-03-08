@@ -301,7 +301,7 @@
 			"meta": {
 				"client": "KCKM Tech",
 				"industry": "Software / AdTech",
-				"role": "Technology Lead, responsible for architectural design, core video engine implementation, and developer experience (DX) optimization.",
+				"role": "As the Front-end Engineer, I designed the core video engine and 'Headless' architecture. I focused on resource management (DOM Pooling), custom lightweight gestures, and bundle size optimization for seamless integration.",
 				"duration": "6 Months"
 			},
 			"painPoints": {

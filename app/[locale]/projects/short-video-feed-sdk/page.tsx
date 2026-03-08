@@ -1,9 +1,10 @@
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import AnimatedList from "@/components/projects/AnimatedList";
+import BackButton from "@/components/projects/BackButton";
 import MediaRenderer from "@/components/projects/MediaRenderer";
 import ScrollRevealText from "@/components/ScrollRevealText";
 import { getProjectById, getRelatedProjectIds } from "@/lib/data/projects";
@@ -40,16 +41,7 @@ export default async function ProjectDetail({
 		<>
 			<div className="w-full">
 				<div className="px-6 md:px-12.5 mb-12 mt-6 md:mt-37.5">
-					<Link
-						href={`/${locale}#projects`}
-						className="group inline-flex items-center gap-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 font-switzer text-sm md:text-base"
-					>
-						<ArrowLeft
-							size={20}
-							className="transition-transform group-hover:-translate-x-1"
-						/>
-						<span>{tBase("backToProjects")}</span>
-					</Link>
+					<BackButton label={tBase("backToProjects")} />
 					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
 						{t(`${id}.title`)}
 					</h1>
