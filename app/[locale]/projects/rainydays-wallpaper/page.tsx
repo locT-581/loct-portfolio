@@ -1,9 +1,12 @@
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import AnimatedList from "@/components/projects/AnimatedList";
 import BackButton from "@/components/projects/BackButton";
 import MediaRenderer from "@/components/projects/MediaRenderer";
+import ScrollRevealText from "@/components/ScrollRevealText";
 import { getProjectById, getRelatedProjectIds } from "@/lib/data/projects";
 
 export default async function ProjectDetail({
@@ -30,7 +33,7 @@ export default async function ProjectDetail({
 			id: rId,
 			title: t(`${rId}.title`),
 			category: tCat(relConfig?.categoryId || ""),
-			image: relConfig?.image,
+			image: relConfig?.squareImage,
 		};
 	});
 
@@ -42,22 +45,61 @@ export default async function ProjectDetail({
 					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
 						{t(`${id}.title`)}
 					</h1>
-					<p className="text-gray-500 font-satoshi text-base md:text-lg">
+					<p className="text-gray-500 font-satoshi text-base md:text-lg mb-8">
 						{t(`${id}.subtitle`)}
 					</p>
-				</div>
 
-				<div className="w-full aspect-21/9 md:aspect-2.5/1 relative mb-20 lg:mb-32">
-					<MediaRenderer
-						media={
-							projectConfig.gallery[0] || {
-								type: "image",
-								src: projectConfig.image,
-								size: "full",
-							}
-						}
-						alt={t(`${id}.title`)}
-					/>
+					<div className="flex flex-wrap gap-4">
+						{projectConfig.liveLink && (
+							<a
+								href={projectConfig.liveLink}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center gap-3 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-switzer font-medium transition-all hover:scale-105 active:scale-95 group shadow-lg"
+							>
+								<ExternalLink size={20} />
+								<span>{tBase("viewProject")}</span>
+							</a>
+						)}
+
+						{projectConfig.figmaLink && (
+							<a
+								href={projectConfig.figmaLink}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center gap-3 px-6 py-3 bg-white dark:bg-neutral-900 text-black dark:text-white border border-neutral-200 dark:border-neutral-800 rounded-full font-switzer font-medium transition-all hover:scale-105 active:scale-95 group shadow-sm"
+							>
+								<svg
+									viewBox="0 0 38 57"
+									className="w-4 h-5"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
+								>
+									<path
+										d="M19 28.5C19 33.7467 14.7467 38 9.5 38C4.25329 38 0 33.7467 0 28.5C0 23.2533 4.25329 19 9.5 19H19V28.5Z"
+										fill="#1ABCFE"
+									/>
+									<path
+										d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z"
+										fill="#0ACF83"
+									/>
+									<path
+										d="M19 0H28.5C33.7467 0 38 4.25329 38 9.5C38 14.7467 33.7467 19 28.5 19H19V0Z"
+										fill="#FF7262"
+									/>
+									<path
+										d="M0 9.5C0 4.25329 4.25329 0 9.5 0H19V19H9.5C4.25329 19 0 14.7467 0 9.5Z"
+										fill="#F24E1E"
+									/>
+									<path
+										d="M0 28.5C0 23.2533 4.25329 19 9.5 19H19V38H9.5C4.25329 38 0 33.7467 0 28.5Z"
+										fill="#A259FF"
+									/>
+								</svg>
+								<span>{tBase("viewDesign")}</span>
+							</a>
+						)}
+					</div>
 				</div>
 
 				<div className="px-6 md:px-12.5">
@@ -67,60 +109,51 @@ export default async function ProjectDetail({
 						{tBase("detail")}
 					</div>
 
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-32 border-b border-black/10 dark:border-white/10 pb-32">
+					<div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-20 pb-6 md:pb-16">
 						{/* Left col */}
-						<div className="flex flex-col justify-between">
-							<h2 className="text-3xl md:text-5xl lg:text-6xl font-switzer font-medium leading-[1.2] tracking-tight mb-16 lg:mb-32">
-								{t(`${id}.details.headingPart1`)}
-								<span className="text-gray-400">
-									{t(`${id}.details.headingPart2`)}
-								</span>
-							</h2>
+						<div className="lg:col-span-3 flex flex-col justify-between">
+							<ScrollRevealText
+								text={t(`${id}.details.headingPart1`)}
+								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-32"
+							/>
 
-							<div className="grid grid-cols-2 gap-y-10 gap-x-4">
+							<div className="grid grid-cols-2 gap-y-10 gap-x-4 mb-10">
 								<div>
-									<p className="text-gray-500 font-satoshi mb-2">Client:</p>
-									<p className="font-switzer font-bold">
-										{t(`${id}.meta.client`)}
+									<p className="text-gray-500 font-satoshi mb-2">
+										{tBase("industry")}
 									</p>
-								</div>
-								<div>
-									<p className="text-gray-500 font-satoshi mb-2">Industry:</p>
 									<p className="font-switzer font-bold">
 										{t(`${id}.meta.industry`)}
 									</p>
 								</div>
 								<div>
-									<p className="text-gray-500 font-satoshi mb-2">Category:</p>
+									<p className="text-gray-500 font-satoshi mb-2">
+										{tBase("category")}
+									</p>
 									<p className="font-switzer font-bold">
 										{tCat(projectConfig.categoryId)}
-									</p>
-								</div>
-								<div>
-									<p className="text-gray-500 font-satoshi mb-2">Duration:</p>
-									<p className="font-switzer font-bold">
-										{t(`${id}.meta.duration`)}
 									</p>
 								</div>
 							</div>
 						</div>
 
 						{/* Right col */}
-						<div className="flex flex-col gap-10">
-							<p className="text-gray-500 font-satoshi text-lg md:text-xl leading-relaxed max-w-lg">
+						<div className="lg:col-span-2 pt-5 md:pt-[25%] flex flex-col gap-10">
+							<p className="text-gray-500 font-satoshi text-lg md:text-xl leading-relaxed">
 								{t(`${id}.details.description`)}
 							</p>
-							<div className="relative w-full aspect-video md:aspect-4/3 bg-gray-200">
+							<div className="relative lg:max-w-[35vw] w-full aspect-video md:aspect-4/3">
 								<Image
 									src={projectConfig.detailsImage}
 									alt="Detail Image"
 									fill
-									className="object-cover"
+									className="object-contain"
 								/>
 							</div>
 						</div>
 					</div>
 
+					{/* Pain Points Section */}
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 py-12">
 						<div className="lg:col-span-3">
 							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
@@ -130,50 +163,30 @@ export default async function ProjectDetail({
 						</div>
 
 						<div className="lg:col-span-9">
-							<h3 className="text-3xl md:text-4xl lg:text-5xl font-switzer font-medium leading-[1.2] tracking-tight text-gray-500 mb-16 max-w-4xl">
-								<span className="text-[#111111] dark:text-[#f2f2f2]">
-									{t(`${id}.painPoints.heading`).split(":")[0]}
-									{t(`${id}.painPoints.heading`).includes(":") ? ":" : ""}
-								</span>
-								{t(`${id}.painPoints.heading`).includes(":")
-									? t(`${id}.painPoints.heading`).substring(
-											t(`${id}.painPoints.heading`).indexOf(":") + 1,
-										)
-									: ""}
-							</h3>
+							<ScrollRevealText
+								text={t(`${id}.painPoints.heading`)}
+								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-20"
+							/>
 
-							<div className="flex flex-col gap-8 max-w-3xl">
-								{t
-									.raw(`${id}.painPoints.list`)
-									.map((point: string, i: number) => (
-										<div
-											key={point}
-											className="flex gap-8 md:gap-16 items-start"
-										>
-											<span className="text-gray-400 font-satoshi text-base">
-												/0{i + 1}
-											</span>
-											<p className="text-gray-500 font-satoshi text-base md:text-lg leading-relaxed">
-												{point}
-											</p>
-										</div>
-									))}
-							</div>
+							<AnimatedList items={t.raw(`${id}.painPoints.list`)} />
 						</div>
 					</div>
 
 					{/* Gallery Grid Section */}
-					{projectConfig.gallery.length > 1 && (
-						<div className="mt-32 md:mt-48 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 auto-rows-min">
-							{projectConfig.gallery.slice(1).map((media, i) => {
+					{projectConfig.gallery.length > 0 && (
+						<div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-14 gap-x-10 auto-rows-min pb-12">
+							{projectConfig.gallery.map((media, i) => {
 								let colSpan = "md:col-span-12";
 								let aspect = "aspect-video";
+								const offset = i % 2 === 0 ? "" : "md:mt-20";
+								const colStart =
+									i % 2 === 0 ? "md:col-start-1" : "md:col-start-7";
 
 								if (media.size === "half") {
 									colSpan = "md:col-span-6";
 									aspect = "aspect-square";
 								} else if (media.size === "portrait") {
-									colSpan = "md:col-span-4";
+									colSpan = "md:col-span-5";
 									aspect = "aspect-3/4";
 								} else if (media.size === "landscape") {
 									colSpan = "md:col-span-8";
@@ -185,21 +198,60 @@ export default async function ProjectDetail({
 
 								return (
 									<div
-										key={media.src}
-										className={`${colSpan} relative w-full ${aspect}`}
+										// biome-ignore lint/suspicious/noArrayIndexKey: using index because media src might be same for placeholders
+										key={media.src + i}
+										className={`${colSpan} ${colStart} ${offset} relative w-full ${aspect}`}
 									>
 										<MediaRenderer
 											media={media}
 											alt={`Gallery media ${i + 1}`}
+											objectFit="contain"
 										/>
 									</div>
 								);
 							})}
 						</div>
 					)}
+					{/* Key Features Section */}
+					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 py-16">
+						<div className="lg:col-span-3">
+							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
+								{tBase("keyFeatures")}
+							</div>
+						</div>
+
+						<div className="lg:col-span-9">
+							<ScrollRevealText
+								text={t(`${id}.keyFeatures.heading`)}
+								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-20"
+							/>
+
+							<AnimatedList items={t.raw(`${id}.keyFeatures.list`)} />
+						</div>
+					</div>
+
+					{/* Architecture Section */}
+					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 py-16">
+						<div className="lg:col-span-3">
+							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
+								{tBase("architecture")}
+							</div>
+						</div>
+
+						<div className="lg:col-span-9">
+							<ScrollRevealText
+								text={t(`${id}.architecture.heading`)}
+								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-20"
+							/>
+
+							<AnimatedList items={t.raw(`${id}.architecture.list`)} />
+						</div>
+					</div>
 
 					{/* Result Section */}
-					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 bg-[#F2F2F2] dark:bg-[#111111] mt-32 md:mt-48 pb-16">
+					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 py-16">
 						<div className="lg:col-span-3">
 							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
@@ -208,60 +260,38 @@ export default async function ProjectDetail({
 						</div>
 
 						<div className="lg:col-span-9">
-							<h3 className="text-3xl md:text-4xl lg:text-5xl font-switzer font-medium leading-[1.2] tracking-tight mb-16 max-w-4xl text-[#111111] dark:text-[#f2f2f2]">
-								{t(`${id}.result.headingPart1`)}
-								<span className="text-gray-400">
-									{t(`${id}.result.headingPart2`)}
-								</span>
-							</h3>
+							<ScrollRevealText
+								text={t(`${id}.result.heading`)}
+								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-20"
+							/>
 
-							<div className="flex flex-col gap-6 md:gap-8 max-w-3xl">
-								{t.raw(`${id}.result.list`).map((item: string, i: number) => (
-									<div
-										key={item}
-										className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8 items-start"
-									>
-										<span className="md:col-span-2 text-gray-400 font-satoshi text-base">
-											/0{i + 1}
-										</span>
-										<p className="md:col-span-10 text-gray-500 font-satoshi text-base md:text-lg leading-relaxed">
-											{item}
-										</p>
-									</div>
-								))}
-							</div>
+							<AnimatedList items={t.raw(`${id}.result.list`)} />
 						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* Related Projects Section */}
-			<section className="pt-24 md:pt-32 pb-20 mt-32 border-t border-black/10 dark:border-white/10">
+			<section className="pt-16 md:pt-20 pb-20 border-t border-black/10 dark:border-white/10">
 				<div className="px-6 md:px-12.5">
 					{/* Heading */}
 					<div className="flex flex-col items-center gap-4 mb-20 text-center">
 						<div className="flex items-center justify-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
 							<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
-							Related Project
+							{tBase("relatedProject")}
 						</div>
 						<h2 className="text-5xl md:text-7xl lg:text-[80px] xl:text-[100px] font-switzer font-medium tracking-tight leading-[1.1]">
-							Explore Similar Work
+							{tBase("exploreSimilar")}
 						</h2>
 						<p className="text-gray-500 font-satoshi text-lg md:text-xl max-w-2xl mt-4">
-							More creative work with a focus on strategy, visual impact, and
-							usability.
+							{tBase("exploreSimilarDesc")}
 						</p>
 					</div>
 
 					{/* Projects Layout */}
 					<div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16">
-						{/* View Details Label (Left Bottom) */}
-						<div className="hidden md:flex md:col-span-4 items-end pb-4 font-switzer font-medium text-gray-600 dark:text-gray-400">
-							VIEW DETAILS
-						</div>
-
 						{/* Two Cards (Right) */}
-						<div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
+						<div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
 							{relatedProjects.map((project) => (
 								<Link
 									key={project.id}

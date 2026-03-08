@@ -381,25 +381,51 @@
 		},
 		"rainydays-wallpaper": {
 			"title": "Rainydays Wallpaper",
-			"subtitle": "Relaxing animated wallpapers.",
+			"year": "2024",
+			"subtitle": "A website specialized for sharing and downloading high-quality wallpapers.",
 			"details": {
-				"headingPart1": "Rainydays ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "The project is designed with a modern, minimalist interface in the style of Pinterest, focusing maximally on the user's visual experience. The name 'Rainydays' evokes a wallpaper style with a chill, gentle, and artistic trend.",
+				"description": "A digital gallery featuring a responsive Masonry grid, tag-based search, and direct downloads. It is powered by a robust CMS for seamless admin content management."
 			},
 			"meta": {
-				"client": "Rainy",
-				"industry": "Entertainment",
-				"duration": "2 Weeks"
+				"industry": "Lifestyle & Desktop Utility",
+				"duration": "2 Weeks",
+				"role": "Personal Project"
 			},
 			"painPoints": {
-				"heading": "Focus",
-				"list": []
+				"heading": "Building a high-performance visual platform required solving complex manual DOM calculations, intricate mobile touch interactions, and multi-relational data synchronization.",
+				"list": [
+					"**Custom Masonry Algorithm**: Architecting a custom Masonry grid from scratch, utilizing complex mathematical logic to calculate dynamic `top` and `left` positioning without relying on external libraries.",
+					"**Mobile Touch UX**: Engineering precise mobile touch interactions (Touch Start, Move, End) to trigger fluid, responsive download menus, demanding meticulous event lifecycle management.",
+					"**Multi-relational Data Sync**: Ensuring strict data consistency during uploads by seamlessly orchestrating database updates across both `images` and `tags` collections simultaneously.",
+					"**High-Res Asset Performance**: Mitigating UI lag while rendering multiple high-resolution assets by strategically implementing Infinite Scrolling and Lazy Loading mechanisms."
+				]
+			},
+			"keyFeatures": {
+				"heading": "A feature-rich visual discovery platform combining intuitive mobile gestures, real-time analytics, and fluid media rendering to deliver a premium, native-like user experience.",
+				"list": [
+					"**Dynamic Masonry & Theme Adaptation**: Engineered a visually striking waterfall grid that auto-arranges based on true image dimensions, completely synchronized with system-level or user-toggled Dark/Light modes.",
+					"**Infinite Scroll & Smart Tagging**: Maximized initial load speeds via infinite scrolling while empowering intuitive discovery through automated tag suggestions and tag-based routing.",
+					"**Native-Grade Mobile Gestures**: Simulated a premium native app experience by implementing intricate long-press touch events to trigger instant, fluid download menus on mobile devices.",
+					"**Social Ecosystem & Real-time Analytics**: Amplified content reach via direct Pinterest and TikTok integrations while seamlessly tracking user engagement with automated, real-time view counters."
+				]
+			},
+			"architecture": {
+				"heading": "A high-performance Serverless Single Page Application (SPA) built with modern React ecosystems and fully powered by Firebase's robust Backend-as-a-Service.",
+				"list": [
+					"**Comprehensive Serverless BaaS**: Leveraged the full Firebase SDK v10 suite—utilizing Auth for Google SSO, Firestore NoSQL for relational metadata (images & tags), Storage for high-res assets, and Analytics.",
+					"**Modern SPA Foundation**: Developed a reactive Single Page Application using React 18 functional components, centralizing state via Context API, and securing admin workflows with React Router v6 Private Routes.",
+					"**Performance-Driven UI**: Styled rapidly with Tailwind CSS for highly flexible layouts, achieving superior initial load times through `React.lazy` and `Suspense`, complemented by `react-toastify` for professional user feedback."
+				]
 			},
 			"result": {
-				"headingPart1": "Success",
-				"headingPart2": "",
-				"list": []
+				"heading": "Delivering a highly optimized, touch-first visual platform that ensures flawless cross-device responsiveness, professional-grade rendering, and highly efficient data pagination.",
+				"list": [
+					"**Professional-Grade Smooth Masonry**: Engineered a flawless custom `renderLayout` system that precisely calculates image coordinates, delivering a buttery-smooth visual experience comparable to top-tier commercial applications.",
+					"**Touch-First Mobile Experience**: Prioritized mobile users by implementing highly stable, native-like long-press interactions for instant image downloads, maximizing convenience on touch devices.",
+					"**Optimized Pagination & Memory**: Achieved highly efficient, bandwidth-friendly pagination and infinite scrolling by strategically utilizing Firebase's `startAfter` cursors, strictly preventing DOM and memory overloads.",
+					"**Flawless Responsive Adaptability**: Ensured pixel-perfect rendering across all viewports, dynamically adapting from expansive desktop wide-views to highly optimized single or double-column layouts on mobile screens."
+				]
 			}
 		},
 		"mimic-mcp": {

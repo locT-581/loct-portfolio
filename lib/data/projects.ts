@@ -119,27 +119,34 @@ export const PROJECTS: Project[] = [
 		gallery: [
 			{
 				type: "image",
-				src: "/assets/images/booking-sport.png",
-				size: "full",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-				size: "portrait",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/rainydays/a.png",
 				size: "square",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/rainydays-wallpaper.png",
 				size: "landscape",
 			},
+			{
+				type: "image",
+				src: "/assets/images/projects/rainydays/d.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/rainydays/c.png",
+				size: "portrait",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/rainydays/b.png",
+				size: "full",
+			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/projects/rainydays/detail.png",
+		liveLink: "https://rainydays-wallpaper.web.app/",
+		figmaLink:
+			"https://www.figma.com/design/e6BBojz2E6TliGZlLjndKK/Rainydayswallpaper?node-id=0-1&t=5XPSmCjwA8Vj7s9B-1",
 	},
 	{
 		id: "mimic-mcp",

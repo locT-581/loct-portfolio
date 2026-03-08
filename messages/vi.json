@@ -380,26 +380,52 @@
 			}
 		},
 		"rainydays-wallpaper": {
-			"title": "Hình nền Rainydays",
-			"subtitle": "Hình nền động thư giãn.",
+			"title": "Rainydays Wallpaper",
+			"year": "2024",
+			"subtitle": "Một trang web chuyên dụng để chia sẻ và tải về các hình nền chất lượng cao.",
 			"details": {
-				"headingPart1": "Rainydays ",
-				"headingPart2": "...",
-				"description": "..."
+				"headingPart1": "Dự án được thiết kế với giao diện hiện đại, tối giản theo phong cách của Pinterest, tập trung tối đa vào trải nghiệm thị giác của người dùng. Tên gọi \"Rainydays\" gợi mở về một phong cách hình nền mang xu hướng chill, nhẹ nhàng và nghệ thuật.",
+				"description": "Thư viện ảnh kỹ thuật số nổi bật với giao diện Masonry, tìm kiếm theo thẻ và tải xuống trực tiếp. Hệ thống được vận hành bởi một CMS chuyên nghiệp giúp Admin dễ dàng quản lý nội dung."
 			},
 			"meta": {
-				"client": "Rainy",
-				"industry": "Giải trí",
-				"duration": "2 Tuần"
+				"industry": "Phong cách sống & Công cụ Desktop",
+				"duration": "2 Tuần",
+				"role": "Dự án cá nhân"
 			},
 			"painPoints": {
-				"heading": "Tập trung",
-				"list": []
+				"heading": "Việc xây dựng nền tảng hình ảnh hiệu năng cao đòi hỏi giải quyết các bài toán phức tạp về tính toán DOM thủ công, xử lý tương tác chạm trên di động và đồng bộ dữ liệu đa luồng.",
+				"list": [
+					"**Thuật toán Masonry Thủ công**: Xây dựng thuật toán lưới Masonry hoàn toàn thủ công, áp dụng logic toán học phức tạp để tính toán tọa độ `top`, `left` động mà không phụ thuộc vào thư viện bên thứ ba.",
+					"**Xử lý Tương tác Chạm Di động**: Thiết kế các tương tác chạm trên di động (Touch Start, Move, End) có độ chính xác cao để kích hoạt menu tải xuống mượt màng, đòi hỏi sự tỉ mỉ trong quản lý vòng đời sự kiện.",
+					"**Đồng bộ Dữ liệu Đa chiều**: Đảm bảo tính nhất quán tuyệt đối của dữ liệu khi tải ảnh lên bằng cách xử lý đồng bộ hóa đồng thời qua cả hai bộ sưu tập `images` và `tags`.",
+					"**Hiệu suất Hình ảnh Phân giải cao**: Loại bỏ hiện tượng giật lag khi render hàng loạt hình ảnh độ phân giải cao thông qua việc triển khai chiến lược Cuộn vô tận (Infinite Scroll) và Tải lười (Lazy Load)."
+				]
+			},
+			"keyFeatures": {
+				"heading": "Nền tảng khám phá hình ảnh đa tính năng, kết hợp hoàn hảo các cử chỉ di động trực quan, thống kê thời gian thực và hiệu suất hiển thị mượt mà nhằm mang lại trải nghiệm chuẩn Native cao cấp.",
+				"list": [
+					"**Giao diện Masonry Động & Tùy biến Chủ đề**: Xây dựng giao diện lưới thác nước (Masonry) tự động sắp xếp thông minh theo kích thước ảnh thực tế, đồng bộ hoàn toàn với chế độ Dark/Light mode của hệ thống hoặc tùy chỉnh cá nhân.",
+					"**Cuộn Vô Tận & Hệ thống Thẻ Thông minh**: Tối ưu hóa tối đa tốc độ tải trang ban đầu nhờ cơ chế cuộn vô tận (Infinite Scroll), kết hợp hệ thống tự động gợi ý thẻ và điều hướng thông minh theo chủ đề (Tags).",
+					"**Cử chỉ Di động Chuẩn Native**: Mô phỏng trải nghiệm ứng dụng gốc (Native app) cao cấp bằng cách tích hợp các sự kiện chạm giữ (long-press) phức tạp để kích hoạt menu tải xuống tức thời trên thiết bị di động.",
+					"**Tích hợp Mạng xã hội & Thống kê Thời gian thực**: Mở rộng độ phủ nội dung thông qua liên kết trực tiếp với Pinterest và TikTok, đồng thời theo dõi mức độ tương tác qua hệ thống đếm lượt xem (views) tự động theo thời gian thực."
+				]
+			},
+			"architecture": {
+				"heading": "Kiến trúc SPA Serverless hiệu năng cao được xây dựng với hệ sinh thái React hiện đại và vận hành toàn diện bởi nền tảng Backend-as-a-Service của Firebase.",
+				"list": [
+					"**Hệ sinh thái Serverless Toàn diện**: Tận dụng sức mạnh Serverless của Firebase v10 với Auth đăng nhập Google (SSO), cơ sở dữ liệu NoSQL Firestore cho siêu dữ liệu (images & tags), Storage lưu trữ hình ảnh và Analytics theo dõi hành vi.",
+					"**Nền tảng SPA Hiện đại & Quản trị Trạng thái**: Phát triển Single Page Application (SPA) với React 18, quản trị trạng thái tập trung qua Context API và bảo mật luồng quản trị viên bằng Private Routes của React Router v6.",
+					"**Tối ưu Hiệu năng & Giao diện Tiện ích**: Xây dựng layout linh hoạt với Tailwind CSS, tối ưu triệt để tốc độ tải trang ban đầu bằng kỹ thuật `React.lazy` kết hợp `Suspense`, cùng `react-toastify` cho hệ thống thông báo chuyên nghiệp."
+				]
 			},
 			"result": {
-				"headingPart1": "Thành công",
-				"headingPart2": "",
-				"list": []
+				"heading": "Mang đến một nền tảng hình ảnh tối ưu hóa trải nghiệm chạm, đảm bảo độ tương thích hoàn hảo trên mọi thiết bị, hiển thị chuẩn chuyên nghiệp và phân trang dữ liệu cực kỳ hiệu quả.",
+				"list": [
+					"**Hiển thị Masonry Mượt mà, Đẳng cấp**: Xây dựng hệ thống `renderLayout` tùy chỉnh tính toán chính xác tọa độ ảnh, mang lại trải nghiệm lưới Masonry mượt mà, đẳng cấp tương đương các ứng dụng thương mại hàng đầu.",
+					"**Trải nghiệm Di động Touch-first**: Đặt tiêu chí \"Touch-first\" lên hàng đầu với tính năng chạm giữ (long-press) để tải ảnh hoạt động cực kỳ ổn định, mang lại sự tiện lợi tối đa cho người dùng thiết bị cảm ứng.",
+					"**Tối ưu Phân trang & Bộ nhớ**: Tối ưu triệt để băng thông và bộ nhớ thông qua cơ chế phân trang hiệu quả bằng cursor `startAfter` của Firebase, ngăn chặn hoàn toàn tình trạng quá tải khi cuộn vô tận.",
+					"**Tương thích Responsive Hoàn hảo**: Đảm bảo độ hiển thị sắc nét trên mọi kích thước màn hình, linh hoạt chuyển đổi từ giao diện toàn cảnh trên Desktop sang bố cục một hoặc hai cột tối ưu trên Mobile."
+				]
 			}
 		},
 		"mimic-mcp": {
