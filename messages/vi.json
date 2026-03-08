@@ -31,7 +31,7 @@
 			},
 			"4": {
 				"number": "/04",
-				"title": "Tích hợp AI Agent",
+				"title": "Sử dụng AI Agent",
 				"tags": ["AI Agents", "Claude", "Github Copilot"],
 				"desc": "Tận dụng các công cụ AI để giảm thiểu thời gian code và phác thảo nhanh các sản phẩm MVP chất lượng cao."
 			}
@@ -250,11 +250,11 @@
 	},
 	"Footer": {
 		"brand": "LocT®",
-		"description": "Kiến tạo các ứng dụng web mở rộng và mang lại trải nghiệm người dùng mượt mà. Mỗi dòng code đều được tối ưu hóa cẩn thận để đạt hiệu năng cao, dễ bảo trì và hoàn thiện về mặt giao diện.",
+		"description": "Triển khai các ứng dụng web mở rộng và mang lại trải nghiệm người dùng mượt mà. Mỗi dòng code đều được tối ưu hóa cẩn thận để đạt hiệu năng cao, dễ bảo trì và hoàn thiện về mặt giao diện.",
 		"emailLabel": "Email:",
 		"phoneLabel": "Điện thoại:",
 		"locationLabel": "Địa điểm:",
-		"locationValue": "Cần Thơ, Việt Nam | Từ xa toàn cầu",
+		"locationValue": "Cần Thơ, Việt Nam | Từ xa",
 		"quickLinks": {
 			"title": "Liên kết nhanh",
 			"home": "Trang chủ",
@@ -458,7 +458,7 @@
 			}
 		},
 		"sudoku-game": {
-			"title": "Web Sudoku",
+			"title": "Trò chơi Sudoku",
 			"year": "2024",
 			"subtitle": "Trò chơi Sudoku ngoại tuyến trên máy tính của bạn! 🎮",
 			"details": {

@@ -30,11 +30,11 @@ export default function Capabilities() {
 	return (
 		<section className="px-6 md:px-[8%] py-16 overflow-hidden">
 			<div className="flex flex-col items-center gap-4 mb-14 lg:mb-16">
-				<div className="flex items-center justify-center gap-2 text-lg md:text-xl font-switzer text-gray-600 dark:text-gray-400">
+				<div className="flex items-center justify-center gap-2 text-lg md:text-xl font-work-sans text-gray-600 dark:text-gray-400">
 					<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 					{t("capabilities.label")}
 				</div>
-				<h2 className="text-5xl md:text-6xl lg:text-[80px] font-switzer font-medium tracking-tight text-center leading-[1.1]">
+				<h2 className="text-5xl md:text-6xl lg:text-[80px] font-work-sans font-medium tracking-tight text-center leading-[1.1]">
 					{t("capabilities.heading")}
 				</h2>
 				<p className="text-gray-500 text-lg md:text-xl text-center max-w-xl">
@@ -55,7 +55,7 @@ export default function Capabilities() {
 							type="button"
 							onMouseEnter={() => setHoveredIndex(item.id)}
 							onFocus={() => setHoveredIndex(item.id)}
-							className={`relative z-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight font-switzer font-medium tracking-tighter uppercase whitespace-nowrap cursor-pointer transition-all duration-500 select-none outline-none ${
+							className={`relative z-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight font-work-sans font-medium tracking-tighter uppercase whitespace-nowrap cursor-pointer transition-all duration-500 select-none outline-none ${
 								hoveredIndex === item.id
 									? "text-black dark:text-[#F2F2F2] scale-105"
 									: "text-[#D1D1D1] dark:text-[#444444] scale-100"

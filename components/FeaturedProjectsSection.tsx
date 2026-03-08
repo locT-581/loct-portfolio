@@ -21,17 +21,17 @@ export default function FeaturedProjectsSection() {
 		<section id="featured-projects" className="w-full px-12 py-16 md:py-24">
 			<div className="flex flex-col md:flex-row justify-between items-end mb- md:mb-24 gap-8">
 				<div className="flex flex-col gap-6">
-					<div className="flex gap-2 items-center text-lg md:text-xl font-switzer">
+					<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans">
 						<div className="bg-black dark:bg-white rounded-full size-1" />
 						{tIndex("featured.subTitle")}
 					</div>
-					<h2 className="text-5xl md:text-7xl lg:text-8xl font-switzer leading-tight tracking-tight whitespace-pre-line">
+					<h2 className="text-5xl md:text-7xl lg:text-8xl font-work-sans leading-tight tracking-tight whitespace-pre-line">
 						{tIndex("featured.heading")}
 					</h2>
 				</div>
 				<Link
 					href={`/${locale}/projects`}
-					className="flex items-center gap-2 border border-black dark:border-white px-6 py-3 text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer whitespace-nowrap"
+					className="flex items-center gap-2 border border-black dark:border-white px-6 py-3 text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-work-sans whitespace-nowrap"
 				>
 					{tIndex("featured.btnAll")}
 					<ArrowRight className="w-5 h-5 ml-2" strokeWidth={1.5} />
@@ -57,14 +57,14 @@ export default function FeaturedProjectsSection() {
 						<div className="absolute inset-0 flex items-end justify-center pb-8 lg:pb-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 							<Link
 								href={`/${locale}/projects/${project1Id}`}
-								className="bg-white/90 text-black px-8 py-3 font-switzer font-medium hover:bg-white transition-colors"
+								className="bg-white/90 text-black px-8 py-3 font-work-sans font-medium hover:bg-white transition-colors"
 							>
 								{tIndex("featured.btnDetails")}
 							</Link>
 						</div>
 					</div>
 					<div className="flex justify-between items-start text-xl lg:text-3xl">
-						<h3 className="font-switzer tracking-tight font-semibold">
+						<h3 className="font-work-sans tracking-tight font-semibold">
 							{tProjects(`${project1Id}.title`)}
 						</h3>
 						<span className="text-gray-400">
@@ -92,14 +92,14 @@ export default function FeaturedProjectsSection() {
 						<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 							<Link
 								href={`/${locale}/projects/${project2Id}`}
-								className="bg-white/90 text-black px-8 py-3 font-switzer font-medium hover:bg-white transition-colors"
+								className="bg-white/90 text-black px-8 py-3 font-work-sans font-medium hover:bg-white transition-colors"
 							>
 								{tIndex("featured.btnDetails")}
 							</Link>
 						</div>
 					</div>
 					<div className="flex justify-between items-start text-xl lg:text-3xl ">
-						<h3 className="tracking-tight font-switzer font-semibold">
+						<h3 className="tracking-tight font-work-sans font-semibold">
 							{tProjects(`${project2Id}.title`)}
 						</h3>
 						<span className="text-gray-400">

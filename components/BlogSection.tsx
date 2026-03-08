@@ -38,7 +38,7 @@ const BlogArticle = ({
 			</div>
 
 			<div className="flex flex-col gap-3 mt-2">
-				<div className="flex justify-between items-center text-sm font-satoshi text-gray-500">
+				<div className="flex justify-between items-center text-sm font-quicksand text-gray-500">
 					<span>{t(`blog.items.${item}.date`)}</span>
 					<span>{t("blog.readTime")}</span>
 				</div>
@@ -62,22 +62,22 @@ export default function BlogSection() {
 
 	return (
 		<section id="blog" className="w-full px-6 md:px-[8%] py-14 md:py-20">
-			<div className="flex gap-2 items-center text-lg md:text-xl font-switzer mb-5">
+			<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans mb-5">
 				<div className="bg-black dark:bg-white rounded-full size-1" />
 				{t("blog.subTitle")}
 			</div>
-			<h2 className="text-5xl max-w-[60%] md:text-7xl lg:text-[86px] font-switzer font-medium leading-[1.1] tracking-tight mb-14 text-balance">
+			<h2 className="text-5xl max-w-[60%] md:text-7xl lg:text-[86px] font-work-sans font-medium leading-[1.1] tracking-tight mb-14 text-balance">
 				{t("blog.heading")}
 			</h2>
 
 			<div className="relative grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
 				<div className="absolute top-0 right-0 flex flex-col items-end gap-14">
-					<p className="text-gray-500 font-satoshi text-base lg:text-lg leading-relaxed text-left max-w-sm xl:max-w-md">
+					<p className="text-gray-500 font-quicksand text-base lg:text-lg leading-relaxed text-left max-w-sm xl:max-w-md">
 						{t("blog.description")}
 					</p>
 					<Link
 						href={`/${locale}/blogs`}
-						className="flex items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer font-medium whitespace-nowrap mb-16 lg:mb-0"
+						className="flex items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-work-sans font-medium whitespace-nowrap mb-16 lg:mb-0"
 					>
 						{t("blog.btnAll")}
 						<ArrowRight className="w-5 h-5 ml-1" strokeWidth={1.5} />

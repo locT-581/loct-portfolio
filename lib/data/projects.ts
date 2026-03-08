@@ -148,37 +148,37 @@ export const PROJECTS: Project[] = [
 		figmaLink:
 			"https://www.figma.com/design/e6BBojz2E6TliGZlLjndKK/Rainydayswallpaper?node-id=0-1&t=5XPSmCjwA8Vj7s9B-1",
 	},
-	{
-		id: "mimic-mcp",
-		categoryId: "architecture",
-		image: "/assets/images/mimic-mcp.png",
-		portalImage: "/assets/images/mimic-mcp.png",
-		squareImage: "/assets/images/mimic-mcp.png",
-		gallery: [
-			{
-				type: "image",
-				src: "/assets/images/mimic-mcp.png",
-				size: "full",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-				size: "portrait",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
-				size: "square",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
-				size: "landscape",
-			},
-		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
-	},
+	// {
+	// 	id: "mimic-mcp",
+	// 	categoryId: "architecture",
+	// 	image: "/assets/images/mimic-mcp.png",
+	// 	portalImage: "/assets/images/mimic-mcp.png",
+	// 	squareImage: "/assets/images/mimic-mcp.png",
+	// 	gallery: [
+	// 		{
+	// 			type: "image",
+	// 			src: "/assets/images/mimic-mcp.png",
+	// 			size: "full",
+	// 		},
+	// 		{
+	// 			type: "image",
+	// 			src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
+	// 			size: "portrait",
+	// 		},
+	// 		{
+	// 			type: "image",
+	// 			src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+	// 			size: "square",
+	// 		},
+	// 		{
+	// 			type: "image",
+	// 			src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+	// 			size: "landscape",
+	// 		},
+	// 	],
+	// 	detailsImage:
+	// 		"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+	// },
 	{
 		id: "sudoku-game",
 		categoryId: "web-app",
@@ -217,21 +217,21 @@ export const PROJECTS: Project[] = [
 		figmaLink:
 			"https://www.figma.com/file/ZDgSiACwATcaH5BQl1Jq4M/Sudoku-Game?type=design&mode=design&t=VlKN4Wjy4fPhS1zt-1",
 	},
-	{
-		id: "graph-builder",
-		categoryId: "web-app",
-		image: "/assets/images/graph-builder.jpeg",
-		portalImage: "/assets/images/graph-builder.jpeg",
-		squareImage: "/assets/images/graph-builder.jpeg",
-		gallery: [
-			{
-				type: "image",
-				src: "/assets/images/graph-builder.jpeg",
-				size: "full",
-			},
-		],
-		detailsImage: "/assets/images/graph-builder.jpeg",
-	},
+	// {
+	// 	id: "graph-builder",
+	// 	categoryId: "web-app",
+	// 	image: "/assets/images/graph-builder.jpeg",
+	// 	portalImage: "/assets/images/graph-builder.jpeg",
+	// 	squareImage: "/assets/images/graph-builder.jpeg",
+	// 	gallery: [
+	// 		{
+	// 			type: "image",
+	// 			src: "/assets/images/graph-builder.jpeg",
+	// 			size: "full",
+	// 		},
+	// 	],
+	// 	detailsImage: "/assets/images/graph-builder.jpeg",
+	// },
 	{
 		id: "uni-portal",
 		categoryId: "mobile-app",
@@ -274,7 +274,7 @@ export const FEATURED_PROJECT_IDS = [
 	"sudoku-game",
 ];
 
-export const DISCOVER_PROJECT_IDS = ["mimic-mcp", "rainydays-wallpaper"];
+export const DISCOVER_PROJECT_IDS = ["uni-portal", "rainydays-wallpaper"];
 
 export const PORTFOLIO_PROJECT_IDS = [
 	"uni-portal",
@@ -282,8 +282,8 @@ export const PORTFOLIO_PROJECT_IDS = [
 	"yaah-connect",
 	"sudoku-game",
 	"rainydays-wallpaper",
-	"mimic-mcp",
-	"graph-builder",
+	// "mimic-mcp",
+	// "graph-builder",
 ];
 
 export const getRelatedProjectIds = (currentId: string) => {

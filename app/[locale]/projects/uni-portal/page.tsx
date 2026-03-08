@@ -41,10 +41,10 @@ export default async function ProjectDetail({
 			<div className="w-full">
 				<div className="px-6 md:px-12.5 mb-12 mt-6 md:mt-37.5">
 					<BackButton label={tBase("backToProjects")} />
-					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-switzer font-medium tracking-tight mb-6">
+					<h1 className="text-6xl md:text-8xl lg:text-[100px] xl:text-[120px] font-work-sans font-medium tracking-tight mb-6">
 						UniPortal
 					</h1>
-					<p className="text-gray-500 font-satoshi text-base md:text-lg mb-8">
+					<p className="text-gray-500 font-quicksand text-base md:text-lg mb-8">
 						{t(`${id}.subtitle`)}
 					</p>
 
@@ -53,7 +53,7 @@ export default async function ProjectDetail({
 							href={projectConfig.appStoreLink}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center gap-3 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-switzer font-medium transition-all hover:scale-105 active:scale-95 group shadow-lg"
+							className="inline-flex items-center gap-3 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-work-sans font-medium transition-all hover:scale-105 active:scale-95 group shadow-lg"
 						>
 							<svg
 								viewBox="0 0 384 512"
@@ -83,7 +83,7 @@ export default async function ProjectDetail({
 
 				<div className="px-6 md:px-12.5">
 					{/* Detail Section */}
-					<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400 mb-8">
+					<div className="flex items-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400 mb-8">
 						<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 						{tBase("detail")}
 					</div>
@@ -98,28 +98,28 @@ export default async function ProjectDetail({
 
 							<div className="grid grid-cols-2 gap-y-10 gap-x-4 mb-10">
 								<div>
-									<p className="text-gray-500 font-satoshi mb-2">
+									<p className="text-gray-500 font-quicksand mb-2">
 										{tBase("industry")}
 									</p>
-									<p className="font-switzer font-bold">
+									<p className="font-work-sans font-bold">
 										{t(`${id}.meta.industry`)}
 									</p>
 								</div>
 								<div>
-									<p className="text-gray-500 font-satoshi mb-2">
+									<p className="text-gray-500 font-quicksand mb-2">
 										{tBase("category")}
 									</p>
-									<p className="font-switzer font-bold">
+									<p className="font-work-sans font-bold">
 										{tCat(projectConfig.categoryId)}
 									</p>
 								</div>
 							</div>
 
 							<div className="border-t border-black/10 dark:border-white/10 pt-10">
-								<p className="text-gray-500 font-satoshi mb-4 tracking-wider text-xs md:text-sm font-medium">
+								<p className="text-gray-500 font-quicksand mb-4 tracking-wider text-xs md:text-sm font-medium">
 									{tBase("myRole")}
 								</p>
-								<p className="text-gray-600 dark:text-gray-300 font-satoshi text-base md:text-lg leading-relaxed max-w-2xl">
+								<p className="text-gray-600 dark:text-gray-300 font-quicksand text-base md:text-lg leading-relaxed max-w-2xl">
 									{t(`${id}.meta.role`)}
 								</p>
 							</div>
@@ -127,7 +127,7 @@ export default async function ProjectDetail({
 
 						{/* Right col */}
 						<div className="lg:col-span-2 pt-5 md:pt-[25%] flex flex-col gap-10">
-							<p className="text-gray-500 font-satoshi text-lg md:text-xl leading-relaxed ">
+							<p className="text-gray-500 font-quicksand text-lg md:text-xl leading-relaxed ">
 								{t(`${id}.details.description`)}
 							</p>
 							<div className="relative lg:max-w-[35vw] w-full aspect-video md:aspect-4/3">
@@ -144,7 +144,7 @@ export default async function ProjectDetail({
 					{/* Pain Points Section */}
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 py-12">
 						<div className="lg:col-span-3">
-							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+							<div className="flex items-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 								{tBase("painPoints")}
 							</div>
@@ -203,7 +203,7 @@ export default async function ProjectDetail({
 					{/* Key Features Section */}
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 py-16">
 						<div className="lg:col-span-3">
-							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+							<div className="flex items-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 								{tBase("keyFeatures")}
 							</div>
@@ -222,7 +222,7 @@ export default async function ProjectDetail({
 					{/* Result Section */}
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 py-16">
 						<div className="lg:col-span-3">
-							<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+							<div className="flex items-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 								<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 								{tBase("result")}
 							</div>
@@ -245,14 +245,14 @@ export default async function ProjectDetail({
 				<div className="px-6 md:px-12.5">
 					{/* Heading */}
 					<div className="flex flex-col items-center gap-4 mb-20 text-center">
-						<div className="flex items-center justify-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+						<div className="flex items-center justify-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 							<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 							{tBase("relatedProject")}
 						</div>
-						<h2 className="text-5xl md:text-7xl lg:text-[80px] xl:text-[100px] font-switzer font-medium tracking-tight leading-[1.1]">
+						<h2 className="text-5xl md:text-7xl lg:text-[80px] xl:text-[100px] font-work-sans font-medium tracking-tight leading-[1.1]">
 							{tBase("exploreSimilar")}
 						</h2>
-						<p className="text-gray-500 font-satoshi text-lg md:text-xl max-w-2xl mt-4">
+						<p className="text-gray-500 font-quicksand text-lg md:text-xl max-w-2xl mt-4">
 							{tBase("exploreSimilarDesc")}
 						</p>
 					</div>
@@ -277,10 +277,10 @@ export default async function ProjectDetail({
 
 								{/* Labels */}
 								<div className="absolute top-6 left-6 right-6 z-10 flex flex-col items-start gap-1 text-white pointer-events-none drop-shadow-sm">
-									<h3 className="font-switzer text-2xl md:text-3xl font-medium tracking-tight leading-tight">
+									<h3 className="font-work-sans text-2xl md:text-3xl font-medium tracking-tight leading-tight">
 										{project.title}
 									</h3>
-									<span className="font-satoshi font-medium text-sm md:text-base opacity-80">
+									<span className="font-quicksand font-medium text-sm md:text-base opacity-80">
 										{project.category}
 									</span>
 								</div>

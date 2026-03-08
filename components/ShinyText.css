@@ -1,3 +1,8 @@
 .shiny-text {
   display: inline-block;
+  padding-bottom: 0.3em;
+  padding-top: 0.1em;
+  margin-bottom: -0.3em;
+  margin-top: -0.1em;
+  line-height: 1.4;
 }

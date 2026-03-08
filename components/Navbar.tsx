@@ -50,14 +50,14 @@ export default function Navbar() {
 						>
 							{t("project")}
 						</Link>
-						<Link
+						{/* <Link
 							href={`/${locale}/blogs`}
 							className={`navbar-link ${
 								pathname.startsWith(`/${locale}/blogs`) ? "active" : ""
 							}`}
 						>
 							{t("blogs")}
-						</Link>
+						</Link> */}
 						<Link
 							href={`/${locale}/about`}
 							className={`navbar-link ${

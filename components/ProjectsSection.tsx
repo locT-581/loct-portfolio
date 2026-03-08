@@ -28,11 +28,11 @@ export default function ProjectsSection() {
 	return (
 		<section id="projects" className="w-full px-6 md:px-[10%] py-14 md:py-20">
 			<div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-				<div className="flex gap-2 items-center text-lg md:text-xl font-switzer">
+				<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans">
 					<div className="bg-black dark:bg-white rounded-full size-1" />
 					{tIndex("discover.subTitle")}
 				</div>
-				<h2 className="text-5xl md:text-7xl lg:text-[86px] font-switzer font-medium leading-[1.1] tracking-tight text-right w-full md:w-auto">
+				<h2 className="text-5xl md:text-7xl lg:text-[86px] font-work-sans font-medium leading-[1.1] tracking-tight text-right w-full md:w-auto">
 					{tIndex("discover.heading")}
 				</h2>
 			</div>
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
 							<Link
 								key={catId}
 								href={`/${locale}/projects?cat=${i}`}
-								className={`inline-block text-left font-switzer text-lg md:text-xl w-fit ${
+								className={`inline-block text-left font-work-sans text-lg md:text-xl w-fit ${
 									i === 0
 										? "font-bold text-black dark:text-white"
 										: "text-gray-500 hover:text-black dark:hover:text-white transition-colors"
@@ -74,7 +74,7 @@ export default function ProjectsSection() {
 									className="object-contain transition-transform duration-700 group-hover:scale-105"
 								/>
 							</Link>
-							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
+							<div className="flex justify-between items-start text-lg md:text-xl font-work-sans font-bold">
 								<Link
 									href={`/${locale}/projects/${project2Id}`}
 									className="tracking-tight hover:underline"
@@ -91,7 +91,7 @@ export default function ProjectsSection() {
 					{/* View All Button */}
 					<Link
 						href={`/${locale}/projects`}
-						className="flex mt-auto items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-switzer font-medium whitespace-nowrap"
+						className="flex mt-auto items-center gap-2 border border-black dark:border-white px-6 py-4 w-fit text-sm md:text-base hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-work-sans font-medium whitespace-nowrap"
 					>
 						{tIndex("discover.btnAll")}
 						<ArrowRight className="w-5 h-5 ml-1" strokeWidth={1.5} />
@@ -119,7 +119,7 @@ export default function ProjectsSection() {
 									className="object-cover transition-transform duration-700 group-hover:scale-105"
 								/>
 							</Link>
-							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold">
+							<div className="flex justify-between items-start text-lg md:text-xl font-work-sans font-bold">
 								<Link
 									href={`/${locale}/projects/${project1Id}`}
 									className="tracking-tight hover:underline"
@@ -153,7 +153,7 @@ export default function ProjectsSection() {
 									className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
 								/>
 							</Link>
-							<div className="flex justify-between items-start text-lg md:text-xl font-switzer font-bold mt-2">
+							<div className="flex justify-between items-start text-lg md:text-xl font-work-sans font-bold mt-2">
 								<Link
 									href={`/${locale}/projects/${project3Id}`}
 									className="tracking-tight hover:underline"

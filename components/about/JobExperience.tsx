@@ -8,7 +8,7 @@ export default async function JobExperience() {
 			<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
 				{/* Left Column */}
 				<div className="lg:col-span-3 flex items-start">
-					<div className="flex items-center gap-2 text-lg md:text-xl font-switzer">
+					<div className="flex items-center gap-2 text-lg md:text-xl font-work-sans">
 						<div className="bg-black dark:bg-white rounded-full w-1 h-1" />
 						{t("experience.label")}
 					</div>
@@ -16,7 +16,7 @@ export default async function JobExperience() {
 
 				{/* Right Column */}
 				<div className="lg:col-span-9">
-					<h2 className="text-5xl md:text-6xl lg:text-[76px] font-switzer leading-[1.1] mb-10 lg:mb-14">
+					<h2 className="text-5xl md:text-6xl lg:text-[76px] font-work-sans leading-[1.1] mb-10 lg:mb-14">
 						{t("experience.heading")}
 					</h2>
 
@@ -27,15 +27,15 @@ export default async function JobExperience() {
 								className="group grid grid-cols-1 md:grid-cols-2 gap-6 py-7.5"
 							>
 								<div className="flex flex-col gap-2">
-									<h3 className="text-2xl md:text-3xl font-switzer font-medium">
+									<h3 className="text-2xl md:text-3xl font-work-sans font-medium">
 										{t(`experience.jobs.${index}.role`)}
 									</h3>
-									<span className="text-sm font-satoshi text-gray-500 font-medium tracking-wide">
+									<span className="text-sm text-gray-500 font-medium tracking-wide">
 										{t(`experience.jobs.${index}.company`)}
 									</span>
 								</div>
 								<div>
-									<p className="text-gray-500 font-satoshi text-base md:text-lg leading-relaxed">
+									<p className="text-gray-500 text-base md:text-lg leading-relaxed">
 										{t(`experience.jobs.${index}.desc`)}
 									</p>
 								</div>

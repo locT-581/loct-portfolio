@@ -14,10 +14,10 @@ export default async function BlogsPage() {
 		<main className="w-full bg-[#f2f2f2] dark:bg-[#111111] pt-32 lg:pt-48 pb-20 min-h-screen">
 			{/* Header */}
 			<section className="px-6 md:px-[8%] mb-24">
-				<h1 className="text-6xl md:text-8xl lg:text-[120px] font-switzer font-medium tracking-tight mb-8">
+				<h1 className="text-6xl md:text-8xl lg:text-[120px] font-work-sans font-medium tracking-tight mb-8">
 					{t("title")}
 				</h1>
-				<p className="text-gray-500 font-satoshi text-lg md:text-xl max-w-2xl leading-relaxed">
+				<p className="text-gray-500 font-quicksand text-lg md:text-xl max-w-2xl leading-relaxed">
 					{t("subtitle")}
 				</p>
 			</section>
@@ -25,11 +25,11 @@ export default async function BlogsPage() {
 			{/* Blog List Section */}
 			<section className="px-6 md:px-[8%]">
 				<div className="flex flex-col gap-1 items-start mb-12">
-					<div className="flex items-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+					<div className="flex items-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 						<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 						Insights
 					</div>
-					<h2 className="text-5xl md:text-6xl font-switzer font-medium tracking-tight mt-2">
+					<h2 className="text-5xl md:text-6xl font-work-sans font-medium tracking-tight mt-2">
 						{t("heading")}
 					</h2>
 				</div>
@@ -57,16 +57,16 @@ export default async function BlogsPage() {
 							</div>
 
 							<div className="flex flex-col gap-4">
-								<div className="flex justify-between items-center text-sm font-satoshi text-gray-500">
+								<div className="flex justify-between items-center text-sm font-quicksand text-gray-500">
 									<span>{t(`items.${id}.date`)}</span>
-									<span className="flex items-center gap-1 group-hover:text-black dark:group-hover:text-white transition-colors uppercase font-switzer font-bold tracking-wider text-xs">
+									<span className="flex items-center gap-1 group-hover:text-black dark:group-hover:text-white transition-colors uppercase font-work-sans font-bold tracking-wider text-xs">
 										Read More <ArrowUpRight className="w-4 h-4" />
 									</span>
 								</div>
-								<h3 className="text-2xl md:text-3xl font-switzer font-medium tracking-tight leading-tight group-hover:text-gray-600 dark:group-hover:text-gray-400 transition-colors">
+								<h3 className="text-2xl md:text-3xl font-work-sans font-medium tracking-tight leading-tight group-hover:text-gray-600 dark:group-hover:text-gray-400 transition-colors">
 									{t(`items.${id}.title`)}
 								</h3>
-								<p className="text-gray-500 font-satoshi line-clamp-2 leading-relaxed opacity-80">
+								<p className="text-gray-500 font-quicksand line-clamp-2 leading-relaxed opacity-80">
 									{t(`items.${id}.excerpt`)}
 								</p>
 							</div>

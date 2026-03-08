@@ -39,10 +39,10 @@ const Item = ({
 			whileHover={{ y: -5 }}
 			className="p-6 md:p-8 rounded-2xl"
 		>
-			<h3 className="text-6xl md:text-8xl mb-4 font-switzer">
+			<h3 className="text-6xl md:text-8xl mb-4 font-work-sans">
 				<Counter value={title} />
 			</h3>
-			<p className="text-xl md:text-2xl font-semibold font-switzer">{desc}</p>
+			<p className="text-xl md:text-2xl font-semibold font-work-sans">{desc}</p>
 			<p className="text-lg md:text-[20px] text-grey-1">{paragraph}</p>
 		</motion.div>
 	);
@@ -55,7 +55,7 @@ export default function AboutSection() {
 	return (
 		<section
 			id="about"
-			className="container flex flex-col lg:flex-row gap-8 lg:gap-[10%] px-6 pt-16 pb-6 md:py-24 border-t border-gray-200 dark:border-gray-800"
+			className="container flex flex-col lg:flex-row gap-8 lg:gap-[10%] px-6 pt-16 pb-6 md:py-20 border-t border-gray-200 dark:border-gray-800"
 		>
 			<div className="flex gap-1 text-nowrap shrink-0 h-fit lg:items-center lg:justify-center self-start items-center">
 				<div className="bg-black dark:bg-white rounded-full size-1" />

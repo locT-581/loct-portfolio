@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import AboutSection from "@/components/AboutSection";
-import BlogSection from "@/components/BlogSection";
+// import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
 import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import HeroSection from "@/components/HeroSection";
@@ -19,11 +19,11 @@ export default async function Home({
 		<div className="flex flex-col gap-12 pb-24">
 			<HeroSection />
 			<AboutSection />
-			<ServicesSection />
 			<FeaturedProjectsSection />
+			<ServicesSection />
 			<CTASection />
 			<ProjectsSection />
-			<BlogSection />
+			{/* <BlogSection /> */}
 		</div>
 	);
 }

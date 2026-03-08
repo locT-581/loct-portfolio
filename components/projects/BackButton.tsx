@@ -14,7 +14,7 @@ export default function BackButton({ label }: BackButtonProps) {
 		<button
 			type="button"
 			onClick={() => router.back()}
-			className="group inline-flex items-center gap-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 font-switzer text-sm md:text-base cursor-pointer"
+			className="group inline-flex items-center gap-2 text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 font-work-sans text-sm md:text-base cursor-pointer"
 		>
 			<ArrowLeft
 				size={20}

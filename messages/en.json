@@ -254,7 +254,7 @@
 		"emailLabel": "Email:",
 		"phoneLabel": "Phone:",
 		"locationLabel": "Location:",
-		"locationValue": "Can Tho, Vietnam | Remote Worldwide",
+		"locationValue": "Can Tho, Vietnam | Remote",
 		"quickLinks": {
 			"title": "Quick Links",
 			"home": "Home",
@@ -458,7 +458,7 @@
 			}
 		},
 		"sudoku-game": {
-			"title": "Web Sudoku",
+			"title": "Sudoku Game",
 			"year": "2024",
 			"subtitle": "Play Sudoku puzzle offline on your desktop! 🎮",
 			"details": {

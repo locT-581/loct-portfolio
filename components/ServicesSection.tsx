@@ -43,7 +43,7 @@ const ServiceItem = ({
 					variants={{
 						hover: { x: 10, color: "var(--foreground)" },
 					}}
-					className="text-xl md:text-2xl mb-2 text-gray-500 font-switzer transition-colors duration-300"
+					className="text-xl md:text-2xl mb-2 text-gray-500 font-work-sans transition-colors duration-300"
 				>
 					{number}
 				</motion.span>
@@ -51,7 +51,7 @@ const ServiceItem = ({
 					variants={{
 						hover: { x: 20 },
 					}}
-					className="text-3xl md:text-4xl lg:text-5xl font-semibold font-switzer group-hover:text-black dark:group-hover:text-white transition-colors duration-300"
+					className="text-3xl md:text-4xl lg:text-5xl font-semibold font-work-sans group-hover:text-black dark:group-hover:text-white transition-colors duration-300"
 				>
 					{title}
 				</motion.h3>
@@ -59,7 +59,7 @@ const ServiceItem = ({
 
 			{/* Right side: Tags and Description */}
 			<div className="flex flex-col w-full lg:w-1/2 justify-center lg:items-end gap-4 relative z-10">
-				<div className="flex flex-wrap items-center gap-3 text-sm md:text-base font-bold font-switzer">
+				<div className="flex flex-wrap items-center gap-3 text-sm md:text-base font-bold font-work-sans">
 					{tags.map((tag, i) => (
 						<motion.div
 							key={tag}
@@ -107,7 +107,7 @@ export default function ServicesSection() {
 	return (
 		<section
 			id="services"
-			className="w-full flex flex-col gap-12 md:gap-24 px-6 md:px-12 pt-16 md:pt-24"
+			className="w-full flex flex-col gap-12 md:gap-20 px-6 md:px-12 pt-16 md:pt-20"
 		>
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}
@@ -116,11 +116,11 @@ export default function ServicesSection() {
 				transition={{ duration: 0.8 }}
 				className="flex flex-col lg:flex-row justify-between items-start"
 			>
-				<div className="flex gap-2 items-center text-lg md:text-xl font-switzer lg:self-start lg:mt-6 mb-8 lg:mb-0">
+				<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans lg:self-start lg:mt-6 mb-8 lg:mb-0">
 					<div className="bg-black dark:bg-white rounded-full size-1" />
 					{t("servicesSubTitle")}
 				</div>
-				<h2 className="text-5xl md:text-7xl lg:text-8xl font-switzer lg:w-3/4 lg:text-right leading-tight tracking-tight">
+				<h2 className="text-5xl md:text-7xl lg:text-8xl font-work-sans lg:w-3/4 lg:text-right leading-tight tracking-tight">
 					{t("servicesHeading")}
 				</h2>
 			</motion.div>

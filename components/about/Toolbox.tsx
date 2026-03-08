@@ -225,7 +225,7 @@ const AnimatedToolGrid = ({
 					</motion.div>
 					<motion.span
 						whileHover={{ color: "#000" }}
-						className="text-gray-500 dark:text-gray-400 font-satoshi text-lg md:text-2xl font-medium text-center transition-colors group-hover:text-black dark:group-hover:text-white"
+						className="text-gray-500 dark:text-gray-400 font-quicksand text-lg md:text-2xl font-medium text-center transition-colors group-hover:text-black dark:group-hover:text-white"
 					>
 						{tool.name}
 					</motion.span>
@@ -247,11 +247,11 @@ export default function Toolbox() {
 				transition={{ duration: 0.8, ease: "easeOut" }}
 				className="flex flex-col items-center gap-4 mb-16 lg:mb-20"
 			>
-				<div className="flex items-center justify-center gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400">
+				<div className="flex items-center justify-center gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400">
 					<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 					{t("toolbox.label")}
 				</div>
-				<h2 className="text-6xl md:text-7xl lg:text-8xl font-switzer font-medium tracking-tight text-center leading-[1.1]">
+				<h2 className="text-6xl md:text-7xl lg:text-8xl font-work-sans font-medium tracking-tight text-center leading-[1.1]">
 					{t("toolbox.heading")}
 				</h2>
 			</motion.div>
@@ -262,7 +262,7 @@ export default function Toolbox() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true }}
-				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400"
+				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400"
 			>
 				<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 				{t("toolbox.state")}
@@ -273,7 +273,7 @@ export default function Toolbox() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true }}
-				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400"
+				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400"
 			>
 				<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 				{t("toolbox.realtime")}
@@ -284,7 +284,7 @@ export default function Toolbox() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true }}
-				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400"
+				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400"
 			>
 				<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 				{t("toolbox.ui")}
@@ -295,7 +295,7 @@ export default function Toolbox() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true }}
-				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-switzer text-gray-600 dark:text-gray-400"
+				className="flex items-center justify-center py-10 gap-2 text-base md:text-lg font-work-sans text-gray-600 dark:text-gray-400"
 			>
 				<div className="bg-black dark:bg-white rounded-full w-1.5 h-1.5" />
 				{t("toolbox.another")}

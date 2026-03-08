@@ -57,7 +57,7 @@ function PortfolioGridContent() {
 						key={catId}
 						type="button"
 						onClick={() => setActiveCategoryId(catId)}
-						className={`font-switzer text-base md:text-xl font-medium transition-colors ${
+						className={`font-work-sans text-base md:text-xl font-medium transition-colors ${
 							activeCategoryId === catId
 								? "text-black dark:text-white"
 								: "text-gray-400 hover:text-black dark:hover:text-white"
@@ -93,7 +93,7 @@ function PortfolioGridContent() {
 
 								{/* Top Right & Top Left Labels */}
 								<div className="absolute top-6 left-6 right-6 z-20 flex justify-between items-start text-white pointer-events-none drop-shadow-md">
-									<h3 className="font-switzer font-semibold text-xl md:text-2xl max-w-[60%]">
+									<h3 className="font-work-sans font-semibold text-xl md:text-2xl max-w-[60%]">
 										{project.title}
 									</h3>
 									<span className="text-sm md:text-base opacity-90">
@@ -112,7 +112,7 @@ function PortfolioGridContent() {
 
 								{/* Hover Overlay Circular Button */}
 								<div className="absolute inset-0 bg-black/30 dark:bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-									<div className="bg-white text-black font-switzer font-bold text-xs md:text-sm px-6 py-6 md:px-8 md:py-8 aspect-square rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform duration-500 ease-out z-20">
+									<div className="bg-white text-black font-work-sans font-bold text-xs md:text-sm px-6 py-6 md:px-8 md:py-8 aspect-square rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform duration-500 ease-out z-20">
 										{btnDetails}
 									</div>
 								</div>

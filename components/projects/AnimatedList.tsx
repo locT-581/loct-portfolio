@@ -37,10 +37,10 @@ export default function AnimatedList({ items }: AnimatedListProps) {
 					}}
 					className="flex gap-8 md:gap-16 items-start"
 				>
-					<span className="text-gray-400 font-satoshi text-base shrink-0">
+					<span className="text-gray-400 font-quicksand text-base shrink-0">
 						/0{i + 1}
 					</span>
-					<p className="text-gray-500 font-satoshi text-base md:text-lg leading-relaxed">
+					<p className="text-gray-500 font-quicksand text-base md:text-lg leading-relaxed">
 						{renderTextWithBold(point)}
 					</p>
 				</motion.div>
