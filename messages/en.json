@@ -242,9 +242,11 @@
 		"exploreSimilarDesc": "More engineering works focusing on robust system design and high-performance UI/UX.",
 		"viewAppStore": "App Store",
 		"keyFeatures": "Key Features",
+		"architecture": "Architecture & Tech Stack",
 		"myRole": "My Role:",
 		"backToProjects": "Back to Projects",
-		"viewProject": "View Project"
+		"viewProject": "View Project",
+		"viewDesign": "Open Design"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -431,30 +433,53 @@
 		},
 		"sudoku-game": {
 			"title": "Web Sudoku",
-			"subtitle": "A modernized, interactive Sudoku game built for the web.",
+			"year": "2024",
+			"subtitle": "Play Sudoku puzzle offline on your desktop! 🎮",
 			"details": {
-				"headingPart1": "Web Sudoku brings ",
-				"headingPart2": "classic puzzles to life.",
-				"description": "An engaging web-based Sudoku experience with multiple difficulty levels, auto-saving, and a sleek user interface."
+				"headingPart1": "The project is a modern Sudoku game application for the Desktop platform, built on the Electron platform combined with React. This is a complete product, not only focusing on game logic but also investing heavily in user experience and vivid interface.",
+				"description": "The project focuses on creating a distraction-free gaming environment, optimizing micro-interactions from number entry to intelligent note-taking systems based on real-world Sudoku techniques."
 			},
 			"meta": {
-				"client": "Personal",
-				"industry": "Gaming",
-				"duration": "2 Weeks"
+				"client": "Personal / Open Source",
+				"industry": "Gaming & Logic",
+				"duration": "2 Weeks",
+				"role": "Personal Project"
 			},
 			"painPoints": {
-				"heading": "The Problem: Poor UX",
+				"heading": "Building a cross-platform Sudoku application required solving complex algorithmic puzzle generation, optimizing grid rendering, and mastering Electron configurations.",
 				"list": [
-					"Outdated UI in existing browser games.",
-					"Loss of game progress on reload."
+					"**Algorithmic Complexity & Unique Solutions**: Architecting a robust generation algorithm that not only strictly follows Sudoku rules but also mathematically guarantees a single, unique solution for every puzzle.",
+					"**High-frequency Grid Rendering**: Optimizing React component lifecycles to eliminate input lag across an 81-cell grid containing multiple dynamic states (notes, highlights, real-time error validations).",
+					"**State & Logic Synchronization**: Engineering a seamless, decoupled synchronization pipeline between complex core algorithmic utilities and the display UI managed by the Redux Store.",
+					"**Cross-Platform Electron Packaging**: Configuring the Electron environment to efficiently package and deploy a highly stable, unified codebase across Windows, macOS, and Linux operating systems."
+				]
+			},
+			"keyFeatures": {
+				"heading": "A fully featured, cross-platform Sudoku desktop application powered by advanced algorithms, persistent state management, and a native-grade user experience.",
+				"list": [
+					"**Dynamic Generation & Difficulty**: Engineered a dynamic board generator supporting multiple difficulty tiers via a custom `removeKDigits` algorithm, ensuring randomized yet valid and unique puzzles.",
+					"**Backtracking Solver & Hints**: Integrated a highly optimized **Backtracking** algorithm to solve any board instantly, validating player moves in real-time and providing intelligent, mathematically accurate hints.",
+					"**Interactive UI & Note System**: Delivered a buttery-smooth interface featuring a dedicated cell-level Note mode, fluid transitions, and a comprehensive navigation system (Home, Continue, Help).",
+					"**Persistent Progress Management**: Implemented robust local state persistence, allowing users to effortlessly save and seamlessly resume their in-progress games across different app sessions.",
+					"**Pure Native Desktop Experience**: Locked down the Electron wrapper by disabling default browser shortcuts (F12, Alt) to simulate a strict, distraction-free native desktop application environment."
+				]
+			},
+			"architecture": {
+				"heading": "A meticulously structured, type-safe Electron application leveraging modern React ecosystems and a rigorous separation of concerns.",
+				"list": [
+					"**Strict Main/Renderer Isolation**: Built on Electron with a clear architectural boundary between the OS-level Main Process and the React-driven UI Renderer Process.",
+					"**Type-Safe Logic & State Decoupling**: Utilized strict TypeScript for complex 9x9 matrix typing, completely decoupling core generation/validation algorithms from the centralized Redux Toolkit game state.",
+					"**Modular UI & Premium Animations**: Structured highly reusable component patterns powered by Material UI, SCSS, and Framer Motion to deliver premium, lag-free micro-animations.",
+					"**Professional Tooling & QA**: Configured a robust, enterprise-grade development pipeline ensuring code quality and stability via Webpack, Jest for unit testing, and rigorous ESLint standards."
 				]
 			},
 			"result": {
-				"headingPart1": "A perfect ",
-				"headingPart2": "pastime.",
+				"heading": "Delivering a commercial-grade, standalone desktop puzzle game powered by millisecond-execution algorithms, fluid rendering, and a highly scalable architecture.",
 				"list": [
-					"Clean, modern aesthetic",
-					"Persistent state and smooth interactions"
+					"**Millisecond Algorithmic Execution**: Successfully implemented an optimized **Recursive Backtracking** algorithm, enabling the generation and solving of complex Sudoku grids in mere milliseconds.",
+					"**Commercial-Grade Fluidity**: Achieved commercial-grade app initialization and fluid scene transitions by strategically combining React Suspense, lazy loading, and Framer Motion.",
+					"**Highly Scalable Codebase**: Established a highly maintainable, type-safe foundation using TypeScript and Redux Toolkit, ensuring effortless future scalability for Online Multiplayer or Leaderboard features.",
+					"**Production-Ready Executable**: Successfully packaged a production-ready, standalone desktop installer via `electron-builder`, completely breaking free from traditional web browser constraints."
 				]
 			}
 		},

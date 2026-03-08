@@ -69,15 +69,15 @@ export default async function ProjectDetail({
 						{tBase("detail")}
 					</div>
 
-					<div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-24 pb-16">
+					<div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-20 pb-6 md:pb-16">
 						{/* Left col */}
-						<div className="lg:col-span-3 flex flex-col justify-between pb-[15%]">
+						<div className="lg:col-span-3 flex flex-col justify-between">
 							<ScrollRevealText
 								text={t(`${id}.details.headingPart1`)}
 								className="text-2xl md:text-3xl lg:text-4xl leading-[1.2] tracking-tight mb-16 lg:mb-32"
 							/>
 
-							<div className="grid grid-cols-2 gap-y-10 gap-x-4 mb-16">
+							<div className="grid grid-cols-2 gap-y-10 gap-x-4 mb-10">
 								<div>
 									<p className="text-gray-500 font-satoshi mb-2">
 										{tBase("industry")}
@@ -111,7 +111,7 @@ export default async function ProjectDetail({
 							<p className="text-gray-500 font-satoshi text-lg md:text-xl leading-relaxed">
 								{t(`${id}.details.description`)}
 							</p>
-							<div className="relative max-w-[35vw] w-full aspect-video md:aspect-4/3">
+							<div className="relative lg:max-w-[35vw] w-full aspect-video md:aspect-4/3">
 								<Image
 									src={projectConfig.detailsImage}
 									alt="Detail Image"

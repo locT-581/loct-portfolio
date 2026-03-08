@@ -16,9 +16,7 @@ export default function MediaRenderer({
 }: Props) {
 	if (media.type === "video") {
 		return (
-			<div
-				className={`relative w-full h-full overflow-hidden bg-gray-200 dark:bg-gray-800 ${className}`}
-			>
+			<div className={`relative w-full h-full overflow-hidden  ${className}`}>
 				<video
 					src={media.src}
 					poster={media.poster}

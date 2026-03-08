@@ -242,9 +242,11 @@
 		"exploreSimilarDesc": "Các dự án phần mềm khác với trọng tâm vào thiết kế hệ thống vững chắc và tối ưu hiệu năng UI/UX.",
 		"viewAppStore": "App Store",
 		"keyFeatures": "Tính năng cốt lõi",
+		"architecture": "Kiến trúc & Công nghệ",
 		"myRole": "Vai trò:",
 		"backToProjects": "Quay lại dự án",
-		"viewProject": "Xem dự án"
+		"viewProject": "Xem dự án",
+		"viewDesign": "Mở bản thiết kế"
 	},
 	"Footer": {
 		"brand": "LocT®",
@@ -431,30 +433,53 @@
 		},
 		"sudoku-game": {
 			"title": "Web Sudoku",
-			"subtitle": "Trò chơi Sudoku tương tác hiện đại trên tảng nền web.",
+			"year": "2024",
+			"subtitle": "Trò chơi Sudoku ngoại tuyến trên máy tính của bạn! 🎮",
 			"details": {
-				"headingPart1": "Web Sudoku mang lại ",
-				"headingPart2": "sức sống mới cho giải đố.",
-				"description": "Trải nghiệm Sudoku tuyệt vời trên web với nhiều độ khó, khả năng tự động lưu và giao diện tối giản hiện đại."
+				"headingPart1": "Dự án là một ứng dụng trò chơi Sudoku hiện đại dành cho nền tảng Desktop, được xây dựng trên nền tảng Electron kết hợp với React. Đây là một sản phẩm hoàn thiện, không chỉ tập trung vào logic game mà còn được đầu tư mạnh mẽ vào trải nghiệm người dùng và giao diện sinh động.",
+				"description": "Dự án tập trung vào việc tạo ra một môi trường chơi game không gián đoạn, tối ưu hóa các tương tác nhỏ nhất từ việc nhập số, ghi chú đến cơ chế gợi ý thông minh dựa trên kỹ thuật giải Sudoku thực tế."
 			},
 			"meta": {
-				"client": "Cá nhân",
-				"industry": "Trò chơi",
-				"duration": "2 Tuần"
+				"client": "Cá nhân / Open Source",
+				"industry": "Trò chơi & Trí tuệ",
+				"duration": "2 Tuần",
+				"role": "Dự án cá nhân"
 			},
 			"painPoints": {
-				"heading": "Vấn đề: Trải nghiệm người dùng kém",
+				"heading": "Việc phát triển ứng dụng Sudoku đa nền tảng đòi hỏi phải giải quyết các bài toán phức tạp về thuật toán tạo lưới, tối ưu hiệu năng render và làm chủ cấu hình Electron.",
 				"list": [
-					"Giao diện các game hiện tại thường lỗi thời.",
-					"Mất trạng thái game khi tải lại trang."
+					"**Độ phức tạp Thuật toán Sinh lưới**: Thiết kế thuật toán tạo bảng chặt chẽ, không chỉ đảm bảo đúng luật Sudoku mà còn phải chứng minh toán học để luôn cho ra duy nhất một lời giải.",
+					"**Hiệu năng Render Lưới 81 ô**: Tối ưu hóa vòng đời React component để tránh hiện tượng giật lag khi thao tác nhanh trên lưới 81 ô chứa hàng loạt trạng thái động (ghi chú, highlight, báo lỗi realtime).",
+					"**Đồng bộ Trạng thái & Logic Giải thuật**: Xây dựng luồng đồng bộ mượt mà, phân tách rõ ràng giữa các hàm logic xử lý thuật toán cốt lõi và trạng thái hiển thị UI được quản lý tập trung qua Redux Store.",
+					"**Đóng gói Desktop Đa nền tảng**: Thiết lập và cấu hình môi trường Electron để đóng gói ứng dụng, đảm bảo một mã nguồn duy nhất hoạt động ổn định trên cả ba hệ điều hành Windows, macOS và Linux."
+				]
+			},
+			"keyFeatures": {
+				"heading": "Ứng dụng Sudoku desktop đa nền tảng toàn diện, được vận hành bởi các thuật toán nâng cao, hệ thống quản lý trạng thái bền bỉ và trải nghiệm chuẩn Native.",
+				"list": [
+					"**Tạo Lưới Động & Đa Cấp Độ**: Xây dựng trình tạo lưới động hỗ trợ nhiều cấp độ khó thông qua thuật toán `removeKDigits` tùy chỉnh, đảm bảo tạo ra các ván chơi ngẫu nhiên nhưng luôn hợp lệ và duy nhất.",
+					"**Giải Thuật Backtracking & Gợi Ý**: Tích hợp thuật toán **Backtracking** tối ưu giúp giải mã mọi bảng đấu tức thời, xác thực nước đi theo thời gian thực và cung cấp hệ thống gợi ý (Hint) thông minh, chính xác.",
+					"**Giao Diện Tương Tác & Hệ Thống Ghi Chú**: Cung cấp giao diện tương tác mượt mà tích hợp chế độ Ghi chú (Note mode) trực tiếp trên từng ô, hiệu ứng chuyển cảnh trơn tru và hệ thống điều hướng toàn diện.",
+					"**Lưu Trữ & Quản Trị Tiến Trình**: Triển khai cơ chế lưu trữ trạng thái cục bộ mạnh mẽ, cho phép người chơi dễ dàng lưu (Save) và tiếp tục (Continue) ván cờ dang dở một cách liền mạch ở các phiên tiếp theo.",
+					"**Trải Nghiệm Desktop Thuần Túy**: Tối ưu hóa môi trường đóng gói Electron bằng cách vô hiệu hóa các phím tắt trình duyệt (F12, Alt), tạo ra một không gian trải nghiệm phần mềm Desktop chuyên nghiệp và thuần túy."
+				]
+			},
+			"architecture": {
+				"heading": "Ứng dụng Electron được cấu trúc tỉ mỉ, an toàn kiểu dữ liệu, tận dụng tối cao hệ sinh thái React hiện đại và phân tách logic nền tảng chặt chẽ.",
+				"list": [
+					"**Phân tách Process Electron**: Xây dựng trên nền tảng Electron với ranh giới kiến trúc rõ ràng giữa Main Process (tương tác cấp hệ thống) và Renderer Process (quản lý giao diện React).",
+					"**Logic Độc Lập & An Toàn Kiểu**: Sử dụng TypeScript nghiêm ngặt cho ma trận số phức tạp, tách biệt hoàn toàn thuật toán lõi (tạo/giải lưới) khỏi hệ thống quản trị trạng thái tập trung Redux Toolkit.",
+					"**Giao Diện Module & Vi Hiệu Ứng**: Áp dụng Component Pattern tái sử dụng cao, kết hợp hệ thống Material UI (MUI), SCSS linh hoạt và Framer Motion để tạo ra các vi hiệu ứng (micro-animations) mượt mà, đẳng cấp.",
+					"**Bộ Công Cụ Tiêu Chuẩn & Kiểm Định**: Thiết lập luồng phát triển chuẩn doanh nghiệp, đảm bảo chất lượng và độ ổn định mã nguồn thông qua Webpack, kiểm thử tự động với Jest và bộ tiêu chuẩn ESLint khắt khe."
 				]
 			},
 			"result": {
-				"headingPart1": "Một tựa game ",
-				"headingPart2": "hoàn hảo.",
+				"heading": "Mang đến một tựa game desktop độc lập chuẩn thương mại, được vận hành bởi thuật toán thực thi tính bằng mili-giây, hiệu ứng mượt mà và kiến trúc sẵn sàng mở rộng.",
 				"list": [
-					"Thẩm mỹ sạch sẽ, hiện đại",
-					"Tương tác mượt mà và lưu lịch sử đầy đủ"
+					"**Thực thi Giải thuật Tốc độ cao**: Triển khai thành công thuật toán **Recursive Backtracking** tối ưu, cho phép tạo lập và giải mã các lưới Sudoku phức tạp chỉ trong vài mili-giây.",
+					"**Trải nghiệm Mượt mà Chuẩn Thương mại**: Đạt tốc độ khởi động và trải nghiệm chuyển cảnh chuyên nghiệp chuẩn game thương mại nhờ kết hợp chiến lược React Suspense, lazy loading và Framer Motion.",
+					"**Mã Nguồn Mở Rộng & Dễ Bảo Trì**: Xây dựng nền tảng mã nguồn an toàn kiểu (type-safe) với TypeScript và Redux Toolkit, sẵn sàng mở rộng cho các tính năng Online Multiplayer hay Leaderboard trong tương lai.",
+					"**Đóng Gói Desktop Hoàn Thiện**: Đóng gói thành công file cài đặt desktop thực thụ thông qua `electron-builder`, thoát ly hoàn toàn khỏi các rào cản và giới hạn của môi trường trình duyệt web truyền thống."
 				]
 			}
 		},

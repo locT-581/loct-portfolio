@@ -34,6 +34,7 @@ export type Project = {
 	panoramaImage?: string; // The panorama image
 	appStoreLink?: string; // Link to the App Store
 	liveLink?: string; // Link to live site or documentation
+	figmaLink?: string; // Link to Figma design
 };
 
 export const PROJECTS: Project[] = [
@@ -180,27 +181,34 @@ export const PROJECTS: Project[] = [
 		gallery: [
 			{
 				type: "image",
-				src: "/assets/images/sudoku-game.jpeg",
-				size: "full",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000",
-				size: "portrait",
-			},
-			{
-				type: "image",
-				src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=1000",
+				src: "/assets/images/projects/sudoku/c.png",
 				size: "square",
 			},
 			{
 				type: "image",
-				src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
-				size: "landscape",
+				src: "/assets/images/projects/sudoku/b.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/sudoku/a.png",
+				size: "square",
+			},
+			{
+				type: "image",
+				src: "/assets/images/projects/sudoku/d.png",
+				size: "square",
+			},
+			{
+				type: "video",
+				src: "/assets/images/projects/sudoku/video.mp4",
+				size: "full",
 			},
 		],
-		detailsImage:
-			"https://images.unsplash.com/photo-1581291518857-484b0e5085e3?auto=format&fit=crop&q=80&w=1000",
+		detailsImage: "/assets/images/sudoku-game.jpeg",
+		liveLink: "https://github.com/locT-581/Sudoku-game/releases/tag/v1.0.0",
+		figmaLink:
+			"https://www.figma.com/file/ZDgSiACwATcaH5BQl1Jq4M/Sudoku-Game?type=design&mode=design&t=VlKN4Wjy4fPhS1zt-1",
 	},
 	{
 		id: "graph-builder",
