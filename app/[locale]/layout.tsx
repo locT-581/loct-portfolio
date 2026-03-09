@@ -63,7 +63,9 @@ export default async function LocaleLayout({
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<SmoothScroll>
 							<Navbar />
-							<main className="grow pt-20 max-w-360 mx-auto">{children}</main>
+							<main className="grow pt-20 max-w-360 mx-auto w-full">
+								{children}
+							</main>
 							<Footer />
 							<ScrollToTop />
 						</SmoothScroll>

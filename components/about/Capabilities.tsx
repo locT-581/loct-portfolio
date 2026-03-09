@@ -55,7 +55,7 @@ export default function Capabilities() {
 							type="button"
 							onMouseEnter={() => setHoveredIndex(item.id)}
 							onFocus={() => setHoveredIndex(item.id)}
-							className={`relative z-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight font-work-sans font-medium tracking-tighter uppercase whitespace-nowrap cursor-pointer transition-all duration-500 select-none outline-none ${
+							className={`relative z-20 text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight font-work-sans font-medium tracking-tighter uppercase whitespace-normal sm:whitespace-nowrap cursor-pointer transition-all duration-500 select-none outline-none wrap-break-word max-w-full px-4 ${
 								hoveredIndex === item.id
 									? "text-black dark:text-[#F2F2F2] scale-105"
 									: "text-[#D1D1D1] dark:text-[#444444] scale-100"

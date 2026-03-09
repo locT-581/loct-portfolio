@@ -17,12 +17,12 @@ export default async function AboutMe() {
 				</div>
 
 				{/* Right Column */}
-				<div className="flex flex-col items-end gap-24 md:gap-32 justify-end max-w-[65%]">
+				<div className="flex flex-col items-start md:items-end gap-16 md:gap-32 justify-end max-w-full md:max-w-[65%]">
 					<ScrollRevealText
 						text={t("aboutMe.heading")}
-						className="text-2xl md:text-3xl lg:text-5xl"
+						className="text-2xl sm:text-3xl md:text-5xl"
 					/>
-					<p className="text-gray-500 text-base md:text-lg lg:text-xl items-end max-w-[65%]">
+					<p className="text-gray-500 text-base md:text-lg lg:text-xl md:items-end max-w-full md:max-w-[65%]">
 						{t("aboutMe.description")}
 					</p>
 				</div>
