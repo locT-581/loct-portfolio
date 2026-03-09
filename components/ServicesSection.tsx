@@ -116,11 +116,11 @@ export default function ServicesSection() {
 				transition={{ duration: 0.8 }}
 				className="flex flex-col lg:flex-row justify-between items-start"
 			>
-				<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans lg:self-start lg:mt-6 mb-8 lg:mb-0">
+				<div className="flex gap-2 items-center text-base md:text-xl font-work-sans lg:self-start lg:mt-6 mb-4 lg:mb-0">
 					<div className="bg-black dark:bg-white rounded-full size-1" />
 					{t("servicesSubTitle")}
 				</div>
-				<h2 className="text-5xl md:text-7xl lg:text-8xl font-work-sans lg:w-3/4 lg:text-right leading-tight tracking-tight">
+				<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-work-sans lg:w-3/4 lg:text-right leading-tight tracking-tight font-medium">
 					{t("servicesHeading")}
 				</h2>
 			</motion.div>

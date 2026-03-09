@@ -213,12 +213,36 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.navbar-mobile-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #222222;
+  transition: opacity 0.2s;
+}
+
+@media (max-width: 768px) {
+  .navbar-mobile-toggle {
+    display: flex;
+  }
+}
+
+.dark .navbar-mobile-toggle {
+  color: #f2f2f2;
+}
+
 @media (max-width: 768px) {
   .navbar-inner {
-    padding: 0 24px;
+    padding: 0 16px;
+    height: 70px;
   }
   .navbar-logo {
-    font-size: 24px;
+    font-size: 28px;
   }
   .navbar-menu {
     display: none;

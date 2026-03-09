@@ -57,7 +57,7 @@ export default function AboutSection() {
 			id="about"
 			className="container flex flex-col lg:flex-row gap-8 lg:gap-[10%] px-6 pt-16 pb-6 md:py-20 border-t border-gray-200 dark:border-gray-800"
 		>
-			<div className="flex gap-1 text-nowrap shrink-0 h-fit lg:items-center lg:justify-center self-start items-center">
+			<div className="flex gap-1 text-nowrap shrink-0 h-fit lg:items-center lg:justify-center self-start items-center text-sm md:text-base">
 				<div className="bg-black dark:bg-white rounded-full size-1" />
 				{t("about.title")}
 			</div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
 				<div className="col-span-1">
 					<ScrollRevealText
 						text={t("about.desc")}
-						className="text-3xl md:text-5xl font-medium"
+						className="text-2xl sm:text-3xl md:text-5xl font-medium leading-relaxed"
 					/>
 				</div>
 				<motion.div

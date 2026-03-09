@@ -27,12 +27,12 @@ export default function ProjectsSection() {
 
 	return (
 		<section id="projects" className="w-full px-6 md:px-[10%] py-14 md:py-20">
-			<div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-				<div className="flex gap-2 items-center text-lg md:text-xl font-work-sans">
+			<div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6">
+				<div className="flex gap-2 items-center text-base md:text-xl font-work-sans">
 					<div className="bg-black dark:bg-white rounded-full size-1" />
 					{tIndex("discover.subTitle")}
 				</div>
-				<h2 className="text-5xl md:text-7xl lg:text-[86px] font-work-sans font-medium leading-[1.1] tracking-tight text-right w-full md:w-auto">
+				<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[86px] font-work-sans font-medium leading-[1.1] tracking-tight md:text-right w-full md:w-auto">
 					{tIndex("discover.heading")}
 				</h2>
 			</div>
