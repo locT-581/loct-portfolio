@@ -1,7 +1,6 @@
 {
 	"Index": {
 		"title": "Hello!",
-		"heroDesc": "I'm Velissa — a multidisciplinary designer with a passion for turning ideas into visually impactful experiences.",
 		"stats": {
 			"clients": "Happy Clients",
 			"experience": "Years Experience",
@@ -149,6 +148,7 @@
 		"experience": {
 			"label": "Experience & Education",
 			"heading": "My Professional Journey",
+			"viewUpwork": "Upwork Profile",
 			"jobs": [
 				{
 					"role": "Front-end Developer",
@@ -157,8 +157,9 @@
 				},
 				{
 					"role": "2D Animator (Freelance)",
-					"company": "Upwork / 06.2022 - 01.2024",
-					"desc": "Designed and produced motion graphics and character animations for various projects. Maintained a 100% positive client rating on Upwork through effective communication."
+					"company": "6/2022 - 1/2024",
+					"desc": "Designed and produced motion graphics and character animations for various projects. Maintained a 100% positive client rating on Upwork through effective communication.",
+					"link": "https://www.upwork.com/freelancers/~014f887f8f402e5149?mp_source=share"
 				},
 				{
 					"role": "B.S. in Software Engineering",

@@ -21,26 +21,56 @@ export default async function JobExperience() {
 					</h2>
 
 					<div className="flex flex-col">
-						{[0, 1, 2].map((index) => (
-							<div
-								key={index}
-								className="group grid grid-cols-1 md:grid-cols-2 gap-6 py-7.5"
-							>
-								<div className="flex flex-col gap-2">
-									<h3 className="text-2xl md:text-3xl font-work-sans font-medium">
-										{t(`experience.jobs.${index}.role`)}
-									</h3>
-									<span className="text-sm text-gray-500 font-medium tracking-wide">
-										{t(`experience.jobs.${index}.company`)}
-									</span>
+						{[0, 1, 2].map((index) => {
+							const hasLink = t.has(`experience.jobs.${index}.link`);
+
+							return (
+								<div
+									key={index}
+									className="group grid grid-cols-1 md:grid-cols-2 gap-6 py-7.5 border-b border-gray-100 dark:border-gray-900 last:border-0"
+								>
+									<div className="flex flex-col gap-2">
+										<h3 className="text-2xl md:text-3xl font-work-sans font-medium">
+											{t(`experience.jobs.${index}.role`)}
+										</h3>
+										<span className="text-sm text-gray-500 font-medium tracking-wide">
+											{t(`experience.jobs.${index}.company`)}
+										</span>
+									</div>
+									<div className="flex flex-col gap-5">
+										<p className="text-gray-500 text-base md:text-lg leading-relaxed">
+											{t(`experience.jobs.${index}.desc`)}
+										</p>
+										{hasLink && (
+											<a
+												href={t(`experience.jobs.${index}.link`)}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="flex items-center gap-2 w-fit px-6 py-2.5 border border-black dark:border-white rounded-full text-sm font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group/btn"
+											>
+												{t("experience.viewUpwork")}
+												<svg
+													width="14"
+													height="14"
+													viewBox="0 0 14 14"
+													fill="none"
+													className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
+													aria-hidden="true"
+												>
+													<path
+														d="M1 13L13 1M13 1H4M13 1V10"
+														stroke="currentColor"
+														strokeWidth="1.5"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+												</svg>
+											</a>
+										)}
+									</div>
 								</div>
-								<div>
-									<p className="text-gray-500 text-base md:text-lg leading-relaxed">
-										{t(`experience.jobs.${index}.desc`)}
-									</p>
-								</div>
-							</div>
-						))}
+							);
+						})}
 					</div>
 				</div>
 			</div>

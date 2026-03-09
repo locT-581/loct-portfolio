@@ -1,7 +1,6 @@
 {
 	"Index": {
 		"title": "Xin chào!",
-		"heroDesc": "Tôi là Velissa — một nhà thiết kế đa ngành với niềm đam mê biến những ý tưởng thành trải nghiệm có tác động mạnh mẽ về mặt thị giác.",
 		"stats": {
 			"clients": "Khách hàng hài lòng",
 			"experience": "Năm kinh nghiệm",
@@ -149,6 +148,7 @@
 		"experience": {
 			"label": "Kinh nghiệm & Học vấn",
 			"heading": "Hành Trình Sự Nghiệp Của Tôi",
+			"viewUpwork": "Hồ sơ Upwork",
 			"jobs": [
 				{
 					"role": "Lập trình viên Front-end",
@@ -157,8 +157,9 @@
 				},
 				{
 					"role": "2D Animator (Freelance)",
-					"company": "GlowUp Wellness App / 2033",
-					"desc": "Thiết kế ý tưởng và sản xuất motion graphics, animation cho đa dạng dự án. Duy trì 100% đánh giá tích cực từ khách hàng trên nền tảng Upwork nhờ kỹ năng giao tiếp hiệu quả."
+					"company": "6/2022 - 1/2024",
+					"desc": "Thiết kế ý tưởng và sản xuất motion graphics, animation cho đa dạng dự án. Duy trì 100% đánh giá tích cực từ khách hàng trên nền tảng Upwork nhờ kỹ năng giao tiếp hiệu quả.",
+					"link": "https://www.upwork.com/freelancers/~014f887f8f402e5149?mp_source=share"
 				},
 				{
 					"role": "Cử nhân Kỹ thuật Phần mềm (Software Engineering)",
