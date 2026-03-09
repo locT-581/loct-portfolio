@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
 	{
 		id: "yaah-connect",
 		categoryId: "mobile-app",
-		image: "/assets/images/booking-sport.png",
+		image: "/assets/images/projects/yaah/detail.png",
 		portalImage: "/assets/images/booking-sport.png",
 		squareImage: "/assets/images/booking-square.png",
 		gallery: [
